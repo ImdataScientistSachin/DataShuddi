@@ -203,7 +203,28 @@ docker-compose up -d --build
 
 ---
 
-### Option 2: Local Python Setup (uv / pip)
+### Option 2: ☁️ AWS Cloud Production Deployment
+
+Deploy DataShuddi in a high-availability, resource-optimized hybrid cloud topology (**AWS EC2 + AWS RDS PostgreSQL + Managed Qdrant Cloud + Groq LLM API + Nginx Reverse Proxy**):
+
+```bash
+# 1. SSH into your AWS EC2 instance (t2.micro / t3.micro with 4GB Swap space)
+ssh -i "your-key.pem" ubuntu@<YOUR_EC2_PUBLIC_IP>
+
+# 2. Clone repository & configure production environment
+git clone https://github.com/ImdataScientistSachin/DataShuddi.git
+cd DataShuddi
+cp .env.example .env  # Configure AWS RDS, Qdrant Cloud URL, and GROQ_API_KEY
+
+# 3. Launch production container stack
+docker compose -f docker-compose.prod.yml up -d --build
+```
+
+📖 **Architecture & AWS Deployment Guide**: See [docs/aws_deployment_guide.md](docs/aws_deployment_guide.md) for full research analysis, network topology, AWS RDS setup, Qdrant Cloud provisioning, and Nginx reverse proxy configuration.
+
+---
+
+### Option 3: Local Python Setup (uv / pip)
 
 > [!WARNING]
 > Ensure **Ollama** is installed locally ([ollama.com](https://ollama.com)) and required models are pulled prior to running local Python execution.
@@ -314,6 +335,9 @@ Configuration is managed centrally in [src/utils/config.py](file:///g:/Project%2
 | `POSTGRES_DB` | `datashuddi` | Database name for checkpoints. |
 | `QDRANT_HOST` | `localhost` | Qdrant Vector DB host address. |
 | `QDRANT_PORT` | `6333` | Qdrant REST API port. |
+| `QDRANT_URL` | `http://localhost:6333` | Full Qdrant instance URL (Local or Qdrant Cloud). |
+| `QDRANT_API_KEY` | `""` | Qdrant Cloud authentication API key. |
+| `GROQ_API_KEY` | `""` | Groq Cloud Llama-3 70B API key (optional cloud acceleration). |
 | `QDRANT_COLLECTION_NAME` | `datashuddi_docs` | Target vector database collection name. |
 | `OLLAMA_BASE_URL` | `http://localhost:11434` | Local Ollama inference service URL. |
 | `OLLAMA_PII_MODEL` | `qwen2.5-coder:3b` | Fast local LLM for Layer 2 PII detection. |

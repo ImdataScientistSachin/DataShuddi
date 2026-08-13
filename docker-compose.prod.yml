@@ -35,6 +35,22 @@ services:
       api:
         condition: service_healthy
 
+  # ─── DataShuddi Production Nginx Reverse Proxy Gateway ──────────────────
+  gateway:
+    image: nginx:alpine
+    container_name: datashuddi_gateway
+    restart: unless-stopped
+    ports:
+      - "80:80"     # Single HTTP Ingress (Streamlit UI + FastAPI Docs)
+      - "443:443"   # HTTPS Ingress
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      api:
+        condition: service_healthy
+      ui:
+        condition: service_started
+
 networks:
   default:
     name: datashuddi_network
