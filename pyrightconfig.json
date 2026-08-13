@@ -1,0 +1,19 @@
+{
+  "include": [
+    "src",
+    "tests",
+    "scripts",
+    "streamlit_app"
+  ],
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.11",
+  "extraPaths": [
+    "."
+  ],
+  "executionEnvironments": [
+    {
+      "root": "."
+    }
+  ]
+}

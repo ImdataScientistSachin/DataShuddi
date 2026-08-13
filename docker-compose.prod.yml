@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # ─── DataShuddi FastAPI REST API Microservice ───────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datashuddi_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"   # FastAPI REST API & Swagger UI
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  # ─── DataShuddi Streamlit Monitoring UI ─────────────────────────────────
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datashuddi_ui
+    restart: unless-stopped
+    ports:
+      - "8501:8501"   # Streamlit UI
+    command: ["streamlit", "run", "streamlit_app/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    env_file:
+      - .env
+    depends_on:
+      api:
+        condition: service_healthy
+
+networks:
+  default:
+    name: datashuddi_network

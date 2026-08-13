@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables & secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime data storage (vector DB & Postgres)
+data/qdrant_storage/*
+!data/qdrant_storage/.gitkeep
+data/postgres_data/*
+!data/postgres_data/.gitkeep
+data/temp/*
+!data/temp/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/clean/*
+!data/clean/.gitkeep
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Documentation & build artifacts
+docs/
+*.egg-info/
+

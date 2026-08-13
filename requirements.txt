@@ -1,0 +1,69 @@
+# DataShuddi — Python Dependencies
+# Pin exact versions for reproducible builds.
+# DO NOT use >= version constraints.
+
+# ─── LangGraph & LangChain Core ──────────────────────────────────────────────
+langgraph==0.2.73
+langchain==0.3.20
+langchain-community==0.3.19
+langchain-core==0.3.42
+langsmith==0.2.11
+
+# ─── LangGraph PostgreSQL Checkpointer ───────────────────────────────────────
+langgraph-checkpoint-postgres==2.0.13
+psycopg==3.2.3
+psycopg-binary==3.2.3
+psycopg-pool==3.2.3
+
+
+# ─── Ollama Integration ───────────────────────────────────────────────────────
+ollama==0.4.7
+
+# ─── PII Detection — Presidio ────────────────────────────────────────────────
+presidio-analyzer==2.2.356
+presidio-anonymizer==2.2.356
+spacy==3.8.3
+
+# ─── Document Extraction ─────────────────────────────────────────────────────
+pymupdf==1.25.1
+python-docx==1.1.2
+paddleocr==3.7.0
+paddlepaddle==3.3.1
+
+# ─── Vector Database — Qdrant ────────────────────────────────────────────────
+qdrant-client==1.13.2
+setuptools==75.8.0
+
+# ─── Data Validation — Pydantic v2 ───────────────────────────────────────────
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# ─── REST API Engine — FastAPI ───────────────────────────────────────────────
+fastapi==0.115.8
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+
+# ─── Dashboard — Streamlit ───────────────────────────────────────────────────
+streamlit==1.35.0
+
+# ─── Logging ─────────────────────────────────────────────────────────────────
+loguru==0.7.3
+
+# ─── Environment Management ──────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+
+# ─── Code Quality ────────────────────────────────────────────────────────────
+ruff==0.9.4
+mypy==1.14.1
+
+# ─── Utilities ───────────────────────────────────────────────────────────────
+httpx==0.28.1
+tenacity==9.0.0
+rich==13.9.4
+click==8.1.8
