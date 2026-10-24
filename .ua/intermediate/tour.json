@@ -1,0 +1,80 @@
+[
+  {
+    "order": 1,
+    "title": "Project Foundation & Ingress Security",
+    "description": "DataShuddi begins at Node 0 (Security Sanitizer). All incoming documents cross a pre-ingestion trust boundary where prompt injection patterns are stripped and untrusted text is wrapped in [UNTRUSTED_CONTENT].",
+    "nodeIds": [
+      "document:README.md",
+      "file:src/agent/nodes/security_sanitizer.py",
+      "function:src/agent/nodes/security_sanitizer.py:security_sanitizer_node"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Text Extraction with Optical Density Fallback",
+    "description": "Node 1 handles digital PDFs, Word documents, and text files using PyMuPDF. If char density falls below 50 chars/page, it seamlessly engages the PaddleOCR CPU fallback.",
+    "nodeIds": [
+      "file:src/agent/nodes/extractor.py",
+      "function:src/agent/nodes/extractor.py:extractor_node",
+      "function:src/agent/nodes/extractor.py:_ocr_fallback_pdf"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Header & Footer Noise Stripping",
+    "description": "Node 2 uses line frequency analysis across pages to detect repeated running headers, footers, and confidential disclaimers, eliminating semantic dilution before chunking.",
+    "nodeIds": [
+      "file:src/agent/nodes/hf_detector.py",
+      "function:src/agent/nodes/hf_detector.py:hf_detector_node"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Hybrid Dual-Layer PII Detection & Anonymization",
+    "description": "Nodes 3 & 4 combine Presidio regex/NER with Qwen2.5-coder:3b contextual LLM inference on the GTX 1650 GPU, followed by offset-safe placeholder redaction.",
+    "nodeIds": [
+      "file:src/agent/nodes/pii_detector.py",
+      "function:src/agent/nodes/pii_detector.py:pii_detector_node",
+      "file:src/agent/nodes/pii_masker.py",
+      "function:src/agent/nodes/pii_masker.py:pii_masker_node"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Pydantic Schema Validation & Residual Scans",
+    "description": "Node 5 validates the scrubbed document against strict EnterpriseDoc schemas and performs a post-anonymization residual scan to guarantee zero PII leakage.",
+    "nodeIds": [
+      "file:src/agent/nodes/schema_validator.py",
+      "function:src/agent/nodes/schema_validator.py:schema_validator_node"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "Reflector Self-Correction Loop & Human Escalation",
+    "description": "Node 6 runs Qwen 14B in CPU mode if validation fails. Governed by a Confidence Gate (\u22650.70) and Max Delta Cap (0.05), it adapts thresholds or escalates to human review if retries exceed 3.",
+    "nodeIds": [
+      "file:src/agent/nodes/reflector.py",
+      "function:src/agent/nodes/reflector.py:reflector_node"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "Zero-Leak Output & Qdrant Vector Upsert",
+    "description": "Node 7 strictly validates ALLOWED_PAYLOAD_KEYS before generating 1024-dimensional embeddings via mxbai-embed-large and upserting points to Qdrant.",
+    "nodeIds": [
+      "file:src/agent/nodes/output_node.py",
+      "function:src/agent/nodes/output_node.py:output_node"
+    ]
+  },
+  {
+    "order": 8,
+    "title": "State Lifecycle, Persistence & CI/CD Safety Gates",
+    "description": "The LangGraph StateGraph unifies execution across 4 state tiers, PostgresSaver checkpoints, and passes a 50-doc golden dataset release gate with 100% PII recall.",
+    "nodeIds": [
+      "file:src/agent/graph.py",
+      "function:src/agent/graph.py:build_graph",
+      "file:src/agent/state.py",
+      "file:tests/test_release_gate.py"
+    ]
+  }
+]

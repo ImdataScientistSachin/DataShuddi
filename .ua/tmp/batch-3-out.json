@@ -1,0 +1,1349 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 8,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 8,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "scripts/evaluate_pii_recall.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 147,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "run_benchmark",
+          "startLine": 72,
+          "endLine": 143,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BenchmarkCase",
+          "startLine": 34,
+          "endLine": 39,
+          "methods": [],
+          "properties": [
+            "name",
+            "text",
+            "ground_truth_entities"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BenchmarkCase",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "run_benchmark",
+          "line": 72,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run_benchmark",
+          "callee": "console.print",
+          "lineNumber": 74
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "Table",
+          "lineNumber": 82
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "table.add_column",
+          "lineNumber": 83
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "table.add_column",
+          "lineNumber": 84
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "table.add_column",
+          "lineNumber": 85
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "table.add_column",
+          "lineNumber": 86
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "time.time",
+          "lineNumber": 88
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "set",
+          "lineNumber": 92
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 93
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "_run_presidio",
+          "lineNumber": 96
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 98
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 101
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "expected.intersection",
+          "lineNumber": 101
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 102
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 103
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "table.add_row",
+          "lineNumber": 111
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "\", \".join",
+          "lineNumber": 113
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "sorted",
+          "lineNumber": 113
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "\", \".join",
+          "lineNumber": 114
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "sorted",
+          "lineNumber": 114
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "time.time",
+          "lineNumber": 118
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "console.print",
+          "lineNumber": 123
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "Table",
+          "lineNumber": 126
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_column",
+          "lineNumber": 127
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_column",
+          "lineNumber": 128
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_column",
+          "lineNumber": 129
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_column",
+          "lineNumber": 130
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_row",
+          "lineNumber": 136
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_row",
+          "lineNumber": 137
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_row",
+          "lineNumber": 138
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "summary_table.add_row",
+          "lineNumber": 139
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 139
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "console.print",
+          "lineNumber": 141
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "console.print",
+          "lineNumber": 142
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "console.print",
+          "lineNumber": 143
+        },
+        {
+          "caller": "run_benchmark",
+          "callee": "len",
+          "lineNumber": 143
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/nodes/output_node.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 181,
+      "nonEmptyLines": 145,
+      "functions": [
+        {
+          "name": "output_node",
+          "startLine": 24,
+          "endLine": 89,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "_chunk_text",
+          "startLine": 92,
+          "endLine": 129,
+          "params": [
+            "text",
+            "chunk_size",
+            "overlap"
+          ]
+        },
+        {
+          "name": "_generate_embedding",
+          "startLine": 132,
+          "endLine": 145,
+          "params": [
+            "text",
+            "doc_id"
+          ]
+        },
+        {
+          "name": "_upsert_to_qdrant",
+          "startLine": 148,
+          "endLine": 180,
+          "params": [
+            "doc_id",
+            "chunk_idx",
+            "vector",
+            "payload",
+            "client"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "output_node",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "_chunk_text",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "_generate_embedding",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "_upsert_to_qdrant",
+          "line": 148,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "output_node",
+          "callee": "dict",
+          "lineNumber": 38
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 38
+        },
+        {
+          "caller": "output_node",
+          "callee": "time.time",
+          "lineNumber": 39
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 41
+        },
+        {
+          "caller": "output_node",
+          "callee": "ValueError",
+          "lineNumber": 42
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 45
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 46
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 47
+        },
+        {
+          "caller": "output_node",
+          "callee": "len",
+          "lineNumber": 48
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 48
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 49
+        },
+        {
+          "caller": "output_node",
+          "callee": "_chunk_text",
+          "lineNumber": 52
+        },
+        {
+          "caller": "output_node",
+          "callee": "logger.info",
+          "lineNumber": 53
+        },
+        {
+          "caller": "output_node",
+          "callee": "len",
+          "lineNumber": 53
+        },
+        {
+          "caller": "output_node",
+          "callee": "enumerate",
+          "lineNumber": 56
+        },
+        {
+          "caller": "output_node",
+          "callee": "set",
+          "lineNumber": 67
+        },
+        {
+          "caller": "output_node",
+          "callee": "raw_payload.keys",
+          "lineNumber": 67
+        },
+        {
+          "caller": "output_node",
+          "callee": "ValueError",
+          "lineNumber": 69
+        },
+        {
+          "caller": "output_node",
+          "callee": "raw_payload.items",
+          "lineNumber": 73
+        },
+        {
+          "caller": "output_node",
+          "callee": "_generate_embedding",
+          "lineNumber": 77
+        },
+        {
+          "caller": "output_node",
+          "callee": "_upsert_to_qdrant",
+          "lineNumber": 78
+        },
+        {
+          "caller": "output_node",
+          "callee": "logger.info",
+          "lineNumber": 80
+        },
+        {
+          "caller": "output_node",
+          "callee": "len",
+          "lineNumber": 80
+        },
+        {
+          "caller": "output_node",
+          "callee": "state.get",
+          "lineNumber": 82
+        },
+        {
+          "caller": "output_node",
+          "callee": "int",
+          "lineNumber": 83
+        },
+        {
+          "caller": "output_node",
+          "callee": "time.time",
+          "lineNumber": 83
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "text.strip",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "text.strip",
+          "lineNumber": 99
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "len",
+          "lineNumber": 100
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "len",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "min",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "clean_text.rfind",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "len",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "clean_text[start:end].strip",
+          "lineNumber": 120
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "chunks.append",
+          "lineNumber": 122
+        },
+        {
+          "caller": "_chunk_text",
+          "callee": "max",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_generate_embedding",
+          "callee": "ollama.embeddings",
+          "lineNumber": 137
+        },
+        {
+          "caller": "_generate_embedding",
+          "callee": "response.get",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_generate_embedding",
+          "callee": "float",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_generate_embedding",
+          "callee": "logger.warning",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "QdrantClient",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "client.get_collections",
+          "lineNumber": 163
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "client.create_collection",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "VectorParams",
+          "lineNumber": 167
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "len",
+          "lineNumber": 167
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "hashlib.sha256(f\"{doc_id}_{chunk_idx}\".encode()).hexdigest",
+          "lineNumber": 173
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "hashlib.sha256",
+          "lineNumber": 173
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "f\"{doc_id}_{chunk_idx}\".encode",
+          "lineNumber": 173
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "int",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "client.upsert",
+          "lineNumber": 175
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "PointStruct",
+          "lineNumber": 177
+        },
+        {
+          "caller": "_upsert_to_qdrant",
+          "callee": "logger.warning",
+          "lineNumber": 180
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/nodes/pii_detector.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 228,
+      "nonEmptyLines": 179,
+      "functions": [
+        {
+          "name": "pii_detector_node",
+          "startLine": 52,
+          "endLine": 98,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "_get_analyzer",
+          "startLine": 105,
+          "endLine": 150,
+          "params": []
+        },
+        {
+          "name": "_run_presidio",
+          "startLine": 154,
+          "endLine": 169,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "_run_qwen_contextual",
+          "startLine": 184,
+          "endLine": 227,
+          "params": [
+            "text",
+            "doc_id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ContextualPIIEntity",
+          "startLine": 175,
+          "endLine": 181,
+          "methods": [],
+          "properties": [
+            "type",
+            "start",
+            "end",
+            "score"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pii_detector_node",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "_get_analyzer",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "_run_presidio",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "ContextualPIIEntity",
+          "line": 175,
+          "isDefault": false
+        },
+        {
+          "name": "_run_qwen_contextual",
+          "line": 184,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pii_detector_node",
+          "callee": "dict",
+          "lineNumber": 63
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "state.get",
+          "lineNumber": 63
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "time.time",
+          "lineNumber": 64
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "state.get",
+          "lineNumber": 66
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "state.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "_run_presidio",
+          "lineNumber": 70
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "logger.info",
+          "lineNumber": 71
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "len",
+          "lineNumber": 74
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "len",
+          "lineNumber": 81
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "_run_qwen_contextual",
+          "lineNumber": 84
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "logger.info",
+          "lineNumber": 85
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "len",
+          "lineNumber": 88
+        },
+        {
+          "caller": "pii_detector_node",
+          "callee": "len",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "AnalyzerEngine",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "Pattern",
+          "lineNumber": 114
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "PatternRecognizer",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "engine.registry.add_recognizer",
+          "lineNumber": 120
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "Pattern",
+          "lineNumber": 123
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "PatternRecognizer",
+          "lineNumber": 124
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "engine.registry.add_recognizer",
+          "lineNumber": 129
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "Pattern",
+          "lineNumber": 132
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "PatternRecognizer",
+          "lineNumber": 133
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "engine.registry.add_recognizer",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "Pattern",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "PatternRecognizer",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_get_analyzer",
+          "callee": "engine.registry.add_recognizer",
+          "lineNumber": 147
+        },
+        {
+          "caller": "_run_presidio",
+          "callee": "_get_analyzer",
+          "lineNumber": 164
+        },
+        {
+          "caller": "_run_presidio",
+          "callee": "analyzer.analyze",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "CONTEXTUAL_PII_PROMPT_TEMPLATE.format",
+          "lineNumber": 199
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "ollama.chat",
+          "lineNumber": 202
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "json.loads",
+          "lineNumber": 208
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "parsed.get",
+          "lineNumber": 209
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "isinstance",
+          "lineNumber": 210
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "len",
+          "lineNumber": 214
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "isinstance",
+          "lineNumber": 216
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "ContextualPIIEntity",
+          "lineNumber": 218
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "validated_entities.append",
+          "lineNumber": 220
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "ent.model_dump",
+          "lineNumber": 220
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "logger.warning",
+          "lineNumber": 226
+        },
+        {
+          "caller": "_run_qwen_contextual",
+          "callee": "type",
+          "lineNumber": 226
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/nodes/security_sanitizer.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "security_sanitizer_node",
+          "startLine": 23,
+          "endLine": 71,
+          "params": [
+            "state"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "security_sanitizer_node",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "dict",
+          "lineNumber": 38
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "state.get",
+          "lineNumber": 38
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "time.time",
+          "lineNumber": 39
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "state.get",
+          "lineNumber": 41
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "re.search",
+          "lineNumber": 47
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "detected_flags.append",
+          "lineNumber": 48
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "logger.warning",
+          "lineNumber": 49
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "state.get",
+          "lineNumber": 51
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "re.sub",
+          "lineNumber": 54
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "state.get",
+          "lineNumber": 58
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "re.sub",
+          "lineNumber": 61
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "sanitized_pages.append",
+          "lineNumber": 62
+        },
+        {
+          "caller": "security_sanitizer_node",
+          "callee": "state.get",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/utils/constants.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 52,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/unit/test_output_node.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "base_state",
+          "startLine": 18,
+          "endLine": 45,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "TestOutputNode",
+          "startLine": 48,
+          "endLine": 119,
+          "methods": [
+            "test_only_allowed_keys_passed_to_qdrant",
+            "test_chunk_text_splitting_with_overlap",
+            "test_ollama_embedding_failure_returns_zero_fallback",
+            "test_deterministic_point_id_hashing",
+            "test_unvalidated_state_raises_value_error"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "base_state",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "TestOutputNode",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "test_only_allowed_keys_passed_to_qdrant",
+          "callee": "output_node",
+          "lineNumber": 62
+        },
+        {
+          "caller": "test_only_allowed_keys_passed_to_qdrant",
+          "callee": "mock_upsert.assert_called_once",
+          "lineNumber": 66
+        },
+        {
+          "caller": "test_only_allowed_keys_passed_to_qdrant",
+          "callee": "set(payload.keys()).issubset",
+          "lineNumber": 68
+        },
+        {
+          "caller": "test_only_allowed_keys_passed_to_qdrant",
+          "callee": "set",
+          "lineNumber": 68
+        },
+        {
+          "caller": "test_only_allowed_keys_passed_to_qdrant",
+          "callee": "payload.keys",
+          "lineNumber": 68
+        },
+        {
+          "caller": "test_chunk_text_splitting_with_overlap",
+          "callee": "_chunk_text",
+          "lineNumber": 78
+        },
+        {
+          "caller": "test_chunk_text_splitting_with_overlap",
+          "callee": "len",
+          "lineNumber": 81
+        },
+        {
+          "caller": "test_chunk_text_splitting_with_overlap",
+          "callee": "len",
+          "lineNumber": 82
+        },
+        {
+          "caller": "test_ollama_embedding_failure_returns_zero_fallback",
+          "callee": "Exception",
+          "lineNumber": 88
+        },
+        {
+          "caller": "test_ollama_embedding_failure_returns_zero_fallback",
+          "callee": "_generate_embedding",
+          "lineNumber": 91
+        },
+        {
+          "caller": "test_ollama_embedding_failure_returns_zero_fallback",
+          "callee": "len",
+          "lineNumber": 94
+        },
+        {
+          "caller": "test_ollama_embedding_failure_returns_zero_fallback",
+          "callee": "all",
+          "lineNumber": 95
+        },
+        {
+          "caller": "test_deterministic_point_id_hashing",
+          "callee": "hashlib.sha256(f\"{doc_id}_{chunk_idx}\".encode()).hexdigest",
+          "lineNumber": 104
+        },
+        {
+          "caller": "test_deterministic_point_id_hashing",
+          "callee": "hashlib.sha256",
+          "lineNumber": 104
+        },
+        {
+          "caller": "test_deterministic_point_id_hashing",
+          "callee": "f\"{doc_id}_{chunk_idx}\".encode",
+          "lineNumber": 104
+        },
+        {
+          "caller": "test_deterministic_point_id_hashing",
+          "callee": "int",
+          "lineNumber": 105
+        },
+        {
+          "caller": "test_deterministic_point_id_hashing",
+          "callee": "isinstance",
+          "lineNumber": 108
+        },
+        {
+          "caller": "test_unvalidated_state_raises_value_error",
+          "callee": "pytest.raises",
+          "lineNumber": 118
+        },
+        {
+          "caller": "test_unvalidated_state_raises_value_error",
+          "callee": "output_node",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "tests/unit/test_pii_detector.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 129,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "base_state",
+          "startLine": 16,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "TestPIIDetectorNode",
+          "startLine": 46,
+          "endLine": 129,
+          "methods": [
+            "test_email_and_phone_detected",
+            "test_no_pii_returns_zero_count",
+            "test_high_risk_domain_triggers_layer_2",
+            "test_ip_address_detected",
+            "test_qwen_contextual_llm_failure_handled_gracefully"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "base_state",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "TestPIIDetectorNode",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "test_email_and_phone_detected",
+          "callee": "pii_detector_node",
+          "lineNumber": 57
+        },
+        {
+          "caller": "test_email_and_phone_detected",
+          "callee": "any",
+          "lineNumber": 61
+        },
+        {
+          "caller": "test_no_pii_returns_zero_count",
+          "callee": "pii_detector_node",
+          "lineNumber": 73
+        },
+        {
+          "caller": "test_high_risk_domain_triggers_layer_2",
+          "callee": "pii_detector_node",
+          "lineNumber": 88
+        },
+        {
+          "caller": "test_high_risk_domain_triggers_layer_2",
+          "callee": "mock_qwen.assert_called_once",
+          "lineNumber": 91
+        },
+        {
+          "caller": "test_ip_address_detected",
+          "callee": "pii_detector_node",
+          "lineNumber": 103
+        },
+        {
+          "caller": "test_ip_address_detected",
+          "callee": "any",
+          "lineNumber": 107
+        },
+        {
+          "caller": "test_qwen_contextual_llm_failure_handled_gracefully",
+          "callee": "Exception",
+          "lineNumber": 113
+        },
+        {
+          "caller": "test_qwen_contextual_llm_failure_handled_gracefully",
+          "callee": "_run_qwen_contextual",
+          "lineNumber": 116
+        },
+        {
+          "caller": "test_qwen_contextual_llm_failure_handled_gracefully",
+          "callee": "_run_qwen_contextual",
+          "lineNumber": 126
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "tests/unit/test_security_sanitizer.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "base_state",
+          "startLine": 14,
+          "endLine": 41,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "TestSecuritySanitizerNode",
+          "startLine": 44,
+          "endLine": 122,
+          "methods": [
+            "test_clean_document_passes_without_flags",
+            "test_injection_pattern_is_stripped_and_flagged",
+            "test_multiple_injection_patterns_detected_and_redacted",
+            "test_empty_text_does_not_crash",
+            "test_is_sanitized_always_set_true"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "base_state",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "TestSecuritySanitizerNode",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "test_clean_document_passes_without_flags",
+          "callee": "security_sanitizer_node",
+          "lineNumber": 54
+        },
+        {
+          "caller": "test_clean_document_passes_without_flags",
+          "callee": "len",
+          "lineNumber": 58
+        },
+        {
+          "caller": "test_injection_pattern_is_stripped_and_flagged",
+          "callee": "security_sanitizer_node",
+          "lineNumber": 69
+        },
+        {
+          "caller": "test_injection_pattern_is_stripped_and_flagged",
+          "callee": "len",
+          "lineNumber": 73
+        },
+        {
+          "caller": "test_injection_pattern_is_stripped_and_flagged",
+          "callee": "result[\"raw_text\"].lower",
+          "lineNumber": 75
+        },
+        {
+          "caller": "test_multiple_injection_patterns_detected_and_redacted",
+          "callee": "security_sanitizer_node",
+          "lineNumber": 89
+        },
+        {
+          "caller": "test_multiple_injection_patterns_detected_and_redacted",
+          "callee": "len",
+          "lineNumber": 93
+        },
+        {
+          "caller": "test_multiple_injection_patterns_detected_and_redacted",
+          "callee": "result[\"raw_text\"].count",
+          "lineNumber": 94
+        },
+        {
+          "caller": "test_multiple_injection_patterns_detected_and_redacted",
+          "callee": "result[\"raw_text\"].lower",
+          "lineNumber": 96
+        },
+        {
+          "caller": "test_empty_text_does_not_crash",
+          "callee": "security_sanitizer_node",
+          "lineNumber": 105
+        },
+        {
+          "caller": "test_empty_text_does_not_crash",
+          "callee": "len",
+          "lineNumber": 109
+        },
+        {
+          "caller": "test_is_sanitized_always_set_true",
+          "callee": "security_sanitizer_node",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "scripts/run_pipeline.py",
+      "language": "python",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/logging_hygiene.py",
+      "language": "python",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/conftest.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_logging_hygiene.py",
+      "language": "python",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "scripts/run_pipeline.py": [
+      "src/main.py"
+    ],
+    "src/main.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/utils/doc_utils.py",
+      "src/utils/logging_hygiene.py"
+    ],
+    "src/utils/logging_hygiene.py": [],
+    "tests/conftest.py": [
+      "src/utils/logging_hygiene.py"
+    ],
+    "tests/unit/test_logging_hygiene.py": [
+      "src/utils/logging_hygiene.py"
+    ]
+  }
+}

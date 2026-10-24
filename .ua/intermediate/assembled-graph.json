@@ -1,0 +1,4588 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/purge_temp_raw.py",
+      "name": "purge_temp_raw.py",
+      "type": "file",
+      "filePath": "scripts/purge_temp_raw.py",
+      "summary": "Module purge_temp_raw.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/purge_temp_raw.py:purge_temp_files",
+      "name": "purge_temp_files",
+      "type": "function",
+      "filePath": "scripts/purge_temp_raw.py",
+      "summary": "Function `purge_temp_files` in purge_temp_raw.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        24,
+        47
+      ]
+    },
+    {
+      "id": "file:scripts/purge_user_data.py",
+      "name": "purge_user_data.py",
+      "type": "file",
+      "filePath": "scripts/purge_user_data.py",
+      "summary": "Module purge_user_data.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/purge_user_data.py:purge_user_data",
+      "name": "purge_user_data",
+      "type": "function",
+      "filePath": "scripts/purge_user_data.py",
+      "summary": "Function `purge_user_data` in purge_user_data.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        28,
+        66
+      ]
+    },
+    {
+      "id": "file:scripts/reprocess_human_feedback.py",
+      "name": "reprocess_human_feedback.py",
+      "type": "file",
+      "filePath": "scripts/reprocess_human_feedback.py",
+      "summary": "Module reprocess_human_feedback.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/reprocess_human_feedback.py:reprocess_human_feedback",
+      "name": "reprocess_human_feedback",
+      "type": "function",
+      "filePath": "scripts/reprocess_human_feedback.py",
+      "summary": "Function `reprocess_human_feedback` in reprocess_human_feedback.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        30,
+        90
+      ]
+    },
+    {
+      "id": "file:src/agent/checkpoints.py",
+      "name": "checkpoints.py",
+      "type": "file",
+      "filePath": "src/agent/checkpoints.py",
+      "summary": "PostgresSaver and MemoryStore persistence providers for pipeline crash recovery",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/checkpoints.py:get_checkpointer",
+      "name": "get_checkpointer",
+      "type": "function",
+      "filePath": "src/agent/checkpoints.py",
+      "summary": "Function `get_checkpointer` in checkpoints.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        49
+      ]
+    },
+    {
+      "id": "function:src/agent/checkpoints.py:get_store",
+      "name": "get_store",
+      "type": "function",
+      "filePath": "src/agent/checkpoints.py",
+      "summary": "Function `get_store` in checkpoints.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        52,
+        60
+      ]
+    },
+    {
+      "id": "file:src/api/app.py",
+      "name": "app.py",
+      "type": "file",
+      "filePath": "src/api/app.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/app.py:log_requests",
+      "name": "log_requests",
+      "type": "function",
+      "filePath": "src/api/app.py",
+      "summary": "Function `log_requests` in app.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        52,
+        67
+      ]
+    },
+    {
+      "id": "file:src/api/routes/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/api/routes/__init__.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/api/routes/admin.py",
+      "name": "admin.py",
+      "type": "file",
+      "filePath": "src/api/routes/admin.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/admin.py:verify_admin_key",
+      "name": "verify_admin_key",
+      "type": "function",
+      "filePath": "src/api/routes/admin.py",
+      "summary": "Function `verify_admin_key` in admin.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        15,
+        23
+      ]
+    },
+    {
+      "id": "function:src/api/routes/admin.py:purge_document_data",
+      "name": "purge_document_data",
+      "type": "function",
+      "filePath": "src/api/routes/admin.py",
+      "summary": "Function `purge_document_data` in admin.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        32,
+        98
+      ]
+    },
+    {
+      "id": "file:src/api/routes/export.py",
+      "name": "export.py",
+      "type": "file",
+      "filePath": "src/api/routes/export.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/export.py:download_redacted_doc",
+      "name": "download_redacted_doc",
+      "type": "function",
+      "filePath": "src/api/routes/export.py",
+      "summary": "Function `download_redacted_doc` in export.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        21,
+        74
+      ]
+    },
+    {
+      "id": "file:src/api/routes/health.py",
+      "name": "health.py",
+      "type": "file",
+      "filePath": "src/api/routes/health.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/health.py:check_health",
+      "name": "check_health",
+      "type": "function",
+      "filePath": "src/api/routes/health.py",
+      "summary": "Function `check_health` in health.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        22,
+        66
+      ]
+    },
+    {
+      "id": "file:src/api/routes/jobs.py",
+      "name": "jobs.py",
+      "type": "file",
+      "filePath": "src/api/routes/jobs.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/jobs.py:get_job_status",
+      "name": "get_job_status",
+      "type": "function",
+      "filePath": "src/api/routes/jobs.py",
+      "summary": "Function `get_job_status` in jobs.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        21,
+        65
+      ]
+    },
+    {
+      "id": "file:src/api/routes/sanitize.py",
+      "name": "sanitize.py",
+      "type": "file",
+      "filePath": "src/api/routes/sanitize.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/sanitize.py:_run_graph_in_background",
+      "name": "_run_graph_in_background",
+      "type": "function",
+      "filePath": "src/api/routes/sanitize.py",
+      "summary": "Function `_run_graph_in_background` in sanitize.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        26
+      ]
+    },
+    {
+      "id": "function:src/api/routes/sanitize.py:submit_document",
+      "name": "submit_document",
+      "type": "function",
+      "filePath": "src/api/routes/sanitize.py",
+      "summary": "Function `submit_document` in sanitize.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        36,
+        92
+      ]
+    },
+    {
+      "id": "file:src/api/schemas.py",
+      "name": "schemas.py",
+      "type": "file",
+      "filePath": "src/api/schemas.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/utils/config.py",
+      "name": "config.py",
+      "type": "file",
+      "filePath": "src/utils/config.py",
+      "summary": "Module config.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/utils/doc_utils.py",
+      "name": "doc_utils.py",
+      "type": "file",
+      "filePath": "src/utils/doc_utils.py",
+      "summary": "Module doc_utils.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/utils/doc_utils.py:compute_doc_id",
+      "name": "compute_doc_id",
+      "type": "function",
+      "filePath": "src/utils/doc_utils.py",
+      "summary": "Function `compute_doc_id` in doc_utils.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        19,
+        42
+      ]
+    },
+    {
+      "id": "function:src/utils/doc_utils.py:detect_mime_type",
+      "name": "detect_mime_type",
+      "type": "function",
+      "filePath": "src/utils/doc_utils.py",
+      "summary": "Function `detect_mime_type` in doc_utils.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        45,
+        56
+      ]
+    },
+    {
+      "id": "file:src/utils/pdf_utils.py",
+      "name": "pdf_utils.py",
+      "type": "file",
+      "filePath": "src/utils/pdf_utils.py",
+      "summary": "Module pdf_utils.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/utils/pdf_utils.py:generate_sanitized_pdf",
+      "name": "generate_sanitized_pdf",
+      "type": "function",
+      "filePath": "src/utils/pdf_utils.py",
+      "summary": "Function `generate_sanitized_pdf` in pdf_utils.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        11,
+        60
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_api.py",
+      "name": "test_api.py",
+      "type": "file",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_health_endpoint",
+      "name": "test_health_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_health_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        15,
+        24
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_sanitize_submission_endpoint",
+      "name": "test_sanitize_submission_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_sanitize_submission_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        31,
+        50
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_job_status_endpoint",
+      "name": "test_job_status_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_job_status_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        62
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_gdpr_purge_endpoint",
+      "name": "test_gdpr_purge_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_gdpr_purge_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        66,
+        73
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_sanitize_unsupported_extension_rejected",
+      "name": "test_sanitize_unsupported_extension_rejected",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_sanitize_unsupported_extension_rejected` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        77,
+        89
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_admin_purge_requires_key_when_configured",
+      "name": "test_admin_purge_requires_key_when_configured",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_admin_purge_requires_key_when_configured` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        93,
+        111
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_doc_utils.py",
+      "name": "test_doc_utils.py",
+      "type": "file",
+      "filePath": "tests/unit/test_doc_utils.py",
+      "summary": "Test suite verifying test_doc_utils",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/graph.py",
+      "name": "graph.py",
+      "type": "file",
+      "filePath": "src/agent/graph.py",
+      "summary": "LangGraph StateGraph assembly, conditional routing, checkpointer integration",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/graph.py:route_after_validation",
+      "name": "route_after_validation",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `route_after_validation` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        36,
+        52
+      ]
+    },
+    {
+      "id": "function:src/agent/graph.py:route_after_reflection",
+      "name": "route_after_reflection",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `route_after_reflection` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        69
+      ]
+    },
+    {
+      "id": "function:src/agent/graph.py:build_graph",
+      "name": "build_graph",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `build_graph` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        72,
+        130
+      ]
+    },
+    {
+      "id": "function:src/agent/graph.py:get_compiled_graph",
+      "name": "get_compiled_graph",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `get_compiled_graph` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        137,
+        142
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/extractor.py",
+      "name": "extractor.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Node 1: PyMuPDF + PaddleOCR fallback text extraction with char density gating",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:extractor_node",
+      "name": "extractor_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `extractor_node` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        29,
+        86
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_extract_pdf",
+      "name": "_extract_pdf",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_extract_pdf` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        89,
+        107
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_ocr_fallback_pdf",
+      "name": "_ocr_fallback_pdf",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_ocr_fallback_pdf` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        110,
+        141
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_extract_docx",
+      "name": "_extract_docx",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_extract_docx` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        144,
+        152
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_extract_txt",
+      "name": "_extract_txt",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_extract_txt` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        155,
+        158
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/hf_detector.py",
+      "name": "hf_detector.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/hf_detector.py",
+      "summary": "Node 2: Header/Footer frequency analysis and dynamic boilerplate stripping",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/hf_detector.py:hf_detector_node",
+      "name": "hf_detector_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/hf_detector.py",
+      "summary": "Function `hf_detector_node` in hf_detector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        28,
+        90
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/pii_masker.py",
+      "name": "pii_masker.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/pii_masker.py",
+      "summary": "Node 4: PII redaction and token replacement with safe placeholder offsets",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/pii_masker.py:_resolve_overlapping_entities",
+      "name": "_resolve_overlapping_entities",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_masker.py",
+      "summary": "Function `_resolve_overlapping_entities` in pii_masker.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        31,
+        68
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/pii_masker.py:pii_masker_node",
+      "name": "pii_masker_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_masker.py",
+      "summary": "Function `pii_masker_node` in pii_masker.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        71,
+        122
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/reflector.py",
+      "name": "reflector.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/reflector.py:reflector_node",
+      "name": "reflector_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Function `reflector_node` in reflector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        41,
+        115
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/reflector.py:_run_qwen_reflection",
+      "name": "_run_qwen_reflection",
+      "type": "function",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Function `_run_qwen_reflection` in reflector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        118,
+        147
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/reflector.py:_write_to_human_review_queue",
+      "name": "_write_to_human_review_queue",
+      "type": "function",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Function `_write_to_human_review_queue` in reflector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        150,
+        167
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/schema_validator.py",
+      "name": "schema_validator.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/schema_validator.py",
+      "summary": "Node 5: Pydantic v2 enterprise doc validation and residual PII scanning",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/schema_validator.py:schema_validator_node",
+      "name": "schema_validator_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/schema_validator.py",
+      "summary": "Function `schema_validator_node` in schema_validator.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        21,
+        82
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/schema_validator.py:_calculate_quality_score",
+      "name": "_calculate_quality_score",
+      "type": "function",
+      "filePath": "src/agent/nodes/schema_validator.py",
+      "summary": "Function `_calculate_quality_score` in schema_validator.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        85,
+        104
+      ]
+    },
+    {
+      "id": "file:src/agent/state.py",
+      "name": "state.py",
+      "type": "file",
+      "filePath": "src/agent/state.py",
+      "summary": "DataShuddiState 4-tier lifecycle taxonomy definition and factory constructors",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/state.py:create_initial_state",
+      "name": "create_initial_state",
+      "type": "function",
+      "filePath": "src/agent/state.py",
+      "summary": "Function `create_initial_state` in state.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        62,
+        113
+      ]
+    },
+    {
+      "id": "file:src/utils/schemas.py",
+      "name": "schemas.py",
+      "type": "file",
+      "filePath": "src/utils/schemas.py",
+      "summary": "Module schemas.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/fixtures/golden_dataset.py",
+      "name": "golden_dataset.py",
+      "type": "file",
+      "filePath": "tests/fixtures/golden_dataset.py",
+      "summary": "50-document golden benchmark dataset with labeled PII ground truth",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/fixtures/golden_dataset.py:get_golden_dataset",
+      "name": "get_golden_dataset",
+      "type": "function",
+      "filePath": "tests/fixtures/golden_dataset.py",
+      "summary": "Function `get_golden_dataset` in golden_dataset.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        123,
+        125
+      ]
+    },
+    {
+      "id": "file:tests/integration/test_full_pipeline.py",
+      "name": "test_full_pipeline.py",
+      "type": "file",
+      "filePath": "tests/integration/test_full_pipeline.py",
+      "summary": "Test suite verifying test_full_pipeline",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/integration/test_full_pipeline.py:clean_doc_file",
+      "name": "clean_doc_file",
+      "type": "function",
+      "filePath": "tests/integration/test_full_pipeline.py",
+      "summary": "Function `clean_doc_file` in test_full_pipeline.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        27
+      ]
+    },
+    {
+      "id": "file:tests/test_release_gate.py",
+      "name": "test_release_gate.py",
+      "type": "file",
+      "filePath": "tests/test_release_gate.py",
+      "summary": "CI/CD release gate verifying 100% PII recall and 0% residual leak tolerance",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/test_extractor.py",
+      "name": "test_extractor.py",
+      "type": "file",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Node 1: PyMuPDF + PaddleOCR fallback text extraction with char density gating",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_extractor.py:txt_sample_file",
+      "name": "txt_sample_file",
+      "type": "function",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Function `txt_sample_file` in test_extractor.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        16,
+        20
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_extractor.py:docx_sample_file",
+      "name": "docx_sample_file",
+      "type": "function",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Function `docx_sample_file` in test_extractor.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        24,
+        32
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_extractor.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Function `base_state` in test_extractor.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        36,
+        63
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_hf_detector.py",
+      "name": "test_hf_detector.py",
+      "type": "file",
+      "filePath": "tests/unit/test_hf_detector.py",
+      "summary": "Node 2: Header/Footer frequency analysis and dynamic boilerplate stripping",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_hf_detector.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_hf_detector.py",
+      "summary": "Function `base_state` in test_hf_detector.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        41
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_pii_masker.py",
+      "name": "test_pii_masker.py",
+      "type": "file",
+      "filePath": "tests/unit/test_pii_masker.py",
+      "summary": "Node 4: PII redaction and token replacement with safe placeholder offsets",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_pii_masker.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_pii_masker.py",
+      "summary": "Function `base_state` in test_pii_masker.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        43
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_reflector.py",
+      "name": "test_reflector.py",
+      "type": "file",
+      "filePath": "tests/unit/test_reflector.py",
+      "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_reflector.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_reflector.py",
+      "summary": "Function `base_state` in test_reflector.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        16,
+        43
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_schema_validator.py",
+      "name": "test_schema_validator.py",
+      "type": "file",
+      "filePath": "tests/unit/test_schema_validator.py",
+      "summary": "Node 5: Pydantic v2 enterprise doc validation and residual PII scanning",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_schema_validator.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_schema_validator.py",
+      "summary": "Function `base_state` in test_schema_validator.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        41
+      ]
+    },
+    {
+      "id": "file:scripts/evaluate_pii_recall.py",
+      "name": "evaluate_pii_recall.py",
+      "type": "file",
+      "filePath": "scripts/evaluate_pii_recall.py",
+      "summary": "Module evaluate_pii_recall.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/evaluate_pii_recall.py:run_benchmark",
+      "name": "run_benchmark",
+      "type": "function",
+      "filePath": "scripts/evaluate_pii_recall.py",
+      "summary": "Function `run_benchmark` in evaluate_pii_recall.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        72,
+        143
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/output_node.py",
+      "name": "output_node.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/output_node.py",
+      "summary": "Node 7: Payload allowlist enforcement, mxbai embeddings, Qdrant upsert",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/output_node.py:output_node",
+      "name": "output_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/output_node.py",
+      "summary": "Function `output_node` in output_node.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        24,
+        89
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/output_node.py:_chunk_text",
+      "name": "_chunk_text",
+      "type": "function",
+      "filePath": "src/agent/nodes/output_node.py",
+      "summary": "Function `_chunk_text` in output_node.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        92,
+        129
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/output_node.py:_generate_embedding",
+      "name": "_generate_embedding",
+      "type": "function",
+      "filePath": "src/agent/nodes/output_node.py",
+      "summary": "Function `_generate_embedding` in output_node.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        132,
+        145
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/output_node.py:_upsert_to_qdrant",
+      "name": "_upsert_to_qdrant",
+      "type": "function",
+      "filePath": "src/agent/nodes/output_node.py",
+      "summary": "Function `_upsert_to_qdrant` in output_node.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        148,
+        180
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/pii_detector.py",
+      "name": "pii_detector.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/pii_detector.py",
+      "summary": "Node 3: Hybrid PII detection via Presidio regex/NER and Qwen 3B contextual LLM",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/agent/nodes/pii_detector.py:pii_detector_node",
+      "name": "pii_detector_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_detector.py",
+      "summary": "Function `pii_detector_node` in pii_detector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        52,
+        98
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/pii_detector.py:_get_analyzer",
+      "name": "_get_analyzer",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_detector.py",
+      "summary": "Function `_get_analyzer` in pii_detector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        105,
+        150
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/pii_detector.py:_run_presidio",
+      "name": "_run_presidio",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_detector.py",
+      "summary": "Function `_run_presidio` in pii_detector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        154,
+        169
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/pii_detector.py:_run_qwen_contextual",
+      "name": "_run_qwen_contextual",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_detector.py",
+      "summary": "Function `_run_qwen_contextual` in pii_detector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        184,
+        227
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/security_sanitizer.py",
+      "name": "security_sanitizer.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/security_sanitizer.py",
+      "summary": "Node 0: Prompt injection defense, untrusted content wrapping, security flags",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/security_sanitizer.py:security_sanitizer_node",
+      "name": "security_sanitizer_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/security_sanitizer.py",
+      "summary": "Function `security_sanitizer_node` in security_sanitizer.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        23,
+        71
+      ]
+    },
+    {
+      "id": "file:src/utils/constants.py",
+      "name": "constants.py",
+      "type": "file",
+      "filePath": "src/utils/constants.py",
+      "summary": "Module constants.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/test_output_node.py",
+      "name": "test_output_node.py",
+      "type": "file",
+      "filePath": "tests/unit/test_output_node.py",
+      "summary": "Node 7: Payload allowlist enforcement, mxbai embeddings, Qdrant upsert",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_output_node.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_output_node.py",
+      "summary": "Function `base_state` in test_output_node.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        18,
+        45
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_pii_detector.py",
+      "name": "test_pii_detector.py",
+      "type": "file",
+      "filePath": "tests/unit/test_pii_detector.py",
+      "summary": "Node 3: Hybrid PII detection via Presidio regex/NER and Qwen 3B contextual LLM",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_pii_detector.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_pii_detector.py",
+      "summary": "Function `base_state` in test_pii_detector.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        16,
+        43
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_security_sanitizer.py",
+      "name": "test_security_sanitizer.py",
+      "type": "file",
+      "filePath": "tests/unit/test_security_sanitizer.py",
+      "summary": "Node 0: Prompt injection defense, untrusted content wrapping, security flags",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_security_sanitizer.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_security_sanitizer.py",
+      "summary": "Function `base_state` in test_security_sanitizer.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        41
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app.py",
+      "name": "app.py",
+      "type": "file",
+      "filePath": "streamlit_app/app.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:streamlit_app/app.py:_get_queue_count",
+      "name": "_get_queue_count",
+      "type": "function",
+      "filePath": "streamlit_app/app.py",
+      "summary": "Function `_get_queue_count` in app.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        39,
+        48
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app.py:_init_session_state",
+      "name": "_init_session_state",
+      "type": "function",
+      "filePath": "streamlit_app/app.py",
+      "summary": "Function `_init_session_state` in app.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        51,
+        60
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app.py:main",
+      "name": "main",
+      "type": "function",
+      "filePath": "streamlit_app/app.py",
+      "summary": "Function `main` in app.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        63,
+        96
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "name": "page_01_live_monitor.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_files",
+      "name": "_count_files",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_count_files` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        21
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_queue_items",
+      "name": "_count_queue_items",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_count_queue_items` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        25,
+        31
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_get_staged_files",
+      "name": "_get_staged_files",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_get_staged_files` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        35,
+        41
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `render` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        44,
+        167
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_run_pipeline",
+      "name": "_run_pipeline",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_run_pipeline` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        170,
+        261
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_render_results",
+      "name": "_render_results",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_render_results` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        264,
+        395
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "name": "page_02_metrics.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_02_metrics.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_02_metrics.py:_gather_metrics",
+      "name": "_gather_metrics",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_02_metrics.py",
+      "summary": "Function `_gather_metrics` in page_02_metrics.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        16,
+        51
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_02_metrics.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_02_metrics.py",
+      "summary": "Function `render` in page_02_metrics.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        54,
+        130
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "name": "page_03_diff_viewer.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_03_diff_viewer.py:_run_diff_detection",
+      "name": "_run_diff_detection",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "summary": "Function `_run_diff_detection` in page_03_diff_viewer.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        17,
+        49
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_03_diff_viewer.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "summary": "Function `render` in page_03_diff_viewer.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        52,
+        232
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "name": "page_04_self_correction.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_04_self_correction.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_04_self_correction.py:_load_reflector_history",
+      "name": "_load_reflector_history",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_04_self_correction.py",
+      "summary": "Function `_load_reflector_history` in page_04_self_correction.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        16,
+        62
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_04_self_correction.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_04_self_correction.py",
+      "summary": "Function `render` in page_04_self_correction.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        65,
+        150
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "name": "page_05_human_review.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:_load_queue",
+      "name": "_load_queue",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `_load_queue` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        17,
+        35
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:_remove_from_queue",
+      "name": "_remove_from_queue",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `_remove_from_queue` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        38,
+        64
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `render` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        67,
+        182
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:_reprocess_document",
+      "name": "_reprocess_document",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `_reprocess_document` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        185,
+        222
+      ]
+    },
+    {
+      "id": "file:streamlit_app/ui_components.py",
+      "name": "ui_components.py",
+      "type": "file",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:load_css",
+      "name": "load_css",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `load_css` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        17
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:status_badge",
+      "name": "status_badge",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `status_badge` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        20,
+        30
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:pipeline_visualization",
+      "name": "pipeline_visualization",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `pipeline_visualization` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        33,
+        72
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:glass_card",
+      "name": "glass_card",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `glass_card` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        75,
+        86
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:diff_line",
+      "name": "diff_line",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `diff_line` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        89,
+        102
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:app_footer",
+      "name": "app_footer",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `app_footer` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        105,
+        119
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:pulse_indicator",
+      "name": "pulse_indicator",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `pulse_indicator` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        122,
+        135
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_file_info_card",
+      "name": "render_file_info_card",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_file_info_card` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        138,
+        196
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_pdf_page_highlights",
+      "name": "render_pdf_page_highlights",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_pdf_page_highlights` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        199,
+        266
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_node_inspector",
+      "name": "render_node_inspector",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_node_inspector` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        273,
+        358
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_sidebar_header",
+      "name": "render_sidebar_header",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_sidebar_header` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        361,
+        402
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_hardware_widget",
+      "name": "render_hardware_widget",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_hardware_widget` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        405,
+        423
+      ]
+    },
+    {
+      "id": "file:scripts/run_pipeline.py",
+      "name": "run_pipeline.py",
+      "type": "file",
+      "filePath": "scripts/run_pipeline.py",
+      "summary": "Module run_pipeline.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main.py",
+      "name": "main.py",
+      "type": "file",
+      "filePath": "src/main.py",
+      "summary": "Module main.py responsible for src utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main.py:run_pipeline",
+      "name": "run_pipeline",
+      "type": "function",
+      "filePath": "src/main.py",
+      "summary": "Function `run_pipeline` in main.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        50,
+        86
+      ]
+    },
+    {
+      "id": "file:src/utils/logging_hygiene.py",
+      "name": "logging_hygiene.py",
+      "type": "file",
+      "filePath": "src/utils/logging_hygiene.py",
+      "summary": "Module logging_hygiene.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/utils/logging_hygiene.py:scrub_pii_from_record",
+      "name": "scrub_pii_from_record",
+      "type": "function",
+      "filePath": "src/utils/logging_hygiene.py",
+      "summary": "Function `scrub_pii_from_record` in logging_hygiene.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        23,
+        46
+      ]
+    },
+    {
+      "id": "function:src/utils/logging_hygiene.py:configure_logging",
+      "name": "configure_logging",
+      "type": "function",
+      "filePath": "src/utils/logging_hygiene.py",
+      "summary": "Function `configure_logging` in logging_hygiene.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        49,
+        62
+      ]
+    },
+    {
+      "id": "file:tests/conftest.py",
+      "name": "conftest.py",
+      "type": "file",
+      "filePath": "tests/conftest.py",
+      "summary": "Module conftest.py responsible for tests utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/conftest.py:setup_logging",
+      "name": "setup_logging",
+      "type": "function",
+      "filePath": "tests/conftest.py",
+      "summary": "Function `setup_logging` in conftest.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_logging_hygiene.py",
+      "name": "test_logging_hygiene.py",
+      "type": "file",
+      "filePath": "tests/unit/test_logging_hygiene.py",
+      "summary": "Test suite verifying test_logging_hygiene",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:Dockerfile",
+      "name": "Dockerfile",
+      "type": "service",
+      "filePath": "Dockerfile",
+      "summary": "Container configuration for multi-service deployment",
+      "tags": [
+        "dockerfile",
+        "infra"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:docker-compose.prod.yml",
+      "name": "docker-compose.prod.yml",
+      "type": "service",
+      "filePath": "docker-compose.prod.yml",
+      "summary": "Container configuration for multi-service deployment",
+      "tags": [
+        "yaml",
+        "infra"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:docker-compose.yml",
+      "name": "docker-compose.yml",
+      "type": "service",
+      "filePath": "docker-compose.yml",
+      "summary": "Container configuration for multi-service deployment",
+      "tags": [
+        "yaml",
+        "infra"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.env.example",
+      "name": ".env.example",
+      "type": "config",
+      "filePath": ".env.example",
+      "summary": "Module .env.example responsible for project utilities",
+      "tags": [
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CHANGELOG.md",
+      "name": "CHANGELOG.md",
+      "type": "document",
+      "filePath": "CHANGELOG.md",
+      "summary": "Module CHANGELOG.md responsible for project utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "name": "CONTRIBUTING.md",
+      "type": "document",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "Module CONTRIBUTING.md responsible for project utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:GEMINI.md",
+      "name": "GEMINI.md",
+      "type": "document",
+      "filePath": "GEMINI.md",
+      "summary": "Workspace protocol and behavioral contract for development and auditing",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "service:Makefile",
+      "name": "Makefile",
+      "type": "service",
+      "filePath": "Makefile",
+      "summary": "Module Makefile responsible for project utilities",
+      "tags": [
+        "makefile",
+        "infra"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "name": "README.md",
+      "type": "document",
+      "filePath": "README.md",
+      "summary": "Main project architectural overview and user documentation",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "name": "SECURITY.md",
+      "type": "document",
+      "filePath": "SECURITY.md",
+      "summary": "Module SECURITY.md responsible for project utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "name": "pyproject.toml",
+      "type": "config",
+      "filePath": "pyproject.toml",
+      "summary": "Module pyproject.toml responsible for project utilities",
+      "tags": [
+        "toml",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:pyrightconfig.json",
+      "name": "pyrightconfig.json",
+      "type": "config",
+      "filePath": "pyrightconfig.json",
+      "summary": "Module pyrightconfig.json responsible for project utilities",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:requirements.txt",
+      "name": "requirements.txt",
+      "type": "document",
+      "filePath": "requirements.txt",
+      "summary": "Module requirements.txt responsible for project utilities",
+      "tags": [
+        "docs",
+        "txt"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:adr/ADR-001-langgraph-stategraph.md",
+      "name": "ADR-001-langgraph-stategraph.md",
+      "type": "document",
+      "filePath": "adr/ADR-001-langgraph-stategraph.md",
+      "summary": "Module ADR-001-langgraph-stategraph.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-002-hybrid-pii-pipeline.md",
+      "name": "ADR-002-hybrid-pii-pipeline.md",
+      "type": "document",
+      "filePath": "adr/ADR-002-hybrid-pii-pipeline.md",
+      "summary": "Module ADR-002-hybrid-pii-pipeline.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-003-qdrant-payload-allowlist.md",
+      "name": "ADR-003-qdrant-payload-allowlist.md",
+      "type": "document",
+      "filePath": "adr/ADR-003-qdrant-payload-allowlist.md",
+      "summary": "Module ADR-003-qdrant-payload-allowlist.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-004-reflector-confidence-gate.md",
+      "name": "ADR-004-reflector-confidence-gate.md",
+      "type": "document",
+      "filePath": "adr/ADR-004-reflector-confidence-gate.md",
+      "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-INDEX.md",
+      "name": "ADR-INDEX.md",
+      "type": "document",
+      "filePath": "adr/ADR-INDEX.md",
+      "summary": "Module ADR-INDEX.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.streamlit/config.toml",
+      "name": "config.toml",
+      "type": "config",
+      "filePath": ".streamlit/config.toml",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "toml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/clean/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/clean/.gitkeep",
+      "summary": "Module .gitkeep responsible for clean utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/human_review/queue.jsonl",
+      "name": "queue.jsonl",
+      "type": "file",
+      "filePath": "data/human_review/queue.jsonl",
+      "summary": "Module queue.jsonl responsible for human_review utilities",
+      "tags": [
+        "jsonl",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:data/postgres_data/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/postgres_data/.gitkeep",
+      "summary": "Module .gitkeep responsible for postgres_data utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/qdrant_storage/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/qdrant_storage/.gitkeep",
+      "summary": "Module .gitkeep responsible for qdrant_storage utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/raw/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/raw/.gitkeep",
+      "summary": "Module .gitkeep responsible for raw utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/temp/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/temp/.gitkeep",
+      "summary": "Module .gitkeep responsible for temp utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:nginx/nginx.conf",
+      "name": "nginx.conf",
+      "type": "service",
+      "filePath": "nginx/nginx.conf",
+      "summary": "Module nginx.conf responsible for nginx utilities",
+      "tags": [
+        "conf",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:notebooks/01_pii_exploration.ipynb",
+      "name": "01_pii_exploration.ipynb",
+      "type": "document",
+      "filePath": "notebooks/01_pii_exploration.ipynb",
+      "summary": "Module 01_pii_exploration.ipynb responsible for notebooks utilities",
+      "tags": [
+        "ipynb",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:notebooks/02_hf_threshold_analysis.ipynb",
+      "name": "02_hf_threshold_analysis.ipynb",
+      "type": "document",
+      "filePath": "notebooks/02_hf_threshold_analysis.ipynb",
+      "summary": "Module 02_hf_threshold_analysis.ipynb responsible for notebooks utilities",
+      "tags": [
+        "ipynb",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:notebooks/03_golden_dataset_analysis.ipynb",
+      "name": "03_golden_dataset_analysis.ipynb",
+      "type": "document",
+      "filePath": "notebooks/03_golden_dataset_analysis.ipynb",
+      "summary": "50-document golden benchmark dataset with labeled PII ground truth",
+      "tags": [
+        "ipynb",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/bootstrap_dev_env.py",
+      "name": "bootstrap_dev_env.py",
+      "type": "file",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Module bootstrap_dev_env.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:check_directories",
+      "name": "check_directories",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `check_directories` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        49,
+        60
+      ]
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:check_env_file",
+      "name": "check_env_file",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `check_env_file` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        63,
+        78
+      ]
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:check_ollama",
+      "name": "check_ollama",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `check_ollama` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        81,
+        111
+      ]
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:main",
+      "name": "main",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `main` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        114,
+        131
+      ]
+    },
+    {
+      "id": "file:scripts/db_init.sql",
+      "name": "db_init.sql",
+      "type": "file",
+      "filePath": "scripts/db_init.sql",
+      "summary": "Module db_init.sql responsible for scripts utilities",
+      "tags": [
+        "sql",
+        "data"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/__init__.py",
+      "summary": "Module __init__.py responsible for src utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/agent/__init__.py",
+      "summary": "Module __init__.py responsible for agent utilities",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/nodes/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/__init__.py",
+      "summary": "Module __init__.py responsible for nodes utilities",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/api/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/api/__init__.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/utils/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/utils/__init__.py",
+      "summary": "Module __init__.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:streamlit_app/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "streamlit_app/__init__.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:streamlit_app/app_pages/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/__init__.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:streamlit_app/assets/styles.css",
+      "name": "styles.css",
+      "type": "file",
+      "filePath": "streamlit_app/assets/styles.css",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "css",
+        "markup"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "tests/__init__.py",
+      "summary": "Module __init__.py responsible for tests utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/integration/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "tests/integration/__init__.py",
+      "summary": "Module __init__.py responsible for integration utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/testdata/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "tests/testdata/.gitkeep",
+      "summary": "Module .gitkeep responsible for testdata utilities",
+      "tags": [
+        "test",
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "tests/unit/__init__.py",
+      "summary": "Module __init__.py responsible for unit utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:file:scripts/purge_temp_raw.py->function:scripts/purge_temp_raw.py:purge_temp_files",
+      "source": "file:scripts/purge_temp_raw.py",
+      "target": "function:scripts/purge_temp_raw.py:purge_temp_files",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function purge_temp_files"
+    },
+    {
+      "id": "edge:file:scripts/purge_temp_raw.py->file:src/utils/config.py",
+      "source": "file:scripts/purge_temp_raw.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:scripts/purge_user_data.py->function:scripts/purge_user_data.py:purge_user_data",
+      "source": "file:scripts/purge_user_data.py",
+      "target": "function:scripts/purge_user_data.py:purge_user_data",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function purge_user_data"
+    },
+    {
+      "id": "edge:file:scripts/purge_user_data.py->file:src/utils/config.py",
+      "source": "file:scripts/purge_user_data.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->function:scripts/reprocess_human_feedback.py:reprocess_human_feedback",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "function:scripts/reprocess_human_feedback.py:reprocess_human_feedback",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function reprocess_human_feedback"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/agent/graph.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/agent/state.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/utils/config.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/utils/doc_utils.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/agent/checkpoints.py->function:src/agent/checkpoints.py:get_checkpointer",
+      "source": "file:src/agent/checkpoints.py",
+      "target": "function:src/agent/checkpoints.py:get_checkpointer",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_checkpointer"
+    },
+    {
+      "id": "edge:file:src/agent/checkpoints.py->function:src/agent/checkpoints.py:get_store",
+      "source": "file:src/agent/checkpoints.py",
+      "target": "function:src/agent/checkpoints.py:get_store",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_store"
+    },
+    {
+      "id": "edge:file:src/agent/checkpoints.py->file:src/utils/config.py",
+      "source": "file:src/agent/checkpoints.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->function:src/api/app.py:log_requests",
+      "source": "file:src/api/app.py",
+      "target": "function:src/api/app.py:log_requests",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function log_requests"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/__init__.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports __init__.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/admin.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/admin.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports admin.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/export.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/export.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports export.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/health.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/health.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports health.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/jobs.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/jobs.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports jobs.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/sanitize.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/sanitize.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports sanitize.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/utils/config.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/utils/logging_hygiene.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->function:src/api/routes/admin.py:verify_admin_key",
+      "source": "file:src/api/routes/admin.py",
+      "target": "function:src/api/routes/admin.py:verify_admin_key",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function verify_admin_key"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->function:src/api/routes/admin.py:purge_document_data",
+      "source": "file:src/api/routes/admin.py",
+      "target": "function:src/api/routes/admin.py:purge_document_data",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function purge_document_data"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/admin.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/admin.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->function:src/api/routes/export.py:download_redacted_doc",
+      "source": "file:src/api/routes/export.py",
+      "target": "function:src/api/routes/export.py:download_redacted_doc",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function download_redacted_doc"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->file:src/agent/checkpoints.py",
+      "source": "file:src/api/routes/export.py",
+      "target": "file:src/agent/checkpoints.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports checkpoints.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/export.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->file:src/utils/pdf_utils.py",
+      "source": "file:src/api/routes/export.py",
+      "target": "file:src/utils/pdf_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pdf_utils.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/health.py->function:src/api/routes/health.py:check_health",
+      "source": "file:src/api/routes/health.py",
+      "target": "function:src/api/routes/health.py:check_health",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_health"
+    },
+    {
+      "id": "edge:file:src/api/routes/health.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/health.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/health.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/health.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/jobs.py->function:src/api/routes/jobs.py:get_job_status",
+      "source": "file:src/api/routes/jobs.py",
+      "target": "function:src/api/routes/jobs.py:get_job_status",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_job_status"
+    },
+    {
+      "id": "edge:file:src/api/routes/jobs.py->file:src/agent/checkpoints.py",
+      "source": "file:src/api/routes/jobs.py",
+      "target": "file:src/agent/checkpoints.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports checkpoints.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/jobs.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/jobs.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->function:src/api/routes/sanitize.py:_run_graph_in_background",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "function:src/api/routes/sanitize.py:_run_graph_in_background",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_graph_in_background"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->function:src/api/routes/sanitize.py:submit_document",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "function:src/api/routes/sanitize.py:submit_document",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function submit_document"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/agent/graph.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/agent/state.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/utils/doc_utils.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/utils/doc_utils.py->function:src/utils/doc_utils.py:compute_doc_id",
+      "source": "file:src/utils/doc_utils.py",
+      "target": "function:src/utils/doc_utils.py:compute_doc_id",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function compute_doc_id"
+    },
+    {
+      "id": "edge:file:src/utils/doc_utils.py->function:src/utils/doc_utils.py:detect_mime_type",
+      "source": "file:src/utils/doc_utils.py",
+      "target": "function:src/utils/doc_utils.py:detect_mime_type",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function detect_mime_type"
+    },
+    {
+      "id": "edge:file:src/utils/pdf_utils.py->function:src/utils/pdf_utils.py:generate_sanitized_pdf",
+      "source": "file:src/utils/pdf_utils.py",
+      "target": "function:src/utils/pdf_utils.py:generate_sanitized_pdf",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function generate_sanitized_pdf"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_health_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_health_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_health_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_sanitize_submission_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_sanitize_submission_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_sanitize_submission_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_job_status_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_job_status_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_job_status_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_gdpr_purge_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_gdpr_purge_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_gdpr_purge_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_sanitize_unsupported_extension_rejected",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_sanitize_unsupported_extension_rejected",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_sanitize_unsupported_extension_rejected"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_admin_purge_requires_key_when_configured",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_admin_purge_requires_key_when_configured",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_admin_purge_requires_key_when_configured"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->file:src/api/app.py",
+      "source": "file:tests/unit/test_api.py",
+      "target": "file:src/api/app.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports app.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_doc_utils.py->file:src/utils/doc_utils.py",
+      "source": "file:tests/unit/test_doc_utils.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:route_after_validation",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:route_after_validation",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function route_after_validation"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:route_after_reflection",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:route_after_reflection",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function route_after_reflection"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:build_graph",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:build_graph",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function build_graph"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:get_compiled_graph",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:get_compiled_graph",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_compiled_graph"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/checkpoints.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/checkpoints.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports checkpoints.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/extractor.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports extractor.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/hf_detector.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/hf_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports hf_detector.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/output_node.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/output_node.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports output_node.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/pii_detector.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/pii_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_detector.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/pii_masker.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/pii_masker.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_masker.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/reflector.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/reflector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports reflector.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/schema_validator.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/schema_validator.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schema_validator.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/security_sanitizer.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/security_sanitizer.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports security_sanitizer.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/state.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:extractor_node",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:extractor_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function extractor_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_extract_pdf",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_extract_pdf",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _extract_pdf"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_ocr_fallback_pdf",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_ocr_fallback_pdf",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _ocr_fallback_pdf"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_extract_docx",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_extract_docx",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _extract_docx"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_extract_txt",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_extract_txt",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _extract_txt"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->file:src/utils/config.py",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/hf_detector.py->function:src/agent/nodes/hf_detector.py:hf_detector_node",
+      "source": "file:src/agent/nodes/hf_detector.py",
+      "target": "function:src/agent/nodes/hf_detector.py:hf_detector_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function hf_detector_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/hf_detector.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/hf_detector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->function:src/agent/nodes/pii_masker.py:_resolve_overlapping_entities",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "function:src/agent/nodes/pii_masker.py:_resolve_overlapping_entities",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _resolve_overlapping_entities"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->function:src/agent/nodes/pii_masker.py:pii_masker_node",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "function:src/agent/nodes/pii_masker.py:pii_masker_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pii_masker_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->file:src/utils/constants.py",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "file:src/utils/constants.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports constants.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->function:src/agent/nodes/reflector.py:reflector_node",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "function:src/agent/nodes/reflector.py:reflector_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function reflector_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->function:src/agent/nodes/reflector.py:_run_qwen_reflection",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "function:src/agent/nodes/reflector.py:_run_qwen_reflection",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_qwen_reflection"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->function:src/agent/nodes/reflector.py:_write_to_human_review_queue",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "function:src/agent/nodes/reflector.py:_write_to_human_review_queue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _write_to_human_review_queue"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->file:src/utils/config.py",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->function:src/agent/nodes/schema_validator.py:schema_validator_node",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "function:src/agent/nodes/schema_validator.py:schema_validator_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function schema_validator_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->function:src/agent/nodes/schema_validator.py:_calculate_quality_score",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "function:src/agent/nodes/schema_validator.py:_calculate_quality_score",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _calculate_quality_score"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->file:src/utils/schemas.py",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "file:src/utils/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/agent/state.py->function:src/agent/state.py:create_initial_state",
+      "source": "file:src/agent/state.py",
+      "target": "function:src/agent/state.py:create_initial_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function create_initial_state"
+    },
+    {
+      "id": "edge:file:tests/fixtures/golden_dataset.py->function:tests/fixtures/golden_dataset.py:get_golden_dataset",
+      "source": "file:tests/fixtures/golden_dataset.py",
+      "target": "function:tests/fixtures/golden_dataset.py:get_golden_dataset",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_golden_dataset"
+    },
+    {
+      "id": "edge:file:tests/integration/test_full_pipeline.py->function:tests/integration/test_full_pipeline.py:clean_doc_file",
+      "source": "file:tests/integration/test_full_pipeline.py",
+      "target": "function:tests/integration/test_full_pipeline.py:clean_doc_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function clean_doc_file"
+    },
+    {
+      "id": "edge:file:tests/integration/test_full_pipeline.py->file:src/agent/graph.py",
+      "source": "file:tests/integration/test_full_pipeline.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:tests/integration/test_full_pipeline.py->file:src/agent/state.py",
+      "source": "file:tests/integration/test_full_pipeline.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/test_release_gate.py->file:src/agent/graph.py",
+      "source": "file:tests/test_release_gate.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:tests/test_release_gate.py->file:src/agent/state.py",
+      "source": "file:tests/test_release_gate.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/test_release_gate.py->file:tests/fixtures/golden_dataset.py",
+      "source": "file:tests/test_release_gate.py",
+      "target": "file:tests/fixtures/golden_dataset.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports golden_dataset.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->function:tests/unit/test_extractor.py:txt_sample_file",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "function:tests/unit/test_extractor.py:txt_sample_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function txt_sample_file"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->function:tests/unit/test_extractor.py:docx_sample_file",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "function:tests/unit/test_extractor.py:docx_sample_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function docx_sample_file"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->function:tests/unit/test_extractor.py:base_state",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "function:tests/unit/test_extractor.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->file:src/agent/nodes/extractor.py",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "file:src/agent/nodes/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports extractor.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_hf_detector.py->function:tests/unit/test_hf_detector.py:base_state",
+      "source": "file:tests/unit/test_hf_detector.py",
+      "target": "function:tests/unit/test_hf_detector.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_hf_detector.py->file:src/agent/nodes/hf_detector.py",
+      "source": "file:tests/unit/test_hf_detector.py",
+      "target": "file:src/agent/nodes/hf_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports hf_detector.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_hf_detector.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_hf_detector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_masker.py->function:tests/unit/test_pii_masker.py:base_state",
+      "source": "file:tests/unit/test_pii_masker.py",
+      "target": "function:tests/unit/test_pii_masker.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_masker.py->file:src/agent/nodes/pii_masker.py",
+      "source": "file:tests/unit/test_pii_masker.py",
+      "target": "file:src/agent/nodes/pii_masker.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_masker.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_masker.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_pii_masker.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_reflector.py->function:tests/unit/test_reflector.py:base_state",
+      "source": "file:tests/unit/test_reflector.py",
+      "target": "function:tests/unit/test_reflector.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_reflector.py->file:src/agent/nodes/reflector.py",
+      "source": "file:tests/unit/test_reflector.py",
+      "target": "file:src/agent/nodes/reflector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports reflector.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_reflector.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_reflector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_schema_validator.py->function:tests/unit/test_schema_validator.py:base_state",
+      "source": "file:tests/unit/test_schema_validator.py",
+      "target": "function:tests/unit/test_schema_validator.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_schema_validator.py->file:src/agent/nodes/schema_validator.py",
+      "source": "file:tests/unit/test_schema_validator.py",
+      "target": "file:src/agent/nodes/schema_validator.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schema_validator.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_schema_validator.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_schema_validator.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:scripts/evaluate_pii_recall.py->function:scripts/evaluate_pii_recall.py:run_benchmark",
+      "source": "file:scripts/evaluate_pii_recall.py",
+      "target": "function:scripts/evaluate_pii_recall.py:run_benchmark",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function run_benchmark"
+    },
+    {
+      "id": "edge:file:scripts/evaluate_pii_recall.py->file:src/agent/nodes/pii_detector.py",
+      "source": "file:scripts/evaluate_pii_recall.py",
+      "target": "file:src/agent/nodes/pii_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_detector.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->function:src/agent/nodes/output_node.py:output_node",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "function:src/agent/nodes/output_node.py:output_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function output_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->function:src/agent/nodes/output_node.py:_chunk_text",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "function:src/agent/nodes/output_node.py:_chunk_text",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _chunk_text"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->function:src/agent/nodes/output_node.py:_generate_embedding",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "function:src/agent/nodes/output_node.py:_generate_embedding",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _generate_embedding"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->function:src/agent/nodes/output_node.py:_upsert_to_qdrant",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "function:src/agent/nodes/output_node.py:_upsert_to_qdrant",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _upsert_to_qdrant"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->file:src/utils/config.py",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/output_node.py->file:src/utils/constants.py",
+      "source": "file:src/agent/nodes/output_node.py",
+      "target": "file:src/utils/constants.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports constants.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->function:src/agent/nodes/pii_detector.py:pii_detector_node",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "function:src/agent/nodes/pii_detector.py:pii_detector_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pii_detector_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->function:src/agent/nodes/pii_detector.py:_get_analyzer",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "function:src/agent/nodes/pii_detector.py:_get_analyzer",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _get_analyzer"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->function:src/agent/nodes/pii_detector.py:_run_presidio",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "function:src/agent/nodes/pii_detector.py:_run_presidio",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_presidio"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->function:src/agent/nodes/pii_detector.py:_run_qwen_contextual",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "function:src/agent/nodes/pii_detector.py:_run_qwen_contextual",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_qwen_contextual"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->file:src/utils/config.py",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_detector.py->file:src/utils/constants.py",
+      "source": "file:src/agent/nodes/pii_detector.py",
+      "target": "file:src/utils/constants.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports constants.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/security_sanitizer.py->function:src/agent/nodes/security_sanitizer.py:security_sanitizer_node",
+      "source": "file:src/agent/nodes/security_sanitizer.py",
+      "target": "function:src/agent/nodes/security_sanitizer.py:security_sanitizer_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function security_sanitizer_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/security_sanitizer.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/security_sanitizer.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/security_sanitizer.py->file:src/utils/constants.py",
+      "source": "file:src/agent/nodes/security_sanitizer.py",
+      "target": "file:src/utils/constants.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports constants.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_output_node.py->function:tests/unit/test_output_node.py:base_state",
+      "source": "file:tests/unit/test_output_node.py",
+      "target": "function:tests/unit/test_output_node.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_output_node.py->file:src/agent/nodes/output_node.py",
+      "source": "file:tests/unit/test_output_node.py",
+      "target": "file:src/agent/nodes/output_node.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports output_node.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_output_node.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_output_node.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_output_node.py->file:src/utils/constants.py",
+      "source": "file:tests/unit/test_output_node.py",
+      "target": "file:src/utils/constants.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports constants.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_detector.py->function:tests/unit/test_pii_detector.py:base_state",
+      "source": "file:tests/unit/test_pii_detector.py",
+      "target": "function:tests/unit/test_pii_detector.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_detector.py->file:src/agent/nodes/pii_detector.py",
+      "source": "file:tests/unit/test_pii_detector.py",
+      "target": "file:src/agent/nodes/pii_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_detector.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_detector.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_pii_detector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_security_sanitizer.py->function:tests/unit/test_security_sanitizer.py:base_state",
+      "source": "file:tests/unit/test_security_sanitizer.py",
+      "target": "function:tests/unit/test_security_sanitizer.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_security_sanitizer.py->file:src/agent/nodes/security_sanitizer.py",
+      "source": "file:tests/unit/test_security_sanitizer.py",
+      "target": "file:src/agent/nodes/security_sanitizer.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports security_sanitizer.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_security_sanitizer.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_security_sanitizer.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->function:streamlit_app/app.py:_get_queue_count",
+      "source": "file:streamlit_app/app.py",
+      "target": "function:streamlit_app/app.py:_get_queue_count",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _get_queue_count"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->function:streamlit_app/app.py:_init_session_state",
+      "source": "file:streamlit_app/app.py",
+      "target": "function:streamlit_app/app.py:_init_session_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _init_session_state"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->function:streamlit_app/app.py:main",
+      "source": "file:streamlit_app/app.py",
+      "target": "function:streamlit_app/app.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function main"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_count_files",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_files",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _count_files"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_count_queue_items",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_queue_items",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _count_queue_items"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_get_staged_files",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_get_staged_files",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _get_staged_files"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:render",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_run_pipeline",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_run_pipeline",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_pipeline"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_render_results",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_render_results",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _render_results"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_02_metrics.py->function:streamlit_app/app_pages/page_02_metrics.py:_gather_metrics",
+      "source": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "target": "function:streamlit_app/app_pages/page_02_metrics.py:_gather_metrics",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _gather_metrics"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_02_metrics.py->function:streamlit_app/app_pages/page_02_metrics.py:render",
+      "source": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "target": "function:streamlit_app/app_pages/page_02_metrics.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_02_metrics.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_03_diff_viewer.py->function:streamlit_app/app_pages/page_03_diff_viewer.py:_run_diff_detection",
+      "source": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "target": "function:streamlit_app/app_pages/page_03_diff_viewer.py:_run_diff_detection",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_diff_detection"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_03_diff_viewer.py->function:streamlit_app/app_pages/page_03_diff_viewer.py:render",
+      "source": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "target": "function:streamlit_app/app_pages/page_03_diff_viewer.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_03_diff_viewer.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_04_self_correction.py->function:streamlit_app/app_pages/page_04_self_correction.py:_load_reflector_history",
+      "source": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "target": "function:streamlit_app/app_pages/page_04_self_correction.py:_load_reflector_history",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _load_reflector_history"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_04_self_correction.py->function:streamlit_app/app_pages/page_04_self_correction.py:render",
+      "source": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "target": "function:streamlit_app/app_pages/page_04_self_correction.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_04_self_correction.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:_load_queue",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:_load_queue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _load_queue"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:_remove_from_queue",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:_remove_from_queue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _remove_from_queue"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:render",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:_reprocess_document",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:_reprocess_document",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _reprocess_document"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:load_css",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:load_css",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function load_css"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:status_badge",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:status_badge",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function status_badge"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:pipeline_visualization",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:pipeline_visualization",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pipeline_visualization"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:glass_card",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:glass_card",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function glass_card"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:diff_line",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:diff_line",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function diff_line"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:app_footer",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:app_footer",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function app_footer"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:pulse_indicator",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:pulse_indicator",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pulse_indicator"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_file_info_card",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_file_info_card",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_file_info_card"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_pdf_page_highlights",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_pdf_page_highlights",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_pdf_page_highlights"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_node_inspector",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_node_inspector",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_node_inspector"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_sidebar_header",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_sidebar_header",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_sidebar_header"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_hardware_widget",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_hardware_widget",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_hardware_widget"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->file:src/utils/pdf_utils.py",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "file:src/utils/pdf_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pdf_utils.py"
+    },
+    {
+      "id": "edge:file:scripts/run_pipeline.py->file:src/main.py",
+      "source": "file:scripts/run_pipeline.py",
+      "target": "file:src/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports main.py"
+    },
+    {
+      "id": "edge:file:src/main.py->function:src/main.py:run_pipeline",
+      "source": "file:src/main.py",
+      "target": "function:src/main.py:run_pipeline",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function run_pipeline"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/agent/graph.py",
+      "source": "file:src/main.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/agent/state.py",
+      "source": "file:src/main.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/utils/doc_utils.py",
+      "source": "file:src/main.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/utils/logging_hygiene.py",
+      "source": "file:src/main.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:src/utils/logging_hygiene.py->function:src/utils/logging_hygiene.py:scrub_pii_from_record",
+      "source": "file:src/utils/logging_hygiene.py",
+      "target": "function:src/utils/logging_hygiene.py:scrub_pii_from_record",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function scrub_pii_from_record"
+    },
+    {
+      "id": "edge:file:src/utils/logging_hygiene.py->function:src/utils/logging_hygiene.py:configure_logging",
+      "source": "file:src/utils/logging_hygiene.py",
+      "target": "function:src/utils/logging_hygiene.py:configure_logging",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function configure_logging"
+    },
+    {
+      "id": "edge:file:tests/conftest.py->function:tests/conftest.py:setup_logging",
+      "source": "file:tests/conftest.py",
+      "target": "function:tests/conftest.py:setup_logging",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function setup_logging"
+    },
+    {
+      "id": "edge:file:tests/conftest.py->file:src/utils/logging_hygiene.py",
+      "source": "file:tests/conftest.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_logging_hygiene.py->file:src/utils/logging_hygiene.py",
+      "source": "file:tests/unit/test_logging_hygiene.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:check_directories",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:check_directories",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_directories"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:check_env_file",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:check_env_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_env_file"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:check_ollama",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:check_ollama",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_ollama"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:main",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function main"
+    }
+  ]
+}

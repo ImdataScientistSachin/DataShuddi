@@ -1,0 +1,125 @@
+{
+  "batchIndex": 7,
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "name": ".env.example",
+      "type": "config",
+      "filePath": ".env.example",
+      "summary": "Module .env.example responsible for project utilities",
+      "tags": [
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CHANGELOG.md",
+      "name": "CHANGELOG.md",
+      "type": "document",
+      "filePath": "CHANGELOG.md",
+      "summary": "Module CHANGELOG.md responsible for project utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "name": "CONTRIBUTING.md",
+      "type": "document",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "Module CONTRIBUTING.md responsible for project utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:GEMINI.md",
+      "name": "GEMINI.md",
+      "type": "document",
+      "filePath": "GEMINI.md",
+      "summary": "Workspace protocol and behavioral contract for development and auditing",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "service:Makefile",
+      "name": "Makefile",
+      "type": "service",
+      "filePath": "Makefile",
+      "summary": "Module Makefile responsible for project utilities",
+      "tags": [
+        "makefile",
+        "infra"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "name": "README.md",
+      "type": "document",
+      "filePath": "README.md",
+      "summary": "Main project architectural overview and user documentation",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "name": "SECURITY.md",
+      "type": "document",
+      "filePath": "SECURITY.md",
+      "summary": "Module SECURITY.md responsible for project utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "name": "pyproject.toml",
+      "type": "config",
+      "filePath": "pyproject.toml",
+      "summary": "Module pyproject.toml responsible for project utilities",
+      "tags": [
+        "toml",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:pyrightconfig.json",
+      "name": "pyrightconfig.json",
+      "type": "config",
+      "filePath": "pyrightconfig.json",
+      "summary": "Module pyrightconfig.json responsible for project utilities",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:requirements.txt",
+      "name": "requirements.txt",
+      "type": "document",
+      "filePath": "requirements.txt",
+      "summary": "Module requirements.txt responsible for project utilities",
+      "tags": [
+        "docs",
+        "txt"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

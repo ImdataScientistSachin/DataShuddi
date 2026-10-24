@@ -1,0 +1,23 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "src/agent/graph.py",
+      "language": "python",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/state.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/agent/graph.py": [
+      "src/agent/state.py",
+      "src/agent/checkpoints.py"
+    ]
+  }
+}

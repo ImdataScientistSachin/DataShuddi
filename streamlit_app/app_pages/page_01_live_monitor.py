@@ -63,20 +63,11 @@ def render() -> None:
     # Document Staging & File Selection Area
     st.markdown("### 📥 Document Staging & Inspection")
 
+    staged_files = _get_staged_files()
+
     tab_staged, tab_upload, tab_manual = st.tabs([
         "📋 Select Staged File", "📁 Upload New File", "🔍 Manual Path Input"
     ])
-
-    input_file_path: Path | None = None
-
-    with tab_staged:
-        staged_files = _get_staged_files()
-        if staged_files:
-            selected_staged = st.selectbox("Select staged file from repository:", staged_files, index=0)
-            if selected_staged:
-                input_file_path = Path(selected_staged)
-        else:
-            st.info("No staged files found in `data/raw` or `tests/fixtures`. Upload a file in the next tab.")
 
     with tab_upload:
         uploaded_file = st.file_uploader(
@@ -90,17 +81,47 @@ def render() -> None:
             target_path = raw_dir / uploaded_file.name
             with open(target_path, "wb") as f:
                 f.write(uploaded_file.getbuffer())
-            input_file_path = target_path
+            st.session_state["active_staged_file"] = str(target_path)
             st.success(f"Successfully staged upload → `{target_path}`")
 
+    with tab_staged:
+        if staged_files:
+            current_active = st.session_state.get("active_staged_file")
+            default_index = staged_files.index(current_active) if current_active in staged_files else 0
+            selected_staged = st.selectbox(
+                "Select staged file from repository:",
+                staged_files,
+                index=default_index,
+                key="staged_file_selectbox",
+            )
+            if selected_staged:
+                st.session_state["active_staged_file"] = selected_staged
+        else:
+            st.info("No staged files found in `data/raw` or `tests/fixtures`. Upload a file in the next tab.")
+
     with tab_manual:
-        manual_path_str = st.text_input("Custom relative or absolute file path:", value="./data/raw/clean_sample.txt")
+        manual_path_str = st.text_input(
+            "Custom relative or absolute file path:",
+            value="",
+            placeholder="./data/raw/clean_sample.txt",
+        )
         if manual_path_str:
             p = Path(manual_path_str)
             if p.exists() and p.is_file():
-                input_file_path = p
+                st.session_state["active_staged_file"] = str(p)
             else:
                 st.warning(f"File not found or invalid: `{manual_path_str}`")
+
+    # Resolve active file path dynamically from session state
+    input_file_path: Path | None = None
+    active_path_str = st.session_state.get("active_staged_file")
+    if active_path_str:
+        p = Path(active_path_str)
+        if p.exists() and p.is_file():
+            input_file_path = p
+    elif staged_files:
+        input_file_path = Path(staged_files[0])
+        st.session_state["active_staged_file"] = staged_files[0]
 
     # Display Metadata Card & Text Snippet Preview if a valid file is selected
     if input_file_path and input_file_path.exists():

@@ -1,0 +1,226 @@
+{
+  "batchIndex": 5,
+  "nodes": [
+    {
+      "id": "file:scripts/run_pipeline.py",
+      "name": "run_pipeline.py",
+      "type": "file",
+      "filePath": "scripts/run_pipeline.py",
+      "summary": "Module run_pipeline.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main.py",
+      "name": "main.py",
+      "type": "file",
+      "filePath": "src/main.py",
+      "summary": "Module main.py responsible for src utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main.py:run_pipeline",
+      "name": "run_pipeline",
+      "type": "function",
+      "filePath": "src/main.py",
+      "summary": "Function `run_pipeline` in main.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        50,
+        86
+      ]
+    },
+    {
+      "id": "file:src/utils/logging_hygiene.py",
+      "name": "logging_hygiene.py",
+      "type": "file",
+      "filePath": "src/utils/logging_hygiene.py",
+      "summary": "Module logging_hygiene.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/utils/logging_hygiene.py:scrub_pii_from_record",
+      "name": "scrub_pii_from_record",
+      "type": "function",
+      "filePath": "src/utils/logging_hygiene.py",
+      "summary": "Function `scrub_pii_from_record` in logging_hygiene.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        23,
+        46
+      ]
+    },
+    {
+      "id": "function:src/utils/logging_hygiene.py:configure_logging",
+      "name": "configure_logging",
+      "type": "function",
+      "filePath": "src/utils/logging_hygiene.py",
+      "summary": "Function `configure_logging` in logging_hygiene.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        49,
+        62
+      ]
+    },
+    {
+      "id": "file:tests/conftest.py",
+      "name": "conftest.py",
+      "type": "file",
+      "filePath": "tests/conftest.py",
+      "summary": "Module conftest.py responsible for tests utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/conftest.py:setup_logging",
+      "name": "setup_logging",
+      "type": "function",
+      "filePath": "tests/conftest.py",
+      "summary": "Function `setup_logging` in conftest.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_logging_hygiene.py",
+      "name": "test_logging_hygiene.py",
+      "type": "file",
+      "filePath": "tests/unit/test_logging_hygiene.py",
+      "summary": "Test suite verifying test_logging_hygiene",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:file:scripts/run_pipeline.py->file:src/main.py",
+      "source": "file:scripts/run_pipeline.py",
+      "target": "file:src/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports main.py"
+    },
+    {
+      "id": "edge:file:src/main.py->function:src/main.py:run_pipeline",
+      "source": "file:src/main.py",
+      "target": "function:src/main.py:run_pipeline",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function run_pipeline"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/agent/graph.py",
+      "source": "file:src/main.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/agent/state.py",
+      "source": "file:src/main.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/utils/doc_utils.py",
+      "source": "file:src/main.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/main.py->file:src/utils/logging_hygiene.py",
+      "source": "file:src/main.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:src/utils/logging_hygiene.py->function:src/utils/logging_hygiene.py:scrub_pii_from_record",
+      "source": "file:src/utils/logging_hygiene.py",
+      "target": "function:src/utils/logging_hygiene.py:scrub_pii_from_record",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function scrub_pii_from_record"
+    },
+    {
+      "id": "edge:file:src/utils/logging_hygiene.py->function:src/utils/logging_hygiene.py:configure_logging",
+      "source": "file:src/utils/logging_hygiene.py",
+      "target": "function:src/utils/logging_hygiene.py:configure_logging",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function configure_logging"
+    },
+    {
+      "id": "edge:file:tests/conftest.py->function:tests/conftest.py:setup_logging",
+      "source": "file:tests/conftest.py",
+      "target": "function:tests/conftest.py:setup_logging",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function setup_logging"
+    },
+    {
+      "id": "edge:file:tests/conftest.py->file:src/utils/logging_hygiene.py",
+      "source": "file:tests/conftest.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_logging_hygiene.py->file:src/utils/logging_hygiene.py",
+      "source": "file:tests/unit/test_logging_hygiene.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    }
+  ]
+}

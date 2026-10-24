@@ -1,0 +1,28 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 42,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker-compose.prod.yml",
+      "language": "yaml",
+      "sizeLines": 56,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 69,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    "Dockerfile": [],
+    "docker-compose.prod.yml": [],
+    "docker-compose.yml": []
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 96,
+    "filesWithImports": 43,
+    "totalEdges": 95
+  },
+  "failures": [],
+  "importMap": {
+    ".env.example": [],
+    ".streamlit/config.toml": [],
+    "CHANGELOG.md": [],
+    "CONTRIBUTING.md": [],
+    "Dockerfile": [],
+    "GEMINI.md": [],
+    "Makefile": [],
+    "README.md": [],
+    "SECURITY.md": [],
+    "adr/ADR-001-langgraph-stategraph.md": [],
+    "adr/ADR-002-hybrid-pii-pipeline.md": [],
+    "adr/ADR-003-qdrant-payload-allowlist.md": [],
+    "adr/ADR-004-reflector-confidence-gate.md": [],
+    "adr/ADR-INDEX.md": [],
+    "data/clean/.gitkeep": [],
+    "data/human_review/queue.jsonl": [],
+    "data/postgres_data/.gitkeep": [],
+    "data/qdrant_storage/.gitkeep": [],
+    "data/raw/.gitkeep": [],
+    "data/temp/.gitkeep": [],
+    "docker-compose.prod.yml": [],
+    "docker-compose.yml": [],
+    "nginx/nginx.conf": [],
+    "notebooks/01_pii_exploration.ipynb": [],
+    "notebooks/02_hf_threshold_analysis.ipynb": [],
+    "notebooks/03_golden_dataset_analysis.ipynb": [],
+    "pyproject.toml": [],
+    "pyrightconfig.json": [],
+    "requirements.txt": [],
+    "scripts/bootstrap_dev_env.py": [],
+    "scripts/db_init.sql": [],
+    "scripts/evaluate_pii_recall.py": [
+      "src/agent/nodes/pii_detector.py"
+    ],
+    "scripts/purge_temp_raw.py": [
+      "src/utils/config.py"
+    ],
+    "scripts/purge_user_data.py": [
+      "src/utils/config.py"
+    ],
+    "scripts/reprocess_human_feedback.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/doc_utils.py"
+    ],
+    "scripts/run_pipeline.py": [
+      "src/main.py"
+    ],
+    "src/__init__.py": [],
+    "src/agent/__init__.py": [],
+    "src/agent/checkpoints.py": [
+      "src/utils/config.py"
+    ],
+    "src/agent/graph.py": [
+      "src/agent/checkpoints.py",
+      "src/agent/nodes/extractor.py",
+      "src/agent/nodes/hf_detector.py",
+      "src/agent/nodes/output_node.py",
+      "src/agent/nodes/pii_detector.py",
+      "src/agent/nodes/pii_masker.py",
+      "src/agent/nodes/reflector.py",
+      "src/agent/nodes/schema_validator.py",
+      "src/agent/nodes/security_sanitizer.py",
+      "src/agent/state.py"
+    ],
+    "src/agent/nodes/__init__.py": [],
+    "src/agent/nodes/extractor.py": [
+      "src/agent/state.py",
+      "src/utils/config.py"
+    ],
+    "src/agent/nodes/hf_detector.py": [
+      "src/agent/state.py"
+    ],
+    "src/agent/nodes/output_node.py": [
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/pii_detector.py": [
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/pii_masker.py": [
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/reflector.py": [
+      "src/agent/state.py",
+      "src/utils/config.py"
+    ],
+    "src/agent/nodes/schema_validator.py": [
+      "src/agent/state.py",
+      "src/utils/schemas.py"
+    ],
+    "src/agent/nodes/security_sanitizer.py": [
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/state.py": [],
+    "src/api/__init__.py": [],
+    "src/api/app.py": [
+      "src/api/routes/__init__.py",
+      "src/api/routes/admin.py",
+      "src/api/routes/export.py",
+      "src/api/routes/health.py",
+      "src/api/routes/jobs.py",
+      "src/api/routes/sanitize.py",
+      "src/utils/config.py",
+      "src/utils/logging_hygiene.py"
+    ],
+    "src/api/routes/__init__.py": [],
+    "src/api/routes/admin.py": [
+      "src/api/schemas.py",
+      "src/utils/config.py"
+    ],
+    "src/api/routes/export.py": [
+      "src/agent/checkpoints.py",
+      "src/utils/config.py",
+      "src/utils/pdf_utils.py"
+    ],
+    "src/api/routes/health.py": [
+      "src/api/schemas.py",
+      "src/utils/config.py"
+    ],
+    "src/api/routes/jobs.py": [
+      "src/agent/checkpoints.py",
+      "src/api/schemas.py"
+    ],
+    "src/api/routes/sanitize.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/api/schemas.py",
+      "src/utils/config.py",
+      "src/utils/doc_utils.py"
+    ],
+    "src/api/schemas.py": [],
+    "src/main.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/utils/doc_utils.py",
+      "src/utils/logging_hygiene.py"
+    ],
+    "src/utils/__init__.py": [],
+    "src/utils/config.py": [],
+    "src/utils/constants.py": [],
+    "src/utils/doc_utils.py": [],
+    "src/utils/logging_hygiene.py": [],
+    "src/utils/pdf_utils.py": [],
+    "src/utils/schemas.py": [],
+    "streamlit_app/__init__.py": [],
+    "streamlit_app/app.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/__init__.py": [],
+    "streamlit_app/app_pages/page_01_live_monitor.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_02_metrics.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_03_diff_viewer.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_04_self_correction.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_05_human_review.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/assets/styles.css": [],
+    "streamlit_app/ui_components.py": [
+      "src/utils/pdf_utils.py"
+    ],
+    "tests/__init__.py": [],
+    "tests/conftest.py": [
+      "src/utils/logging_hygiene.py"
+    ],
+    "tests/fixtures/golden_dataset.py": [],
+    "tests/integration/__init__.py": [],
+    "tests/integration/test_full_pipeline.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py"
+    ],
+    "tests/test_release_gate.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "tests/fixtures/golden_dataset.py"
+    ],
+    "tests/testdata/.gitkeep": [],
+    "tests/unit/__init__.py": [],
+    "tests/unit/test_api.py": [
+      "src/api/app.py"
+    ],
+    "tests/unit/test_doc_utils.py": [
+      "src/utils/doc_utils.py"
+    ],
+    "tests/unit/test_extractor.py": [
+      "src/agent/nodes/extractor.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_hf_detector.py": [
+      "src/agent/nodes/hf_detector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_logging_hygiene.py": [
+      "src/utils/logging_hygiene.py"
+    ],
+    "tests/unit/test_output_node.py": [
+      "src/agent/nodes/output_node.py",
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "tests/unit/test_pii_detector.py": [
+      "src/agent/nodes/pii_detector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_pii_masker.py": [
+      "src/agent/nodes/pii_masker.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_reflector.py": [
+      "src/agent/nodes/reflector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_schema_validator.py": [
+      "src/agent/nodes/schema_validator.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_security_sanitizer.py": [
+      "src/agent/nodes/security_sanitizer.py",
+      "src/agent/state.py"
+    ]
+  }
+}

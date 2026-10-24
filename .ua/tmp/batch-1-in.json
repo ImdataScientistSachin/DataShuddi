@@ -1,0 +1,169 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "scripts/purge_temp_raw.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/purge_user_data.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/reprocess_human_feedback.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/checkpoints.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/app.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/admin.py",
+      "language": "python",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/export.py",
+      "language": "python",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/health.py",
+      "language": "python",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/jobs.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/sanitize.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/schemas.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/config.py",
+      "language": "python",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/doc_utils.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/pdf_utils.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_api.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_doc_utils.py",
+      "language": "python",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "scripts/purge_temp_raw.py": [
+      "src/utils/config.py"
+    ],
+    "scripts/purge_user_data.py": [
+      "src/utils/config.py"
+    ],
+    "scripts/reprocess_human_feedback.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/doc_utils.py"
+    ],
+    "src/agent/checkpoints.py": [
+      "src/utils/config.py"
+    ],
+    "src/api/app.py": [
+      "src/api/routes/__init__.py",
+      "src/api/routes/admin.py",
+      "src/api/routes/export.py",
+      "src/api/routes/health.py",
+      "src/api/routes/jobs.py",
+      "src/api/routes/sanitize.py",
+      "src/utils/config.py",
+      "src/utils/logging_hygiene.py"
+    ],
+    "src/api/routes/__init__.py": [],
+    "src/api/routes/admin.py": [
+      "src/api/schemas.py",
+      "src/utils/config.py"
+    ],
+    "src/api/routes/export.py": [
+      "src/agent/checkpoints.py",
+      "src/utils/config.py",
+      "src/utils/pdf_utils.py"
+    ],
+    "src/api/routes/health.py": [
+      "src/api/schemas.py",
+      "src/utils/config.py"
+    ],
+    "src/api/routes/jobs.py": [
+      "src/agent/checkpoints.py",
+      "src/api/schemas.py"
+    ],
+    "src/api/routes/sanitize.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/api/schemas.py",
+      "src/utils/config.py",
+      "src/utils/doc_utils.py"
+    ],
+    "src/api/schemas.py": [],
+    "src/utils/config.py": [],
+    "src/utils/doc_utils.py": [],
+    "src/utils/pdf_utils.py": [],
+    "tests/unit/test_api.py": [
+      "src/api/app.py"
+    ],
+    "tests/unit/test_doc_utils.py": [
+      "src/utils/doc_utils.py"
+    ]
+  }
+}

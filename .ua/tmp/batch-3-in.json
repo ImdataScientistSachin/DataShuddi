@@ -1,0 +1,86 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "scripts/evaluate_pii_recall.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/output_node.py",
+      "language": "python",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/pii_detector.py",
+      "language": "python",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/security_sanitizer.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/constants.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_output_node.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_pii_detector.py",
+      "language": "python",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_security_sanitizer.py",
+      "language": "python",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "scripts/evaluate_pii_recall.py": [
+      "src/agent/nodes/pii_detector.py"
+    ],
+    "src/agent/nodes/output_node.py": [
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/pii_detector.py": [
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/security_sanitizer.py": [
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "src/utils/constants.py": [],
+    "tests/unit/test_output_node.py": [
+      "src/agent/nodes/output_node.py",
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "tests/unit/test_pii_detector.py": [
+      "src/agent/nodes/pii_detector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_security_sanitizer.py": [
+      "src/agent/nodes/security_sanitizer.py",
+      "src/agent/state.py"
+    ]
+  }
+}

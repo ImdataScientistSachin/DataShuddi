@@ -90,16 +90,42 @@ def output_node(state: DataShuddiState) -> DataShuddiState:
 
 
 def _chunk_text(text: str, chunk_size: int = 512, overlap: int = 50) -> list[str]:
-    """Split text into overlapping character chunks."""
-    if not text:
+    """
+    Split text into clean overlapping chunks respecting sentence and word boundaries.
+    """
+    if not text or not text.strip():
         return []
-    chunks = []
-    step = max(1, chunk_size - overlap)  # Guard against infinite loop
+
+    clean_text = text.strip()
+    if len(clean_text) <= chunk_size:
+        return [clean_text]
+
+    chunks: list[str] = []
     start = 0
-    while start < len(text):
-        end = start + chunk_size
-        chunks.append(text[start:end])
-        start += step
+    text_len = len(clean_text)
+
+    while start < text_len:
+        end = min(start + chunk_size, text_len)
+        if end < text_len:
+            # Look for natural sentence or paragraph delimiter in the latter half of chunk window
+            last_break = -1
+            for sep in ("\n\n", "\n", ". ", "? ", "! ", " "):
+                pos = clean_text.rfind(sep, start + (chunk_size // 2), end)
+                if pos != -1:
+                    last_break = pos + len(sep)
+                    break
+            if last_break > start:
+                end = last_break
+
+        chunk_content = clean_text[start:end].strip()
+        if chunk_content:
+            chunks.append(chunk_content)
+
+        if end >= text_len:
+            break
+        # Advance with overlap
+        start = max(start + 1, end - overlap)
+
     return chunks
 
 

@@ -1,0 +1,450 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 13,
+  "filesSkipped": [
+    "data/clean/.gitkeep",
+    "data/human_review/queue.jsonl",
+    "data/postgres_data/.gitkeep",
+    "data/qdrant_storage/.gitkeep",
+    "data/raw/.gitkeep",
+    "data/temp/.gitkeep",
+    "nginx/nginx.conf",
+    "notebooks/01_pii_exploration.ipynb",
+    "notebooks/02_hf_threshold_analysis.ipynb",
+    "notebooks/03_golden_dataset_analysis.ipynb",
+    "streamlit_app/assets/styles.css",
+    "tests/testdata/.gitkeep"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 13,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 11,
+      "failed": 0,
+      "skipped": 2
+    }
+  },
+  "results": [
+    {
+      "path": ".streamlit/config.toml",
+      "language": "toml",
+      "fileCategory": "config",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "theme",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "server",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "browser",
+          "level": 1,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "scripts/bootstrap_dev_env.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 135,
+      "nonEmptyLines": 111,
+      "functions": [
+        {
+          "name": "check_directories",
+          "startLine": 49,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "check_env_file",
+          "startLine": 63,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "check_ollama",
+          "startLine": 81,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "main",
+          "startLine": 114,
+          "endLine": 131,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "check_directories",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "check_env_file",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "check_ollama",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 114,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_directories",
+          "callee": "print",
+          "lineNumber": 51
+        },
+        {
+          "caller": "check_directories",
+          "callee": "d.exists",
+          "lineNumber": 55
+        },
+        {
+          "caller": "check_directories",
+          "callee": "print",
+          "lineNumber": 56
+        },
+        {
+          "caller": "check_directories",
+          "callee": "d.mkdir",
+          "lineNumber": 57
+        },
+        {
+          "caller": "check_directories",
+          "callee": "print",
+          "lineNumber": 59
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "print",
+          "lineNumber": 65
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "env_path.exists",
+          "lineNumber": 69
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "env_example.exists",
+          "lineNumber": 70
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "print",
+          "lineNumber": 71
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "shutil.copy",
+          "lineNumber": 72
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "print",
+          "lineNumber": 74
+        },
+        {
+          "caller": "check_env_file",
+          "callee": "print",
+          "lineNumber": 77
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 83
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 86
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "httpx.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 92
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "resp.json().get",
+          "lineNumber": 95
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "resp.json",
+          "lineNumber": 95
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "m.get",
+          "lineNumber": 96
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 97
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "any",
+          "lineNumber": 100
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 102
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 104
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 109
+        },
+        {
+          "caller": "check_ollama",
+          "callee": "print",
+          "lineNumber": 110
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 116
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 117
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "check_directories",
+          "lineNumber": 120
+        },
+        {
+          "caller": "main",
+          "callee": "check_env_file",
+          "lineNumber": 121
+        },
+        {
+          "caller": "main",
+          "callee": "check_ollama",
+          "lineNumber": 122
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 124
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 126
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 128
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 130
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/db_init.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "src/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/nodes/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/api/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "streamlit_app/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "streamlit_app/app_pages/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/integration/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/unit/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "batchIndex": 6,
+  "nodes": [
+    {
+      "id": "service:Dockerfile",
+      "name": "Dockerfile",
+      "type": "service",
+      "filePath": "Dockerfile",
+      "summary": "Container configuration for multi-service deployment",
+      "tags": [
+        "dockerfile",
+        "infra"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:docker-compose.prod.yml",
+      "name": "docker-compose.prod.yml",
+      "type": "service",
+      "filePath": "docker-compose.prod.yml",
+      "summary": "Container configuration for multi-service deployment",
+      "tags": [
+        "yaml",
+        "infra"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:docker-compose.yml",
+      "name": "docker-compose.yml",
+      "type": "service",
+      "filePath": "docker-compose.yml",
+      "summary": "Container configuration for multi-service deployment",
+      "tags": [
+        "yaml",
+        "infra"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

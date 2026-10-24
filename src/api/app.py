@@ -20,6 +20,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from loguru import logger
 
 from src.api.routes import admin, export, health, jobs, sanitize
+from src.utils.config import settings
 from src.utils.logging_hygiene import configure_logging
 
 # Configure PII-scrubbing Loguru logging
@@ -37,12 +38,12 @@ app = FastAPI(
     redoc_url="/redoc",
 )
 
-# Enable Cross-Origin Resource Sharing (CORS) for external clients & frontend dashboards
+# Enable Cross-Origin Resource Sharing (CORS) restricted to trusted dashboard origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
-    allow_methods=["*"],
+    allow_origins=settings.cors_allowed_origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 

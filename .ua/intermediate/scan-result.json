@@ -1,0 +1,836 @@
+{
+  "name": "DataShuddi",
+  "description": "Enterprise-grade, local-first, self-correcting PII scrubbing and data validation agent using LangGraph and Presidio.",
+  "languages": [
+    "python",
+    "markdown",
+    "dockerfile",
+    "yaml",
+    "toml"
+  ],
+  "frameworks": [
+    "LangGraph",
+    "FastAPI",
+    "Pydantic",
+    "Presidio",
+    "Streamlit",
+    "Qdrant",
+    "PyMuPDF"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 58,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".streamlit/config.toml",
+      "language": "toml",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 42,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "GEMINI.md",
+      "language": "markdown",
+      "sizeLines": 554,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "sizeLines": 42,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 468,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-001-langgraph-stategraph.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-002-hybrid-pii-pipeline.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-003-qdrant-payload-allowlist.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-004-reflector-confidence-gate.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-INDEX.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "data/clean/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/human_review/queue.jsonl",
+      "language": "jsonl",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/postgres_data/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/qdrant_storage/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/temp/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker-compose.prod.yml",
+      "language": "yaml",
+      "sizeLines": 56,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 69,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "nginx/nginx.conf",
+      "language": "conf",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/01_pii_exploration.ipynb",
+      "language": "ipynb",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/02_hf_threshold_analysis.ipynb",
+      "language": "ipynb",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/03_golden_dataset_analysis.ipynb",
+      "language": "ipynb",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "sizeLines": 115,
+      "fileCategory": "config"
+    },
+    {
+      "path": "pyrightconfig.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "requirements.txt",
+      "language": "txt",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/bootstrap_dev_env.py",
+      "language": "python",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/db_init.sql",
+      "language": "sql",
+      "sizeLines": 10,
+      "fileCategory": "data"
+    },
+    {
+      "path": "scripts/evaluate_pii_recall.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/purge_temp_raw.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/purge_user_data.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/reprocess_human_feedback.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "language": "python",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/__init__.py",
+      "language": "python",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/checkpoints.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/graph.py",
+      "language": "python",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/extractor.py",
+      "language": "python",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/hf_detector.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/output_node.py",
+      "language": "python",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/pii_detector.py",
+      "language": "python",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/pii_masker.py",
+      "language": "python",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/reflector.py",
+      "language": "python",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/schema_validator.py",
+      "language": "python",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/security_sanitizer.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/state.py",
+      "language": "python",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/app.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/admin.py",
+      "language": "python",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/export.py",
+      "language": "python",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/health.py",
+      "language": "python",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/jobs.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/routes/sanitize.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/schemas.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/config.py",
+      "language": "python",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/constants.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/doc_utils.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/logging_hygiene.py",
+      "language": "python",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/pdf_utils.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/schemas.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app.py",
+      "language": "python",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "language": "python",
+      "sizeLines": 396,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_02_metrics.py",
+      "language": "python",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "language": "python",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_04_self_correction.py",
+      "language": "python",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_05_human_review.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/assets/styles.css",
+      "language": "css",
+      "sizeLines": 836,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "streamlit_app/ui_components.py",
+      "language": "python",
+      "sizeLines": 425,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/conftest.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/golden_dataset.py",
+      "language": "python",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/integration/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/integration/test_full_pipeline.py",
+      "language": "python",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_release_gate.py",
+      "language": "python",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/testdata/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_api.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_doc_utils.py",
+      "language": "python",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_extractor.py",
+      "language": "python",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_hf_detector.py",
+      "language": "python",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_logging_hygiene.py",
+      "language": "python",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_output_node.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_pii_detector.py",
+      "language": "python",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_pii_masker.py",
+      "language": "python",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_reflector.py",
+      "language": "python",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_schema_validator.py",
+      "language": "python",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_security_sanitizer.py",
+      "language": "python",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 96,
+  "importMap": {
+    ".env.example": [],
+    ".streamlit/config.toml": [],
+    "CHANGELOG.md": [],
+    "CONTRIBUTING.md": [],
+    "Dockerfile": [],
+    "GEMINI.md": [],
+    "Makefile": [],
+    "README.md": [],
+    "SECURITY.md": [],
+    "adr/ADR-001-langgraph-stategraph.md": [],
+    "adr/ADR-002-hybrid-pii-pipeline.md": [],
+    "adr/ADR-003-qdrant-payload-allowlist.md": [],
+    "adr/ADR-004-reflector-confidence-gate.md": [],
+    "adr/ADR-INDEX.md": [],
+    "data/clean/.gitkeep": [],
+    "data/human_review/queue.jsonl": [],
+    "data/postgres_data/.gitkeep": [],
+    "data/qdrant_storage/.gitkeep": [],
+    "data/raw/.gitkeep": [],
+    "data/temp/.gitkeep": [],
+    "docker-compose.prod.yml": [],
+    "docker-compose.yml": [],
+    "nginx/nginx.conf": [],
+    "notebooks/01_pii_exploration.ipynb": [],
+    "notebooks/02_hf_threshold_analysis.ipynb": [],
+    "notebooks/03_golden_dataset_analysis.ipynb": [],
+    "pyproject.toml": [],
+    "pyrightconfig.json": [],
+    "requirements.txt": [],
+    "scripts/bootstrap_dev_env.py": [],
+    "scripts/db_init.sql": [],
+    "scripts/evaluate_pii_recall.py": [
+      "src/agent/nodes/pii_detector.py"
+    ],
+    "scripts/purge_temp_raw.py": [
+      "src/utils/config.py"
+    ],
+    "scripts/purge_user_data.py": [
+      "src/utils/config.py"
+    ],
+    "scripts/reprocess_human_feedback.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/doc_utils.py"
+    ],
+    "scripts/run_pipeline.py": [
+      "src/main.py"
+    ],
+    "src/__init__.py": [],
+    "src/agent/__init__.py": [],
+    "src/agent/checkpoints.py": [
+      "src/utils/config.py"
+    ],
+    "src/agent/graph.py": [
+      "src/agent/checkpoints.py",
+      "src/agent/nodes/extractor.py",
+      "src/agent/nodes/hf_detector.py",
+      "src/agent/nodes/output_node.py",
+      "src/agent/nodes/pii_detector.py",
+      "src/agent/nodes/pii_masker.py",
+      "src/agent/nodes/reflector.py",
+      "src/agent/nodes/schema_validator.py",
+      "src/agent/nodes/security_sanitizer.py",
+      "src/agent/state.py"
+    ],
+    "src/agent/nodes/__init__.py": [],
+    "src/agent/nodes/extractor.py": [
+      "src/agent/state.py",
+      "src/utils/config.py"
+    ],
+    "src/agent/nodes/hf_detector.py": [
+      "src/agent/state.py"
+    ],
+    "src/agent/nodes/output_node.py": [
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/pii_detector.py": [
+      "src/agent/state.py",
+      "src/utils/config.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/pii_masker.py": [
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/reflector.py": [
+      "src/agent/state.py",
+      "src/utils/config.py"
+    ],
+    "src/agent/nodes/schema_validator.py": [
+      "src/agent/state.py",
+      "src/utils/schemas.py"
+    ],
+    "src/agent/nodes/security_sanitizer.py": [
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/state.py": [],
+    "src/api/__init__.py": [],
+    "src/api/app.py": [
+      "src/api/routes/__init__.py",
+      "src/api/routes/admin.py",
+      "src/api/routes/export.py",
+      "src/api/routes/health.py",
+      "src/api/routes/jobs.py",
+      "src/api/routes/sanitize.py",
+      "src/utils/config.py",
+      "src/utils/logging_hygiene.py"
+    ],
+    "src/api/routes/__init__.py": [],
+    "src/api/routes/admin.py": [
+      "src/api/schemas.py",
+      "src/utils/config.py"
+    ],
+    "src/api/routes/export.py": [
+      "src/agent/checkpoints.py",
+      "src/utils/config.py",
+      "src/utils/pdf_utils.py"
+    ],
+    "src/api/routes/health.py": [
+      "src/api/schemas.py",
+      "src/utils/config.py"
+    ],
+    "src/api/routes/jobs.py": [
+      "src/agent/checkpoints.py",
+      "src/api/schemas.py"
+    ],
+    "src/api/routes/sanitize.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/api/schemas.py",
+      "src/utils/config.py",
+      "src/utils/doc_utils.py"
+    ],
+    "src/api/schemas.py": [],
+    "src/main.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "src/utils/doc_utils.py",
+      "src/utils/logging_hygiene.py"
+    ],
+    "src/utils/__init__.py": [],
+    "src/utils/config.py": [],
+    "src/utils/constants.py": [],
+    "src/utils/doc_utils.py": [],
+    "src/utils/logging_hygiene.py": [],
+    "src/utils/pdf_utils.py": [],
+    "src/utils/schemas.py": [],
+    "streamlit_app/__init__.py": [],
+    "streamlit_app/app.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/__init__.py": [],
+    "streamlit_app/app_pages/page_01_live_monitor.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_02_metrics.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_03_diff_viewer.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_04_self_correction.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_05_human_review.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/assets/styles.css": [],
+    "streamlit_app/ui_components.py": [
+      "src/utils/pdf_utils.py"
+    ],
+    "tests/__init__.py": [],
+    "tests/conftest.py": [
+      "src/utils/logging_hygiene.py"
+    ],
+    "tests/fixtures/golden_dataset.py": [],
+    "tests/integration/__init__.py": [],
+    "tests/integration/test_full_pipeline.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py"
+    ],
+    "tests/test_release_gate.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "tests/fixtures/golden_dataset.py"
+    ],
+    "tests/testdata/.gitkeep": [],
+    "tests/unit/__init__.py": [],
+    "tests/unit/test_api.py": [
+      "src/api/app.py"
+    ],
+    "tests/unit/test_doc_utils.py": [
+      "src/utils/doc_utils.py"
+    ],
+    "tests/unit/test_extractor.py": [
+      "src/agent/nodes/extractor.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_hf_detector.py": [
+      "src/agent/nodes/hf_detector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_logging_hygiene.py": [
+      "src/utils/logging_hygiene.py"
+    ],
+    "tests/unit/test_output_node.py": [
+      "src/agent/nodes/output_node.py",
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "tests/unit/test_pii_detector.py": [
+      "src/agent/nodes/pii_detector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_pii_masker.py": [
+      "src/agent/nodes/pii_masker.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_reflector.py": [
+      "src/agent/nodes/reflector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_schema_validator.py": [
+      "src/agent/nodes/schema_validator.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_security_sanitizer.py": [
+      "src/agent/nodes/security_sanitizer.py",
+      "src/agent/state.py"
+    ]
+  },
+  "complexity": "moderate"
+}

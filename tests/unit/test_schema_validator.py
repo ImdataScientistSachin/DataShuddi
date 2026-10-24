@@ -114,3 +114,25 @@ class TestSchemaValidatorNode:
         # Assert
         assert result["validation_passed"] is False
         assert any("Residual" in err for err in result["validation_errors"])
+
+    def test_dynamic_quality_score_reflects_pii_and_hf(self, base_state: DataShuddiState) -> None:
+        """Arrange: Document with varying PII & HF counts. Act: Calculate scores. Assert: Scores reflect dynamic factors."""
+        # Clean state: 0 PII, 5 HF removed
+        clean_state: DataShuddiState = {
+            **base_state,
+            "pii_count": 0,
+            "header_footer_candidates": ["H1", "H2", "H3", "H4", "H5"],
+        }
+        res_clean = schema_validator_node(clean_state)
+
+        # Heavy PII state: 40 PII entities
+        heavy_pii_state: DataShuddiState = {
+            **base_state,
+            "pii_count": 40,
+            "header_footer_candidates": [],
+        }
+        res_heavy = schema_validator_node(heavy_pii_state)
+
+        assert res_clean["quality_score"] > res_heavy["quality_score"]
+        assert 0.0 <= res_heavy["quality_score"] <= 1.0
+        assert 0.85 <= res_clean["quality_score"] <= 1.0

@@ -1,0 +1,77 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 58,
+      "fileCategory": "config"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "GEMINI.md",
+      "language": "markdown",
+      "sizeLines": 554,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "sizeLines": 42,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 468,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "sizeLines": 115,
+      "fileCategory": "config"
+    },
+    {
+      "path": "pyrightconfig.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "requirements.txt",
+      "language": "txt",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    "CHANGELOG.md": [],
+    "CONTRIBUTING.md": [],
+    "GEMINI.md": [],
+    "Makefile": [],
+    "README.md": [],
+    "SECURITY.md": [],
+    "pyproject.toml": [],
+    "pyrightconfig.json": [],
+    "requirements.txt": []
+  }
+}

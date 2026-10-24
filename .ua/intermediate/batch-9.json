@@ -1,0 +1,416 @@
+{
+  "batchIndex": 9,
+  "nodes": [
+    {
+      "id": "config:.streamlit/config.toml",
+      "name": "config.toml",
+      "type": "config",
+      "filePath": ".streamlit/config.toml",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "toml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/clean/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/clean/.gitkeep",
+      "summary": "Module .gitkeep responsible for clean utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/human_review/queue.jsonl",
+      "name": "queue.jsonl",
+      "type": "file",
+      "filePath": "data/human_review/queue.jsonl",
+      "summary": "Module queue.jsonl responsible for human_review utilities",
+      "tags": [
+        "jsonl",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:data/postgres_data/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/postgres_data/.gitkeep",
+      "summary": "Module .gitkeep responsible for postgres_data utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/qdrant_storage/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/qdrant_storage/.gitkeep",
+      "summary": "Module .gitkeep responsible for qdrant_storage utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/raw/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/raw/.gitkeep",
+      "summary": "Module .gitkeep responsible for raw utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:data/temp/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "data/temp/.gitkeep",
+      "summary": "Module .gitkeep responsible for temp utilities",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:nginx/nginx.conf",
+      "name": "nginx.conf",
+      "type": "service",
+      "filePath": "nginx/nginx.conf",
+      "summary": "Module nginx.conf responsible for nginx utilities",
+      "tags": [
+        "conf",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:notebooks/01_pii_exploration.ipynb",
+      "name": "01_pii_exploration.ipynb",
+      "type": "document",
+      "filePath": "notebooks/01_pii_exploration.ipynb",
+      "summary": "Module 01_pii_exploration.ipynb responsible for notebooks utilities",
+      "tags": [
+        "ipynb",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:notebooks/02_hf_threshold_analysis.ipynb",
+      "name": "02_hf_threshold_analysis.ipynb",
+      "type": "document",
+      "filePath": "notebooks/02_hf_threshold_analysis.ipynb",
+      "summary": "Module 02_hf_threshold_analysis.ipynb responsible for notebooks utilities",
+      "tags": [
+        "ipynb",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:notebooks/03_golden_dataset_analysis.ipynb",
+      "name": "03_golden_dataset_analysis.ipynb",
+      "type": "document",
+      "filePath": "notebooks/03_golden_dataset_analysis.ipynb",
+      "summary": "50-document golden benchmark dataset with labeled PII ground truth",
+      "tags": [
+        "ipynb",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/bootstrap_dev_env.py",
+      "name": "bootstrap_dev_env.py",
+      "type": "file",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Module bootstrap_dev_env.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:check_directories",
+      "name": "check_directories",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `check_directories` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        49,
+        60
+      ]
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:check_env_file",
+      "name": "check_env_file",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `check_env_file` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        63,
+        78
+      ]
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:check_ollama",
+      "name": "check_ollama",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `check_ollama` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        81,
+        111
+      ]
+    },
+    {
+      "id": "function:scripts/bootstrap_dev_env.py:main",
+      "name": "main",
+      "type": "function",
+      "filePath": "scripts/bootstrap_dev_env.py",
+      "summary": "Function `main` in bootstrap_dev_env.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        114,
+        131
+      ]
+    },
+    {
+      "id": "file:scripts/db_init.sql",
+      "name": "db_init.sql",
+      "type": "file",
+      "filePath": "scripts/db_init.sql",
+      "summary": "Module db_init.sql responsible for scripts utilities",
+      "tags": [
+        "sql",
+        "data"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/__init__.py",
+      "summary": "Module __init__.py responsible for src utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/agent/__init__.py",
+      "summary": "Module __init__.py responsible for agent utilities",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/nodes/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/__init__.py",
+      "summary": "Module __init__.py responsible for nodes utilities",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/api/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/api/__init__.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/utils/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/utils/__init__.py",
+      "summary": "Module __init__.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:streamlit_app/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "streamlit_app/__init__.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:streamlit_app/app_pages/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/__init__.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:streamlit_app/assets/styles.css",
+      "name": "styles.css",
+      "type": "file",
+      "filePath": "streamlit_app/assets/styles.css",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "css",
+        "markup"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "tests/__init__.py",
+      "summary": "Module __init__.py responsible for tests utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/integration/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "tests/integration/__init__.py",
+      "summary": "Module __init__.py responsible for integration utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/testdata/.gitkeep",
+      "name": ".gitkeep",
+      "type": "file",
+      "filePath": "tests/testdata/.gitkeep",
+      "summary": "Module .gitkeep responsible for testdata utilities",
+      "tags": [
+        "test",
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "tests/unit/__init__.py",
+      "summary": "Module __init__.py responsible for unit utilities",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:check_directories",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:check_directories",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_directories"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:check_env_file",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:check_env_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_env_file"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:check_ollama",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:check_ollama",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_ollama"
+    },
+    {
+      "id": "edge:file:scripts/bootstrap_dev_env.py->function:scripts/bootstrap_dev_env.py:main",
+      "source": "file:scripts/bootstrap_dev_env.py",
+      "target": "function:scripts/bootstrap_dev_env.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function main"
+    }
+  ]
+}

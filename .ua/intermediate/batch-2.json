@@ -1,0 +1,1213 @@
+{
+  "batchIndex": 2,
+  "nodes": [
+    {
+      "id": "file:src/agent/graph.py",
+      "name": "graph.py",
+      "type": "file",
+      "filePath": "src/agent/graph.py",
+      "summary": "LangGraph StateGraph assembly, conditional routing, checkpointer integration",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/graph.py:route_after_validation",
+      "name": "route_after_validation",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `route_after_validation` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        36,
+        52
+      ]
+    },
+    {
+      "id": "function:src/agent/graph.py:route_after_reflection",
+      "name": "route_after_reflection",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `route_after_reflection` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        69
+      ]
+    },
+    {
+      "id": "function:src/agent/graph.py:build_graph",
+      "name": "build_graph",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `build_graph` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        72,
+        130
+      ]
+    },
+    {
+      "id": "function:src/agent/graph.py:get_compiled_graph",
+      "name": "get_compiled_graph",
+      "type": "function",
+      "filePath": "src/agent/graph.py",
+      "summary": "Function `get_compiled_graph` in graph.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        137,
+        142
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/extractor.py",
+      "name": "extractor.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Node 1: PyMuPDF + PaddleOCR fallback text extraction with char density gating",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:extractor_node",
+      "name": "extractor_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `extractor_node` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        29,
+        86
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_extract_pdf",
+      "name": "_extract_pdf",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_extract_pdf` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        89,
+        107
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_ocr_fallback_pdf",
+      "name": "_ocr_fallback_pdf",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_ocr_fallback_pdf` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        110,
+        141
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_extract_docx",
+      "name": "_extract_docx",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_extract_docx` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        144,
+        152
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/extractor.py:_extract_txt",
+      "name": "_extract_txt",
+      "type": "function",
+      "filePath": "src/agent/nodes/extractor.py",
+      "summary": "Function `_extract_txt` in extractor.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        155,
+        158
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/hf_detector.py",
+      "name": "hf_detector.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/hf_detector.py",
+      "summary": "Node 2: Header/Footer frequency analysis and dynamic boilerplate stripping",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/hf_detector.py:hf_detector_node",
+      "name": "hf_detector_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/hf_detector.py",
+      "summary": "Function `hf_detector_node` in hf_detector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        28,
+        90
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/pii_masker.py",
+      "name": "pii_masker.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/pii_masker.py",
+      "summary": "Node 4: PII redaction and token replacement with safe placeholder offsets",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/pii_masker.py:_resolve_overlapping_entities",
+      "name": "_resolve_overlapping_entities",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_masker.py",
+      "summary": "Function `_resolve_overlapping_entities` in pii_masker.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        31,
+        68
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/pii_masker.py:pii_masker_node",
+      "name": "pii_masker_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/pii_masker.py",
+      "summary": "Function `pii_masker_node` in pii_masker.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        71,
+        122
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/reflector.py",
+      "name": "reflector.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/reflector.py:reflector_node",
+      "name": "reflector_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Function `reflector_node` in reflector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        41,
+        115
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/reflector.py:_run_qwen_reflection",
+      "name": "_run_qwen_reflection",
+      "type": "function",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Function `_run_qwen_reflection` in reflector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        118,
+        147
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/reflector.py:_write_to_human_review_queue",
+      "name": "_write_to_human_review_queue",
+      "type": "function",
+      "filePath": "src/agent/nodes/reflector.py",
+      "summary": "Function `_write_to_human_review_queue` in reflector.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        150,
+        167
+      ]
+    },
+    {
+      "id": "file:src/agent/nodes/schema_validator.py",
+      "name": "schema_validator.py",
+      "type": "file",
+      "filePath": "src/agent/nodes/schema_validator.py",
+      "summary": "Node 5: Pydantic v2 enterprise doc validation and residual PII scanning",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/nodes/schema_validator.py:schema_validator_node",
+      "name": "schema_validator_node",
+      "type": "function",
+      "filePath": "src/agent/nodes/schema_validator.py",
+      "summary": "Function `schema_validator_node` in schema_validator.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        21,
+        82
+      ]
+    },
+    {
+      "id": "function:src/agent/nodes/schema_validator.py:_calculate_quality_score",
+      "name": "_calculate_quality_score",
+      "type": "function",
+      "filePath": "src/agent/nodes/schema_validator.py",
+      "summary": "Function `_calculate_quality_score` in schema_validator.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        85,
+        104
+      ]
+    },
+    {
+      "id": "file:src/agent/state.py",
+      "name": "state.py",
+      "type": "file",
+      "filePath": "src/agent/state.py",
+      "summary": "DataShuddiState 4-tier lifecycle taxonomy definition and factory constructors",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/state.py:create_initial_state",
+      "name": "create_initial_state",
+      "type": "function",
+      "filePath": "src/agent/state.py",
+      "summary": "Function `create_initial_state` in state.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        62,
+        113
+      ]
+    },
+    {
+      "id": "file:src/utils/schemas.py",
+      "name": "schemas.py",
+      "type": "file",
+      "filePath": "src/utils/schemas.py",
+      "summary": "Module schemas.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/fixtures/golden_dataset.py",
+      "name": "golden_dataset.py",
+      "type": "file",
+      "filePath": "tests/fixtures/golden_dataset.py",
+      "summary": "50-document golden benchmark dataset with labeled PII ground truth",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/fixtures/golden_dataset.py:get_golden_dataset",
+      "name": "get_golden_dataset",
+      "type": "function",
+      "filePath": "tests/fixtures/golden_dataset.py",
+      "summary": "Function `get_golden_dataset` in golden_dataset.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        123,
+        125
+      ]
+    },
+    {
+      "id": "file:tests/integration/test_full_pipeline.py",
+      "name": "test_full_pipeline.py",
+      "type": "file",
+      "filePath": "tests/integration/test_full_pipeline.py",
+      "summary": "Test suite verifying test_full_pipeline",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/integration/test_full_pipeline.py:clean_doc_file",
+      "name": "clean_doc_file",
+      "type": "function",
+      "filePath": "tests/integration/test_full_pipeline.py",
+      "summary": "Function `clean_doc_file` in test_full_pipeline.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        27
+      ]
+    },
+    {
+      "id": "file:tests/test_release_gate.py",
+      "name": "test_release_gate.py",
+      "type": "file",
+      "filePath": "tests/test_release_gate.py",
+      "summary": "CI/CD release gate verifying 100% PII recall and 0% residual leak tolerance",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/test_extractor.py",
+      "name": "test_extractor.py",
+      "type": "file",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Node 1: PyMuPDF + PaddleOCR fallback text extraction with char density gating",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_extractor.py:txt_sample_file",
+      "name": "txt_sample_file",
+      "type": "function",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Function `txt_sample_file` in test_extractor.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        16,
+        20
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_extractor.py:docx_sample_file",
+      "name": "docx_sample_file",
+      "type": "function",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Function `docx_sample_file` in test_extractor.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        24,
+        32
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_extractor.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_extractor.py",
+      "summary": "Function `base_state` in test_extractor.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        36,
+        63
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_hf_detector.py",
+      "name": "test_hf_detector.py",
+      "type": "file",
+      "filePath": "tests/unit/test_hf_detector.py",
+      "summary": "Node 2: Header/Footer frequency analysis and dynamic boilerplate stripping",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_hf_detector.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_hf_detector.py",
+      "summary": "Function `base_state` in test_hf_detector.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        41
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_pii_masker.py",
+      "name": "test_pii_masker.py",
+      "type": "file",
+      "filePath": "tests/unit/test_pii_masker.py",
+      "summary": "Node 4: PII redaction and token replacement with safe placeholder offsets",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_pii_masker.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_pii_masker.py",
+      "summary": "Function `base_state` in test_pii_masker.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        43
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_reflector.py",
+      "name": "test_reflector.py",
+      "type": "file",
+      "filePath": "tests/unit/test_reflector.py",
+      "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_reflector.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_reflector.py",
+      "summary": "Function `base_state` in test_reflector.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        16,
+        43
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_schema_validator.py",
+      "name": "test_schema_validator.py",
+      "type": "file",
+      "filePath": "tests/unit/test_schema_validator.py",
+      "summary": "Node 5: Pydantic v2 enterprise doc validation and residual PII scanning",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_schema_validator.py:base_state",
+      "name": "base_state",
+      "type": "function",
+      "filePath": "tests/unit/test_schema_validator.py",
+      "summary": "Function `base_state` in test_schema_validator.py",
+      "tags": [
+        "python",
+        "function",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        41
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:route_after_validation",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:route_after_validation",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function route_after_validation"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:route_after_reflection",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:route_after_reflection",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function route_after_reflection"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:build_graph",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:build_graph",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function build_graph"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->function:src/agent/graph.py:get_compiled_graph",
+      "source": "file:src/agent/graph.py",
+      "target": "function:src/agent/graph.py:get_compiled_graph",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_compiled_graph"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/checkpoints.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/checkpoints.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports checkpoints.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/extractor.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports extractor.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/hf_detector.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/hf_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports hf_detector.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/output_node.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/output_node.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports output_node.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/pii_detector.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/pii_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_detector.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/pii_masker.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/pii_masker.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_masker.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/reflector.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/reflector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports reflector.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/schema_validator.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/schema_validator.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schema_validator.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/nodes/security_sanitizer.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/nodes/security_sanitizer.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports security_sanitizer.py"
+    },
+    {
+      "id": "edge:file:src/agent/graph.py->file:src/agent/state.py",
+      "source": "file:src/agent/graph.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:extractor_node",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:extractor_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function extractor_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_extract_pdf",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_extract_pdf",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _extract_pdf"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_ocr_fallback_pdf",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_ocr_fallback_pdf",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _ocr_fallback_pdf"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_extract_docx",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_extract_docx",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _extract_docx"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->function:src/agent/nodes/extractor.py:_extract_txt",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "function:src/agent/nodes/extractor.py:_extract_txt",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _extract_txt"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/extractor.py->file:src/utils/config.py",
+      "source": "file:src/agent/nodes/extractor.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/hf_detector.py->function:src/agent/nodes/hf_detector.py:hf_detector_node",
+      "source": "file:src/agent/nodes/hf_detector.py",
+      "target": "function:src/agent/nodes/hf_detector.py:hf_detector_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function hf_detector_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/hf_detector.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/hf_detector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->function:src/agent/nodes/pii_masker.py:_resolve_overlapping_entities",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "function:src/agent/nodes/pii_masker.py:_resolve_overlapping_entities",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _resolve_overlapping_entities"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->function:src/agent/nodes/pii_masker.py:pii_masker_node",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "function:src/agent/nodes/pii_masker.py:pii_masker_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pii_masker_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/pii_masker.py->file:src/utils/constants.py",
+      "source": "file:src/agent/nodes/pii_masker.py",
+      "target": "file:src/utils/constants.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports constants.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->function:src/agent/nodes/reflector.py:reflector_node",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "function:src/agent/nodes/reflector.py:reflector_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function reflector_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->function:src/agent/nodes/reflector.py:_run_qwen_reflection",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "function:src/agent/nodes/reflector.py:_run_qwen_reflection",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_qwen_reflection"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->function:src/agent/nodes/reflector.py:_write_to_human_review_queue",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "function:src/agent/nodes/reflector.py:_write_to_human_review_queue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _write_to_human_review_queue"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/reflector.py->file:src/utils/config.py",
+      "source": "file:src/agent/nodes/reflector.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->function:src/agent/nodes/schema_validator.py:schema_validator_node",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "function:src/agent/nodes/schema_validator.py:schema_validator_node",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function schema_validator_node"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->function:src/agent/nodes/schema_validator.py:_calculate_quality_score",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "function:src/agent/nodes/schema_validator.py:_calculate_quality_score",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _calculate_quality_score"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->file:src/agent/state.py",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/agent/nodes/schema_validator.py->file:src/utils/schemas.py",
+      "source": "file:src/agent/nodes/schema_validator.py",
+      "target": "file:src/utils/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/agent/state.py->function:src/agent/state.py:create_initial_state",
+      "source": "file:src/agent/state.py",
+      "target": "function:src/agent/state.py:create_initial_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function create_initial_state"
+    },
+    {
+      "id": "edge:file:tests/fixtures/golden_dataset.py->function:tests/fixtures/golden_dataset.py:get_golden_dataset",
+      "source": "file:tests/fixtures/golden_dataset.py",
+      "target": "function:tests/fixtures/golden_dataset.py:get_golden_dataset",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_golden_dataset"
+    },
+    {
+      "id": "edge:file:tests/integration/test_full_pipeline.py->function:tests/integration/test_full_pipeline.py:clean_doc_file",
+      "source": "file:tests/integration/test_full_pipeline.py",
+      "target": "function:tests/integration/test_full_pipeline.py:clean_doc_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function clean_doc_file"
+    },
+    {
+      "id": "edge:file:tests/integration/test_full_pipeline.py->file:src/agent/graph.py",
+      "source": "file:tests/integration/test_full_pipeline.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:tests/integration/test_full_pipeline.py->file:src/agent/state.py",
+      "source": "file:tests/integration/test_full_pipeline.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/test_release_gate.py->file:src/agent/graph.py",
+      "source": "file:tests/test_release_gate.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:tests/test_release_gate.py->file:src/agent/state.py",
+      "source": "file:tests/test_release_gate.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/test_release_gate.py->file:tests/fixtures/golden_dataset.py",
+      "source": "file:tests/test_release_gate.py",
+      "target": "file:tests/fixtures/golden_dataset.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports golden_dataset.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->function:tests/unit/test_extractor.py:txt_sample_file",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "function:tests/unit/test_extractor.py:txt_sample_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function txt_sample_file"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->function:tests/unit/test_extractor.py:docx_sample_file",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "function:tests/unit/test_extractor.py:docx_sample_file",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function docx_sample_file"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->function:tests/unit/test_extractor.py:base_state",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "function:tests/unit/test_extractor.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->file:src/agent/nodes/extractor.py",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "file:src/agent/nodes/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports extractor.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_extractor.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_extractor.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_hf_detector.py->function:tests/unit/test_hf_detector.py:base_state",
+      "source": "file:tests/unit/test_hf_detector.py",
+      "target": "function:tests/unit/test_hf_detector.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_hf_detector.py->file:src/agent/nodes/hf_detector.py",
+      "source": "file:tests/unit/test_hf_detector.py",
+      "target": "file:src/agent/nodes/hf_detector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports hf_detector.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_hf_detector.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_hf_detector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_masker.py->function:tests/unit/test_pii_masker.py:base_state",
+      "source": "file:tests/unit/test_pii_masker.py",
+      "target": "function:tests/unit/test_pii_masker.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_masker.py->file:src/agent/nodes/pii_masker.py",
+      "source": "file:tests/unit/test_pii_masker.py",
+      "target": "file:src/agent/nodes/pii_masker.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pii_masker.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_pii_masker.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_pii_masker.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_reflector.py->function:tests/unit/test_reflector.py:base_state",
+      "source": "file:tests/unit/test_reflector.py",
+      "target": "function:tests/unit/test_reflector.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_reflector.py->file:src/agent/nodes/reflector.py",
+      "source": "file:tests/unit/test_reflector.py",
+      "target": "file:src/agent/nodes/reflector.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports reflector.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_reflector.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_reflector.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_schema_validator.py->function:tests/unit/test_schema_validator.py:base_state",
+      "source": "file:tests/unit/test_schema_validator.py",
+      "target": "function:tests/unit/test_schema_validator.py:base_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function base_state"
+    },
+    {
+      "id": "edge:file:tests/unit/test_schema_validator.py->file:src/agent/nodes/schema_validator.py",
+      "source": "file:tests/unit/test_schema_validator.py",
+      "target": "file:src/agent/nodes/schema_validator.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schema_validator.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_schema_validator.py->file:src/agent/state.py",
+      "source": "file:tests/unit/test_schema_validator.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 2,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 2,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 2,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/agent/graph.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 143,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "route_after_validation",
+          "startLine": 36,
+          "endLine": 52,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "route_after_reflection",
+          "startLine": 55,
+          "endLine": 69,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "build_graph",
+          "startLine": 72,
+          "endLine": 130,
+          "params": [
+            "use_checkpointer"
+          ]
+        },
+        {
+          "name": "get_compiled_graph",
+          "startLine": 137,
+          "endLine": 142,
+          "params": [
+            "use_checkpointer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "route_after_validation",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "route_after_reflection",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "build_graph",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "get_compiled_graph",
+          "line": 137,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "route_after_validation",
+          "callee": "state.get",
+          "lineNumber": 48
+        },
+        {
+          "caller": "route_after_validation",
+          "callee": "state.get",
+          "lineNumber": 50
+        },
+        {
+          "caller": "route_after_reflection",
+          "callee": "state.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build_graph",
+          "callee": "StateGraph",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 85
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 87
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_node",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 98
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_conditional_edges",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_conditional_edges",
+          "lineNumber": 114
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.add_edge",
+          "lineNumber": 124
+        },
+        {
+          "caller": "build_graph",
+          "callee": "get_checkpointer",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build_graph",
+          "callee": "get_store",
+          "lineNumber": 128
+        },
+        {
+          "caller": "build_graph",
+          "callee": "builder.compile",
+          "lineNumber": 130
+        },
+        {
+          "caller": "get_compiled_graph",
+          "callee": "build_graph",
+          "lineNumber": 141
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/state.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "create_initial_state",
+          "startLine": 62,
+          "endLine": 113,
+          "params": [
+            "doc_id",
+            "doc_path",
+            "source_system",
+            "mime_type",
+            "raw_text",
+            "pages",
+            "hf_threshold"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DataShuddiState",
+          "startLine": 18,
+          "endLine": 59,
+          "methods": [],
+          "properties": [
+            "doc_id",
+            "doc_path",
+            "source_system",
+            "mime_type",
+            "raw_text",
+            "_pages",
+            "cleaned_text",
+            "masked_text",
+            "header_footer_candidates",
+            "pii_entities",
+            "pii_count",
+            "validation_errors",
+            "validation_passed",
+            "retry_count",
+            "reflection_text",
+            "reflector_confidence",
+            "needs_human_review",
+            "hf_threshold",
+            "is_sanitized",
+            "security_flags",
+            "quality_score",
+            "node_timestamps",
+            "processing_time_ms",
+            "_start_time"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DataShuddiState",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "create_initial_state",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create_initial_state",
+          "callee": "time.time",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,1046 @@
+{
+  "batchIndex": 1,
+  "nodes": [
+    {
+      "id": "file:scripts/purge_temp_raw.py",
+      "name": "purge_temp_raw.py",
+      "type": "file",
+      "filePath": "scripts/purge_temp_raw.py",
+      "summary": "Module purge_temp_raw.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/purge_temp_raw.py:purge_temp_files",
+      "name": "purge_temp_files",
+      "type": "function",
+      "filePath": "scripts/purge_temp_raw.py",
+      "summary": "Function `purge_temp_files` in purge_temp_raw.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        24,
+        47
+      ]
+    },
+    {
+      "id": "file:scripts/purge_user_data.py",
+      "name": "purge_user_data.py",
+      "type": "file",
+      "filePath": "scripts/purge_user_data.py",
+      "summary": "Module purge_user_data.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/purge_user_data.py:purge_user_data",
+      "name": "purge_user_data",
+      "type": "function",
+      "filePath": "scripts/purge_user_data.py",
+      "summary": "Function `purge_user_data` in purge_user_data.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        28,
+        66
+      ]
+    },
+    {
+      "id": "file:scripts/reprocess_human_feedback.py",
+      "name": "reprocess_human_feedback.py",
+      "type": "file",
+      "filePath": "scripts/reprocess_human_feedback.py",
+      "summary": "Module reprocess_human_feedback.py responsible for scripts utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/reprocess_human_feedback.py:reprocess_human_feedback",
+      "name": "reprocess_human_feedback",
+      "type": "function",
+      "filePath": "scripts/reprocess_human_feedback.py",
+      "summary": "Function `reprocess_human_feedback` in reprocess_human_feedback.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        30,
+        90
+      ]
+    },
+    {
+      "id": "file:src/agent/checkpoints.py",
+      "name": "checkpoints.py",
+      "type": "file",
+      "filePath": "src/agent/checkpoints.py",
+      "summary": "PostgresSaver and MemoryStore persistence providers for pipeline crash recovery",
+      "tags": [
+        "python",
+        "agent",
+        "core",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/checkpoints.py:get_checkpointer",
+      "name": "get_checkpointer",
+      "type": "function",
+      "filePath": "src/agent/checkpoints.py",
+      "summary": "Function `get_checkpointer` in checkpoints.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        14,
+        49
+      ]
+    },
+    {
+      "id": "function:src/agent/checkpoints.py:get_store",
+      "name": "get_store",
+      "type": "function",
+      "filePath": "src/agent/checkpoints.py",
+      "summary": "Function `get_store` in checkpoints.py",
+      "tags": [
+        "agent",
+        "python",
+        "function",
+        "code",
+        "core"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        52,
+        60
+      ]
+    },
+    {
+      "id": "file:src/api/app.py",
+      "name": "app.py",
+      "type": "file",
+      "filePath": "src/api/app.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/app.py:log_requests",
+      "name": "log_requests",
+      "type": "function",
+      "filePath": "src/api/app.py",
+      "summary": "Function `log_requests` in app.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        52,
+        67
+      ]
+    },
+    {
+      "id": "file:src/api/routes/__init__.py",
+      "name": "__init__.py",
+      "type": "file",
+      "filePath": "src/api/routes/__init__.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/api/routes/admin.py",
+      "name": "admin.py",
+      "type": "file",
+      "filePath": "src/api/routes/admin.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/admin.py:verify_admin_key",
+      "name": "verify_admin_key",
+      "type": "function",
+      "filePath": "src/api/routes/admin.py",
+      "summary": "Function `verify_admin_key` in admin.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        15,
+        23
+      ]
+    },
+    {
+      "id": "function:src/api/routes/admin.py:purge_document_data",
+      "name": "purge_document_data",
+      "type": "function",
+      "filePath": "src/api/routes/admin.py",
+      "summary": "Function `purge_document_data` in admin.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        32,
+        98
+      ]
+    },
+    {
+      "id": "file:src/api/routes/export.py",
+      "name": "export.py",
+      "type": "file",
+      "filePath": "src/api/routes/export.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/export.py:download_redacted_doc",
+      "name": "download_redacted_doc",
+      "type": "function",
+      "filePath": "src/api/routes/export.py",
+      "summary": "Function `download_redacted_doc` in export.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        21,
+        74
+      ]
+    },
+    {
+      "id": "file:src/api/routes/health.py",
+      "name": "health.py",
+      "type": "file",
+      "filePath": "src/api/routes/health.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/health.py:check_health",
+      "name": "check_health",
+      "type": "function",
+      "filePath": "src/api/routes/health.py",
+      "summary": "Function `check_health` in health.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        22,
+        66
+      ]
+    },
+    {
+      "id": "file:src/api/routes/jobs.py",
+      "name": "jobs.py",
+      "type": "file",
+      "filePath": "src/api/routes/jobs.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/jobs.py:get_job_status",
+      "name": "get_job_status",
+      "type": "function",
+      "filePath": "src/api/routes/jobs.py",
+      "summary": "Function `get_job_status` in jobs.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        21,
+        65
+      ]
+    },
+    {
+      "id": "file:src/api/routes/sanitize.py",
+      "name": "sanitize.py",
+      "type": "file",
+      "filePath": "src/api/routes/sanitize.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api/routes/sanitize.py:_run_graph_in_background",
+      "name": "_run_graph_in_background",
+      "type": "function",
+      "filePath": "src/api/routes/sanitize.py",
+      "summary": "Function `_run_graph_in_background` in sanitize.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        26
+      ]
+    },
+    {
+      "id": "function:src/api/routes/sanitize.py:submit_document",
+      "name": "submit_document",
+      "type": "function",
+      "filePath": "src/api/routes/sanitize.py",
+      "summary": "Function `submit_document` in sanitize.py",
+      "tags": [
+        "python",
+        "api",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        36,
+        92
+      ]
+    },
+    {
+      "id": "file:src/api/schemas.py",
+      "name": "schemas.py",
+      "type": "file",
+      "filePath": "src/api/schemas.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/utils/config.py",
+      "name": "config.py",
+      "type": "file",
+      "filePath": "src/utils/config.py",
+      "summary": "Module config.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/utils/doc_utils.py",
+      "name": "doc_utils.py",
+      "type": "file",
+      "filePath": "src/utils/doc_utils.py",
+      "summary": "Module doc_utils.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/utils/doc_utils.py:compute_doc_id",
+      "name": "compute_doc_id",
+      "type": "function",
+      "filePath": "src/utils/doc_utils.py",
+      "summary": "Function `compute_doc_id` in doc_utils.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        19,
+        42
+      ]
+    },
+    {
+      "id": "function:src/utils/doc_utils.py:detect_mime_type",
+      "name": "detect_mime_type",
+      "type": "function",
+      "filePath": "src/utils/doc_utils.py",
+      "summary": "Function `detect_mime_type` in doc_utils.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        45,
+        56
+      ]
+    },
+    {
+      "id": "file:src/utils/pdf_utils.py",
+      "name": "pdf_utils.py",
+      "type": "file",
+      "filePath": "src/utils/pdf_utils.py",
+      "summary": "Module pdf_utils.py responsible for utils utilities",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/utils/pdf_utils.py:generate_sanitized_pdf",
+      "name": "generate_sanitized_pdf",
+      "type": "function",
+      "filePath": "src/utils/pdf_utils.py",
+      "summary": "Function `generate_sanitized_pdf` in pdf_utils.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        11,
+        60
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_api.py",
+      "name": "test_api.py",
+      "type": "file",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "api",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_health_endpoint",
+      "name": "test_health_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_health_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        15,
+        24
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_sanitize_submission_endpoint",
+      "name": "test_sanitize_submission_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_sanitize_submission_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        31,
+        50
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_job_status_endpoint",
+      "name": "test_job_status_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_job_status_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        62
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_gdpr_purge_endpoint",
+      "name": "test_gdpr_purge_endpoint",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_gdpr_purge_endpoint` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        66,
+        73
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_sanitize_unsupported_extension_rejected",
+      "name": "test_sanitize_unsupported_extension_rejected",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_sanitize_unsupported_extension_rejected` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        77,
+        89
+      ]
+    },
+    {
+      "id": "function:tests/unit/test_api.py:test_admin_purge_requires_key_when_configured",
+      "name": "test_admin_purge_requires_key_when_configured",
+      "type": "function",
+      "filePath": "tests/unit/test_api.py",
+      "summary": "Function `test_admin_purge_requires_key_when_configured` in test_api.py",
+      "tags": [
+        "api",
+        "python",
+        "test",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        93,
+        111
+      ]
+    },
+    {
+      "id": "file:tests/unit/test_doc_utils.py",
+      "name": "test_doc_utils.py",
+      "type": "file",
+      "filePath": "tests/unit/test_doc_utils.py",
+      "summary": "Test suite verifying test_doc_utils",
+      "tags": [
+        "python",
+        "code",
+        "test"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:file:scripts/purge_temp_raw.py->function:scripts/purge_temp_raw.py:purge_temp_files",
+      "source": "file:scripts/purge_temp_raw.py",
+      "target": "function:scripts/purge_temp_raw.py:purge_temp_files",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function purge_temp_files"
+    },
+    {
+      "id": "edge:file:scripts/purge_temp_raw.py->file:src/utils/config.py",
+      "source": "file:scripts/purge_temp_raw.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:scripts/purge_user_data.py->function:scripts/purge_user_data.py:purge_user_data",
+      "source": "file:scripts/purge_user_data.py",
+      "target": "function:scripts/purge_user_data.py:purge_user_data",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function purge_user_data"
+    },
+    {
+      "id": "edge:file:scripts/purge_user_data.py->file:src/utils/config.py",
+      "source": "file:scripts/purge_user_data.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->function:scripts/reprocess_human_feedback.py:reprocess_human_feedback",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "function:scripts/reprocess_human_feedback.py:reprocess_human_feedback",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function reprocess_human_feedback"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/agent/graph.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/agent/state.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/utils/config.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:scripts/reprocess_human_feedback.py->file:src/utils/doc_utils.py",
+      "source": "file:scripts/reprocess_human_feedback.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/agent/checkpoints.py->function:src/agent/checkpoints.py:get_checkpointer",
+      "source": "file:src/agent/checkpoints.py",
+      "target": "function:src/agent/checkpoints.py:get_checkpointer",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_checkpointer"
+    },
+    {
+      "id": "edge:file:src/agent/checkpoints.py->function:src/agent/checkpoints.py:get_store",
+      "source": "file:src/agent/checkpoints.py",
+      "target": "function:src/agent/checkpoints.py:get_store",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_store"
+    },
+    {
+      "id": "edge:file:src/agent/checkpoints.py->file:src/utils/config.py",
+      "source": "file:src/agent/checkpoints.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->function:src/api/app.py:log_requests",
+      "source": "file:src/api/app.py",
+      "target": "function:src/api/app.py:log_requests",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function log_requests"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/__init__.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports __init__.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/admin.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/admin.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports admin.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/export.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/export.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports export.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/health.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/health.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports health.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/jobs.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/jobs.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports jobs.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/api/routes/sanitize.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/api/routes/sanitize.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports sanitize.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/utils/config.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/app.py->file:src/utils/logging_hygiene.py",
+      "source": "file:src/api/app.py",
+      "target": "file:src/utils/logging_hygiene.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports logging_hygiene.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->function:src/api/routes/admin.py:verify_admin_key",
+      "source": "file:src/api/routes/admin.py",
+      "target": "function:src/api/routes/admin.py:verify_admin_key",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function verify_admin_key"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->function:src/api/routes/admin.py:purge_document_data",
+      "source": "file:src/api/routes/admin.py",
+      "target": "function:src/api/routes/admin.py:purge_document_data",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function purge_document_data"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/admin.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/admin.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/admin.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->function:src/api/routes/export.py:download_redacted_doc",
+      "source": "file:src/api/routes/export.py",
+      "target": "function:src/api/routes/export.py:download_redacted_doc",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function download_redacted_doc"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->file:src/agent/checkpoints.py",
+      "source": "file:src/api/routes/export.py",
+      "target": "file:src/agent/checkpoints.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports checkpoints.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/export.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/export.py->file:src/utils/pdf_utils.py",
+      "source": "file:src/api/routes/export.py",
+      "target": "file:src/utils/pdf_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pdf_utils.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/health.py->function:src/api/routes/health.py:check_health",
+      "source": "file:src/api/routes/health.py",
+      "target": "function:src/api/routes/health.py:check_health",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function check_health"
+    },
+    {
+      "id": "edge:file:src/api/routes/health.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/health.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/health.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/health.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/jobs.py->function:src/api/routes/jobs.py:get_job_status",
+      "source": "file:src/api/routes/jobs.py",
+      "target": "function:src/api/routes/jobs.py:get_job_status",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function get_job_status"
+    },
+    {
+      "id": "edge:file:src/api/routes/jobs.py->file:src/agent/checkpoints.py",
+      "source": "file:src/api/routes/jobs.py",
+      "target": "file:src/agent/checkpoints.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports checkpoints.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/jobs.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/jobs.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->function:src/api/routes/sanitize.py:_run_graph_in_background",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "function:src/api/routes/sanitize.py:_run_graph_in_background",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_graph_in_background"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->function:src/api/routes/sanitize.py:submit_document",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "function:src/api/routes/sanitize.py:submit_document",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function submit_document"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/agent/graph.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/agent/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports graph.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/agent/state.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/agent/state.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports state.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/api/schemas.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/api/schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports schemas.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/utils/config.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/utils/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports config.py"
+    },
+    {
+      "id": "edge:file:src/api/routes/sanitize.py->file:src/utils/doc_utils.py",
+      "source": "file:src/api/routes/sanitize.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    },
+    {
+      "id": "edge:file:src/utils/doc_utils.py->function:src/utils/doc_utils.py:compute_doc_id",
+      "source": "file:src/utils/doc_utils.py",
+      "target": "function:src/utils/doc_utils.py:compute_doc_id",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function compute_doc_id"
+    },
+    {
+      "id": "edge:file:src/utils/doc_utils.py->function:src/utils/doc_utils.py:detect_mime_type",
+      "source": "file:src/utils/doc_utils.py",
+      "target": "function:src/utils/doc_utils.py:detect_mime_type",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function detect_mime_type"
+    },
+    {
+      "id": "edge:file:src/utils/pdf_utils.py->function:src/utils/pdf_utils.py:generate_sanitized_pdf",
+      "source": "file:src/utils/pdf_utils.py",
+      "target": "function:src/utils/pdf_utils.py:generate_sanitized_pdf",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function generate_sanitized_pdf"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_health_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_health_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_health_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_sanitize_submission_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_sanitize_submission_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_sanitize_submission_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_job_status_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_job_status_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_job_status_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_gdpr_purge_endpoint",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_gdpr_purge_endpoint",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_gdpr_purge_endpoint"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_sanitize_unsupported_extension_rejected",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_sanitize_unsupported_extension_rejected",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_sanitize_unsupported_extension_rejected"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->function:tests/unit/test_api.py:test_admin_purge_requires_key_when_configured",
+      "source": "file:tests/unit/test_api.py",
+      "target": "function:tests/unit/test_api.py:test_admin_purge_requires_key_when_configured",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function test_admin_purge_requires_key_when_configured"
+    },
+    {
+      "id": "edge:file:tests/unit/test_api.py->file:src/api/app.py",
+      "source": "file:tests/unit/test_api.py",
+      "target": "file:src/api/app.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports app.py"
+    },
+    {
+      "id": "edge:file:tests/unit/test_doc_utils.py->file:src/utils/doc_utils.py",
+      "source": "file:tests/unit/test_doc_utils.py",
+      "target": "file:src/utils/doc_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports doc_utils.py"
+    }
+  ]
+}

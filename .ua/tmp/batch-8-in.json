@@ -1,0 +1,42 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "adr/ADR-001-langgraph-stategraph.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-002-hybrid-pii-pipeline.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-003-qdrant-payload-allowlist.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-004-reflector-confidence-gate.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "adr/ADR-INDEX.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "adr/ADR-001-langgraph-stategraph.md": [],
+    "adr/ADR-002-hybrid-pii-pipeline.md": [],
+    "adr/ADR-003-qdrant-payload-allowlist.md": [],
+    "adr/ADR-004-reflector-confidence-gate.md": [],
+    "adr/ADR-INDEX.md": []
+  }
+}

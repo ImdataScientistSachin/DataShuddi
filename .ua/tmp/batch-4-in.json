@@ -1,0 +1,70 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "streamlit_app/app.py",
+      "language": "python",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "language": "python",
+      "sizeLines": 396,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_02_metrics.py",
+      "language": "python",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "language": "python",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_04_self_correction.py",
+      "language": "python",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/page_05_human_review.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/ui_components.py",
+      "language": "python",
+      "sizeLines": 425,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "streamlit_app/app.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_01_live_monitor.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_02_metrics.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_03_diff_viewer.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_04_self_correction.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/app_pages/page_05_human_review.py": [
+      "streamlit_app/ui_components.py"
+    ],
+    "streamlit_app/ui_components.py": [
+      "src/utils/pdf_utils.py"
+    ]
+  }
+}

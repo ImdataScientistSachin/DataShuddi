@@ -1,0 +1,66 @@
+{
+  "batchIndex": 8,
+  "nodes": [
+    {
+      "id": "document:adr/ADR-001-langgraph-stategraph.md",
+      "name": "ADR-001-langgraph-stategraph.md",
+      "type": "document",
+      "filePath": "adr/ADR-001-langgraph-stategraph.md",
+      "summary": "Module ADR-001-langgraph-stategraph.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-002-hybrid-pii-pipeline.md",
+      "name": "ADR-002-hybrid-pii-pipeline.md",
+      "type": "document",
+      "filePath": "adr/ADR-002-hybrid-pii-pipeline.md",
+      "summary": "Module ADR-002-hybrid-pii-pipeline.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-003-qdrant-payload-allowlist.md",
+      "name": "ADR-003-qdrant-payload-allowlist.md",
+      "type": "document",
+      "filePath": "adr/ADR-003-qdrant-payload-allowlist.md",
+      "summary": "Module ADR-003-qdrant-payload-allowlist.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-004-reflector-confidence-gate.md",
+      "name": "ADR-004-reflector-confidence-gate.md",
+      "type": "document",
+      "filePath": "adr/ADR-004-reflector-confidence-gate.md",
+      "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:adr/ADR-INDEX.md",
+      "name": "ADR-INDEX.md",
+      "type": "document",
+      "filePath": "adr/ADR-INDEX.md",
+      "summary": "Module ADR-INDEX.md responsible for adr utilities",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

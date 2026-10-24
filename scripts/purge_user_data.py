@@ -18,7 +18,6 @@ from loguru import logger
 from src.utils.config import settings
 
 
-
 @click.command()
 @click.option(
     "--doc-id",

@@ -1,0 +1,166 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": "src/agent/graph.py",
+      "language": "python",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/extractor.py",
+      "language": "python",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/hf_detector.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/pii_masker.py",
+      "language": "python",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/reflector.py",
+      "language": "python",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/schema_validator.py",
+      "language": "python",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/state.py",
+      "language": "python",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/schemas.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/golden_dataset.py",
+      "language": "python",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/integration/test_full_pipeline.py",
+      "language": "python",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_release_gate.py",
+      "language": "python",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_extractor.py",
+      "language": "python",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_hf_detector.py",
+      "language": "python",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_pii_masker.py",
+      "language": "python",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_reflector.py",
+      "language": "python",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/test_schema_validator.py",
+      "language": "python",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/agent/graph.py": [
+      "src/agent/checkpoints.py",
+      "src/agent/nodes/extractor.py",
+      "src/agent/nodes/hf_detector.py",
+      "src/agent/nodes/output_node.py",
+      "src/agent/nodes/pii_detector.py",
+      "src/agent/nodes/pii_masker.py",
+      "src/agent/nodes/reflector.py",
+      "src/agent/nodes/schema_validator.py",
+      "src/agent/nodes/security_sanitizer.py",
+      "src/agent/state.py"
+    ],
+    "src/agent/nodes/extractor.py": [
+      "src/agent/state.py",
+      "src/utils/config.py"
+    ],
+    "src/agent/nodes/hf_detector.py": [
+      "src/agent/state.py"
+    ],
+    "src/agent/nodes/pii_masker.py": [
+      "src/agent/state.py",
+      "src/utils/constants.py"
+    ],
+    "src/agent/nodes/reflector.py": [
+      "src/agent/state.py",
+      "src/utils/config.py"
+    ],
+    "src/agent/nodes/schema_validator.py": [
+      "src/agent/state.py",
+      "src/utils/schemas.py"
+    ],
+    "src/agent/state.py": [],
+    "src/utils/schemas.py": [],
+    "tests/fixtures/golden_dataset.py": [],
+    "tests/integration/test_full_pipeline.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py"
+    ],
+    "tests/test_release_gate.py": [
+      "src/agent/graph.py",
+      "src/agent/state.py",
+      "tests/fixtures/golden_dataset.py"
+    ],
+    "tests/unit/test_extractor.py": [
+      "src/agent/nodes/extractor.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_hf_detector.py": [
+      "src/agent/nodes/hf_detector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_pii_masker.py": [
+      "src/agent/nodes/pii_masker.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_reflector.py": [
+      "src/agent/nodes/reflector.py",
+      "src/agent/state.py"
+    ],
+    "tests/unit/test_schema_validator.py": [
+      "src/agent/nodes/schema_validator.py",
+      "src/agent/state.py"
+    ]
+  }
+}

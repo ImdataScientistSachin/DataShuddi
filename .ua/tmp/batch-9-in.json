@@ -1,0 +1,182 @@
+{
+  "projectRoot": "G:\\Project Directory\\GENAI PROJECT DIRECTORY\\DataShuddi",
+  "batchFiles": [
+    {
+      "path": ".streamlit/config.toml",
+      "language": "toml",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "data/clean/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/human_review/queue.jsonl",
+      "language": "jsonl",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/postgres_data/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/qdrant_storage/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "data/temp/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nginx/nginx.conf",
+      "language": "conf",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/01_pii_exploration.ipynb",
+      "language": "ipynb",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/02_hf_threshold_analysis.ipynb",
+      "language": "ipynb",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/03_golden_dataset_analysis.ipynb",
+      "language": "ipynb",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/bootstrap_dev_env.py",
+      "language": "python",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/db_init.sql",
+      "language": "sql",
+      "sizeLines": 10,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/__init__.py",
+      "language": "python",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/nodes/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/app_pages/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "streamlit_app/assets/styles.css",
+      "language": "css",
+      "sizeLines": 836,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "tests/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/integration/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/testdata/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/unit/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".streamlit/config.toml": [],
+    "data/clean/.gitkeep": [],
+    "data/human_review/queue.jsonl": [],
+    "data/postgres_data/.gitkeep": [],
+    "data/qdrant_storage/.gitkeep": [],
+    "data/raw/.gitkeep": [],
+    "data/temp/.gitkeep": [],
+    "nginx/nginx.conf": [],
+    "notebooks/01_pii_exploration.ipynb": [],
+    "notebooks/02_hf_threshold_analysis.ipynb": [],
+    "notebooks/03_golden_dataset_analysis.ipynb": [],
+    "scripts/bootstrap_dev_env.py": [],
+    "scripts/db_init.sql": [],
+    "src/__init__.py": [],
+    "src/agent/__init__.py": [],
+    "src/agent/nodes/__init__.py": [],
+    "src/api/__init__.py": [],
+    "src/utils/__init__.py": [],
+    "streamlit_app/__init__.py": [],
+    "streamlit_app/app_pages/__init__.py": [],
+    "streamlit_app/assets/styles.css": [],
+    "tests/__init__.py": [],
+    "tests/integration/__init__.py": [],
+    "tests/testdata/.gitkeep": [],
+    "tests/unit/__init__.py": []
+  }
+}

@@ -1,0 +1,922 @@
+{
+  "batchIndex": 4,
+  "nodes": [
+    {
+      "id": "file:streamlit_app/app.py",
+      "name": "app.py",
+      "type": "file",
+      "filePath": "streamlit_app/app.py",
+      "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:streamlit_app/app.py:_get_queue_count",
+      "name": "_get_queue_count",
+      "type": "function",
+      "filePath": "streamlit_app/app.py",
+      "summary": "Function `_get_queue_count` in app.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        39,
+        48
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app.py:_init_session_state",
+      "name": "_init_session_state",
+      "type": "function",
+      "filePath": "streamlit_app/app.py",
+      "summary": "Function `_init_session_state` in app.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        51,
+        60
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app.py:main",
+      "name": "main",
+      "type": "function",
+      "filePath": "streamlit_app/app.py",
+      "summary": "Function `main` in app.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        63,
+        96
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "name": "page_01_live_monitor.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_files",
+      "name": "_count_files",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_count_files` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        21
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_queue_items",
+      "name": "_count_queue_items",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_count_queue_items` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        25,
+        31
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_get_staged_files",
+      "name": "_get_staged_files",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_get_staged_files` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        35,
+        41
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `render` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        44,
+        167
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_run_pipeline",
+      "name": "_run_pipeline",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_run_pipeline` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        170,
+        261
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_01_live_monitor.py:_render_results",
+      "name": "_render_results",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_01_live_monitor.py",
+      "summary": "Function `_render_results` in page_01_live_monitor.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        264,
+        395
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "name": "page_02_metrics.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_02_metrics.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_02_metrics.py:_gather_metrics",
+      "name": "_gather_metrics",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_02_metrics.py",
+      "summary": "Function `_gather_metrics` in page_02_metrics.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        16,
+        51
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_02_metrics.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_02_metrics.py",
+      "summary": "Function `render` in page_02_metrics.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        54,
+        130
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "name": "page_03_diff_viewer.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_03_diff_viewer.py:_run_diff_detection",
+      "name": "_run_diff_detection",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "summary": "Function `_run_diff_detection` in page_03_diff_viewer.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        17,
+        49
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_03_diff_viewer.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_03_diff_viewer.py",
+      "summary": "Function `render` in page_03_diff_viewer.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        52,
+        232
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "name": "page_04_self_correction.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_04_self_correction.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_04_self_correction.py:_load_reflector_history",
+      "name": "_load_reflector_history",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_04_self_correction.py",
+      "summary": "Function `_load_reflector_history` in page_04_self_correction.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        16,
+        62
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_04_self_correction.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_04_self_correction.py",
+      "summary": "Function `render` in page_04_self_correction.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        65,
+        150
+      ]
+    },
+    {
+      "id": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "name": "page_05_human_review.py",
+      "type": "file",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:_load_queue",
+      "name": "_load_queue",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `_load_queue` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        17,
+        35
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:_remove_from_queue",
+      "name": "_remove_from_queue",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `_remove_from_queue` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        38,
+        64
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:render",
+      "name": "render",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `render` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        67,
+        182
+      ]
+    },
+    {
+      "id": "function:streamlit_app/app_pages/page_05_human_review.py:_reprocess_document",
+      "name": "_reprocess_document",
+      "type": "function",
+      "filePath": "streamlit_app/app_pages/page_05_human_review.py",
+      "summary": "Function `_reprocess_document` in page_05_human_review.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        185,
+        222
+      ]
+    },
+    {
+      "id": "file:streamlit_app/ui_components.py",
+      "name": "ui_components.py",
+      "type": "file",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Interactive Streamlit operations dashboard for inspection and human review",
+      "tags": [
+        "python",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:load_css",
+      "name": "load_css",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `load_css` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        17
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:status_badge",
+      "name": "status_badge",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `status_badge` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        20,
+        30
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:pipeline_visualization",
+      "name": "pipeline_visualization",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `pipeline_visualization` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        33,
+        72
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:glass_card",
+      "name": "glass_card",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `glass_card` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        75,
+        86
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:diff_line",
+      "name": "diff_line",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `diff_line` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        89,
+        102
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:app_footer",
+      "name": "app_footer",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `app_footer` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        105,
+        119
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:pulse_indicator",
+      "name": "pulse_indicator",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `pulse_indicator` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        122,
+        135
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_file_info_card",
+      "name": "render_file_info_card",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_file_info_card` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        138,
+        196
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_pdf_page_highlights",
+      "name": "render_pdf_page_highlights",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_pdf_page_highlights` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        199,
+        266
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_node_inspector",
+      "name": "render_node_inspector",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_node_inspector` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        273,
+        358
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_sidebar_header",
+      "name": "render_sidebar_header",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_sidebar_header` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        361,
+        402
+      ]
+    },
+    {
+      "id": "function:streamlit_app/ui_components.py:render_hardware_widget",
+      "name": "render_hardware_widget",
+      "type": "function",
+      "filePath": "streamlit_app/ui_components.py",
+      "summary": "Function `render_hardware_widget` in ui_components.py",
+      "tags": [
+        "python",
+        "function",
+        "code"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        405,
+        423
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:file:streamlit_app/app.py->function:streamlit_app/app.py:_get_queue_count",
+      "source": "file:streamlit_app/app.py",
+      "target": "function:streamlit_app/app.py:_get_queue_count",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _get_queue_count"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->function:streamlit_app/app.py:_init_session_state",
+      "source": "file:streamlit_app/app.py",
+      "target": "function:streamlit_app/app.py:_init_session_state",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _init_session_state"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->function:streamlit_app/app.py:main",
+      "source": "file:streamlit_app/app.py",
+      "target": "function:streamlit_app/app.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function main"
+    },
+    {
+      "id": "edge:file:streamlit_app/app.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_count_files",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_files",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _count_files"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_count_queue_items",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_count_queue_items",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _count_queue_items"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_get_staged_files",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_get_staged_files",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _get_staged_files"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:render",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_run_pipeline",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_run_pipeline",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_pipeline"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->function:streamlit_app/app_pages/page_01_live_monitor.py:_render_results",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "function:streamlit_app/app_pages/page_01_live_monitor.py:_render_results",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _render_results"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_01_live_monitor.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_01_live_monitor.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_02_metrics.py->function:streamlit_app/app_pages/page_02_metrics.py:_gather_metrics",
+      "source": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "target": "function:streamlit_app/app_pages/page_02_metrics.py:_gather_metrics",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _gather_metrics"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_02_metrics.py->function:streamlit_app/app_pages/page_02_metrics.py:render",
+      "source": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "target": "function:streamlit_app/app_pages/page_02_metrics.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_02_metrics.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_02_metrics.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_03_diff_viewer.py->function:streamlit_app/app_pages/page_03_diff_viewer.py:_run_diff_detection",
+      "source": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "target": "function:streamlit_app/app_pages/page_03_diff_viewer.py:_run_diff_detection",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _run_diff_detection"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_03_diff_viewer.py->function:streamlit_app/app_pages/page_03_diff_viewer.py:render",
+      "source": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "target": "function:streamlit_app/app_pages/page_03_diff_viewer.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_03_diff_viewer.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_03_diff_viewer.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_04_self_correction.py->function:streamlit_app/app_pages/page_04_self_correction.py:_load_reflector_history",
+      "source": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "target": "function:streamlit_app/app_pages/page_04_self_correction.py:_load_reflector_history",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _load_reflector_history"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_04_self_correction.py->function:streamlit_app/app_pages/page_04_self_correction.py:render",
+      "source": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "target": "function:streamlit_app/app_pages/page_04_self_correction.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_04_self_correction.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_04_self_correction.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:_load_queue",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:_load_queue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _load_queue"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:_remove_from_queue",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:_remove_from_queue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _remove_from_queue"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:render",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->function:streamlit_app/app_pages/page_05_human_review.py:_reprocess_document",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "function:streamlit_app/app_pages/page_05_human_review.py:_reprocess_document",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function _reprocess_document"
+    },
+    {
+      "id": "edge:file:streamlit_app/app_pages/page_05_human_review.py->file:streamlit_app/ui_components.py",
+      "source": "file:streamlit_app/app_pages/page_05_human_review.py",
+      "target": "file:streamlit_app/ui_components.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports ui_components.py"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:load_css",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:load_css",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function load_css"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:status_badge",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:status_badge",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function status_badge"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:pipeline_visualization",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:pipeline_visualization",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pipeline_visualization"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:glass_card",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:glass_card",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function glass_card"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:diff_line",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:diff_line",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function diff_line"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:app_footer",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:app_footer",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function app_footer"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:pulse_indicator",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:pulse_indicator",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function pulse_indicator"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_file_info_card",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_file_info_card",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_file_info_card"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_pdf_page_highlights",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_pdf_page_highlights",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_pdf_page_highlights"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_node_inspector",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_node_inspector",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_node_inspector"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_sidebar_header",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_sidebar_header",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_sidebar_header"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->function:streamlit_app/ui_components.py:render_hardware_widget",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "function:streamlit_app/ui_components.py:render_hardware_widget",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Contains function render_hardware_widget"
+    },
+    {
+      "id": "edge:file:streamlit_app/ui_components.py->file:src/utils/pdf_utils.py",
+      "source": "file:streamlit_app/ui_components.py",
+      "target": "file:src/utils/pdf_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Imports pdf_utils.py"
+    }
+  ]
+}

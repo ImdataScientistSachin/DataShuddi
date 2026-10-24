@@ -1,0 +1,351 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "scripts/run_pipeline.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "run_pipeline",
+          "startLine": 50,
+          "endLine": 86,
+          "params": [
+            "file_path",
+            "source_system",
+            "no_checkpointer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "run_pipeline",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run_pipeline",
+          "callee": "configure_logging",
+          "lineNumber": 52
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "logger.info",
+          "lineNumber": 53
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "time.time",
+          "lineNumber": 55
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "compute_doc_id",
+          "lineNumber": 56
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "detect_mime_type",
+          "lineNumber": 57
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "create_initial_state",
+          "lineNumber": 59
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "str",
+          "lineNumber": 61
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "file_path.resolve",
+          "lineNumber": 61
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "build_graph",
+          "lineNumber": 66
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "graph.invoke",
+          "lineNumber": 70
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "int",
+          "lineNumber": 71
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "time.time",
+          "lineNumber": 71
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "logger.info",
+          "lineNumber": 73
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "final_state.get",
+          "lineNumber": 77
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "final_state.get",
+          "lineNumber": 78
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "final_state.get",
+          "lineNumber": 81
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "logger.warning",
+          "lineNumber": 82
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "logger.error",
+          "lineNumber": 85
+        },
+        {
+          "caller": "run_pipeline",
+          "callee": "sys.exit",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/utils/logging_hygiene.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 51,
+      "functions": [
+        {
+          "name": "scrub_pii_from_record",
+          "startLine": 23,
+          "endLine": 46,
+          "params": [
+            "record"
+          ]
+        },
+        {
+          "name": "configure_logging",
+          "startLine": 49,
+          "endLine": 62,
+          "params": [
+            "log_level"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "scrub_pii_from_record",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "configure_logging",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "record.get",
+          "lineNumber": 30
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "list",
+          "lineNumber": 34
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "extra.keys",
+          "lineNumber": 34
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "isinstance",
+          "lineNumber": 37
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "isinstance",
+          "lineNumber": 41
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "scrubbed_entities.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "ent.get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "scrub_pii_from_record",
+          "callee": "ent.get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "configure_logging",
+          "callee": "logger.remove",
+          "lineNumber": 56
+        },
+        {
+          "caller": "configure_logging",
+          "callee": "logger.configure",
+          "lineNumber": 57
+        },
+        {
+          "caller": "configure_logging",
+          "callee": "logger.add",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/conftest.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "setup_logging",
+          "startLine": 10,
+          "endLine": 12,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "setup_logging",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "setup_logging",
+          "callee": "configure_logging",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/unit/test_logging_hygiene.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 62,
+      "classes": [
+        {
+          "name": "TestLoggingHygiene",
+          "startLine": 12,
+          "endLine": 75,
+          "methods": [
+            "test_sensitive_keys_are_redacted_from_log_record",
+            "test_pii_entities_raw_text_is_scrubbed_from_extra",
+            "test_record_without_extra_handled_safely"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TestLoggingHygiene",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "test_sensitive_keys_are_redacted_from_log_record",
+          "callee": "scrub_pii_from_record",
+          "lineNumber": 31
+        },
+        {
+          "caller": "test_pii_entities_raw_text_is_scrubbed_from_extra",
+          "callee": "scrub_pii_from_record",
+          "lineNumber": 56
+        },
+        {
+          "caller": "test_pii_entities_raw_text_is_scrubbed_from_extra",
+          "callee": "len",
+          "lineNumber": 60
+        },
+        {
+          "caller": "test_record_without_extra_handled_safely",
+          "callee": "scrub_pii_from_record",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 3
+    }
+  },
+  "results": [
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "fileCategory": "infra",
+      "totalLines": 42,
+      "nonEmptyLines": 31,
+      "services": [
+        {
+          "name": "builder",
+          "image": "python:3.12-slim",
+          "ports": [],
+          "startLine": 3,
+          "endLine": 18
+        },
+        {
+          "name": "runner",
+          "image": "python:3.12-slim",
+          "ports": [
+            8000,
+            8501
+          ],
+          "startLine": 19,
+          "endLine": 43
+        }
+      ],
+      "steps": [
+        {
+          "name": "FROM python:3.12-slim AS builder",
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "name": "RUN apt-get update && apt-get install -y --no-install-recommends",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "COPY requirements.txt .",
+          "startLine": 13,
+          "endLine": 13
+        },
+        {
+          "name": "RUN python -m venv /opt/venv",
+          "startLine": 14,
+          "endLine": 14
+        },
+        {
+          "name": "ENV PATH=\"/opt/venv/bin:$PATH\"",
+          "startLine": 15,
+          "endLine": 15
+        },
+        {
+          "name": "RUN pip install --no-cache-dir -r requirements.txt",
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "FROM python:3.12-slim AS runner",
+          "startLine": 19,
+          "endLine": 19
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 21,
+          "endLine": 21
+        },
+        {
+          "name": "RUN apt-get update && apt-get install -y --no-install-recommends",
+          "startLine": 24,
+          "endLine": 24
+        },
+        {
+          "name": "COPY --from=builder /opt/venv /opt/venv",
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "ENV PATH=\"/opt/venv/bin:$PATH\"",
+          "startLine": 32,
+          "endLine": 32
+        },
+        {
+          "name": "RUN python -m spacy download en_core_web_lg",
+          "startLine": 35,
+          "endLine": 35
+        },
+        {
+          "name": "COPY . .",
+          "startLine": 37,
+          "endLine": 37
+        },
+        {
+          "name": "EXPOSE 8000 8501",
+          "startLine": 39,
+          "endLine": 39
+        },
+        {
+          "name": "CMD [\"uvicorn\", \"src.api.app:app\", \"--host\", \"0.0.0.0\", \"--port\"",
+          "startLine": 42,
+          "endLine": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "serviceCount": 2,
+        "stepCount": 16
+      }
+    },
+    {
+      "path": "docker-compose.prod.yml",
+      "language": "yaml",
+      "fileCategory": "infra",
+      "totalLines": 56,
+      "nonEmptyLines": 52,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "services",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "networks",
+          "level": 1,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "fileCategory": "infra",
+      "totalLines": 69,
+      "nonEmptyLines": 62,
+      "sections": [
+        {
+          "heading": "services",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "networks",
+          "level": 1,
+          "line": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}
