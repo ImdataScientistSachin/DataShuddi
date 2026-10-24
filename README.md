@@ -19,7 +19,8 @@
   <a href="https://qdrant.tech"><img src="https://img.shields.io/badge/Qdrant-v1.13.0-red?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant" /></a>
   <a href="https://docker.com"><img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /></a>
   <a href="#"><img src="https://img.shields.io/badge/PII%20Recall-100.0%25-brightgreen?style=for-the-badge" alt="PII Recall 100%" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Tests-66%2F66%20Passed-success?style=for-the-badge" alt="Tests Passed" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Tests-72%2F72%20Passed-success?style=for-the-badge" alt="Tests Passed" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Knowledge%20Graph-197%20Nodes%20%C2%B7%2010%20Layers-blueviolet?style=for-the-badge" alt="Architecture Graph" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg?style=for-the-badge" alt="License" /></a>
 </p>
 
@@ -42,6 +43,7 @@
   - [Color-Coded 8-Node LangGraph State Machine](#color-coded-8-node-langgraph-state-machine)
   - [Multi-Container Deployment Topology](#multi-container-deployment-topology)
   - [4-Tier Categorized State Schema](#4-tier-categorized-state-schema)
+- [🗺️ Interactive Architecture Graph & Tour (Understand-Anything)](#%EF%B8%8F-interactive-architecture-graph--tour-understand-anything)
 - [🚀 Quick Start Guide](#-quick-start-guide)
   - [Option 1: 1-Command Deployment via Docker Compose](#option-1-1-command-deployment-via-docker-compose)
   - [Option 2: Local Python Setup (.venv / uv / pip)](#option-2-local-python-setup-venv--uv--pip)
@@ -91,8 +93,8 @@ In enterprise RAG architectures, **garbage in equals garbage out**:
       <p>Combines <b>Microsoft Presidio</b> (Regex, Custom Recognizers, SpaCy <code>en_core_web_lg</code>) + <b>Ollama Local LLM</b> (<code>qwen2.5-coder:3b</code>). Resolves overlapping spans (e.g. email containing URL domain) and substitutes tokens right-to-left to guarantee zero offset drift.</p>
     </td>
     <td width="50%">
-      <h3>🧠 Self-Correcting Reflection Loop</h3>
-      <p>When Pydantic v2 schema validation fails, Node 6 (<b>Reflector</b>) evaluates errors using <code>qwen2.5-coder:14b</code> with confidence gating (<code>>= 0.70</code>) and strict delta caps (<code>±0.05</code>) to autonomously tune extraction parameters.</p>
+      <h3>🧠 Self-Correcting Reflection Loop & trim-1 Sieve</h3>
+      <p>When Pydantic v2 schema validation fails, Node 6 (<b>Reflector</b>) uses the <code>trim-1</code> GBDT context sieve (~7 ms verbatim line extraction) to isolate focused error evidence snippets (~250–350 tokens), enabling <code>qwen2.5-coder:14b</code> to diagnose issues <b>15x faster</b> on CPU with confidence gating (<code>>= 0.70</code>) and strict delta caps (<code>±0.05</code>).</p>
     </td>
   </tr>
   <tr>
@@ -113,6 +115,16 @@ In enterprise RAG architectures, **garbage in equals garbage out**:
     <td width="50%">
       <h3>🔒 Zero-Leak Log Hygiene & GDPR Purge</h3>
       <p>Custom <b>Loguru</b> interceptor redacts sensitive keys and entity values from all log records. Provides an authenticated <code>POST /api/v1/admin/purge</code> endpoint for instant multi-storage GDPR Article 17 erasure.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🗺️ Interactive Knowledge Graph & Architecture Tour</h3>
+      <p>Full architectural visibility powered by <b>Understand-Anything</b>: 197 nodes and 196 typed relationships mapped across 10 architectural layers with an interactive 8-step guided tour running locally at <code>http://127.0.0.1:5173/</code>.</p>
+    </td>
+    <td width="50%">
+      <h3>⚡ RAG-Anything Downstream Decoupling</h3>
+      <p>Maintains a strict zero-leak boundary: heavy multimodal vision pipelines (like <b>RAG-Anything</b>) consume DataShuddi's sanitized outputs downstream rather than internally, preserving our 4GB VRAM envelope and zero-PII guarantee.</p>
     </td>
   </tr>
 </table>
@@ -176,6 +188,7 @@ flowchart TD
     classDef successNode fill:#16a34a,stroke:#15803d,stroke-width:2px,color:#fff;
     classDef retryNode fill:#ea580c,stroke:#c2410c,stroke-width:2px,color:#fff;
     classDef alertNode fill:#dc2626,stroke:#b91c1c,stroke-width:2px,color:#fff;
+    classDef sieveNode fill:#7c3aed,stroke:#6d28d9,stroke-width:2px,color:#fff;
 
     START([Raw Document Upload]):::startNode --> N1[Node 1: Extractor\nPyMuPDF / docx / PaddleOCR]:::defaultNode
     N1 --> N0[Node 0: Security Sanitizer\nPrompt Injection Neutralization]:::defaultNode
@@ -185,7 +198,8 @@ flowchart TD
     N4 --> N5[Node 5: Schema Validator\nPydantic v2 & Quality Scoring]:::defaultNode
     
     N5 -->|Validation Passed| N7[Node 7: Output Node\nSentence Chunking & Qdrant Upsert]:::successNode
-    N5 -->|Validation Failed| N6[Node 6: Reflector\nQwen 14b Diagnostic Critique]:::retryNode
+    N5 -->|Validation Failed| SIEVE[trim-1 Context Sieve\nGBDT Verbatim Line Sifting ~7ms]:::sieveNode
+    SIEVE --> N6[Node 6: Reflector\nQwen 14b Diagnostic Critique]:::retryNode
     N5 -->|Max Retries >= 3| HRQ[🚨 Human Review Queue\ndata/human_review/queue.jsonl]:::alertNode
     
     N6 -->|Retry Count < 3| N1
@@ -252,6 +266,27 @@ class DataShuddiState(TypedDict):
     quality_score: float                # Dynamic composite quality score [0.0, 1.0]
     processing_time_ms: int             # Total pipeline latency in milliseconds
 ```
+
+---
+
+## 🗺️ Interactive Architecture Graph & Tour (Understand-Anything)
+
+DataShuddi features a live, interactive codebase knowledge graph and architectural explorer powered by **Understand-Anything**:
+
+- **197 Knowledge Nodes & 196 Typed Relationships:** Maps every subsystem across 10 architectural tiers including API routes, graph state schemas, dual PII recognizers, the `trim-1` GBDT context sieve, PostgresSaver checkpointer, and Qdrant vector endpoints.
+- **8-Step Interactive Guided Tour:** Provides an interactive step-by-step walkthrough of the pipeline from ingress document upload to GDPR Article 17 purge.
+- **Deep Code Symbol Navigation:** Direct inspection of function signatures, dependencies, and state invariants.
+
+### 🌐 Accessing the Interactive Graph Explorer
+
+The graph server runs locally with zero external network dependencies:
+
+```bash
+# Launch the local interactive graph explorer
+cmd.exe /c ".ua\tmp\launch_dashboard.bat"
+```
+
+Once launched, open your browser to **[http://127.0.0.1:5173/](http://127.0.0.1:5173/)** to explore the complete graph topology, search symbols (e.g., `trimmer`, `reflector`, `security_sanitizer`), or click **"Start Tour"** to trace the 8 execution stages.
 
 ---
 
@@ -430,20 +465,26 @@ Configuration is managed centrally in [`src/utils/config.py`](file:///g:/Project
 DataShuddi maintains a comprehensive test suite covering unit, integration, and security edge cases:
 
 ```bash
-# Run complete test suite (66 tests)
+# Run complete test suite (72 tests: 67 unit + 4 integration + 1 release gate)
 pytest tests/ -v
 
-# Run unit tests only
+# Run unit tests only (67 tests, 100% pass)
 pytest tests/unit -v
 
-# Run full graph integration tests
+# Run full graph integration tests (4 tests in ~15s — 6.8x speedup with trim-1)
 pytest tests/integration -v
+
+# Run non-negotiable release gate (50-document golden benchmark)
+pytest tests/test_release_gate.py -v
 
 # Run test coverage report
 pytest --cov=src --cov-report=term-missing
 
-# Run Ruff linter
+# Run Ruff linter (0 errors)
 ruff check src/ tests/ scripts/
+
+# Run Mypy static type checking (0 issues across 32 source files)
+mypy src/
 ```
 
 ---

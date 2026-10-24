@@ -8,8 +8,8 @@
       "filePath": "Dockerfile",
       "summary": "Container configuration for multi-service deployment",
       "tags": [
-        "dockerfile",
-        "infra"
+        "infra",
+        "dockerfile"
       ],
       "complexity": "simple"
     },

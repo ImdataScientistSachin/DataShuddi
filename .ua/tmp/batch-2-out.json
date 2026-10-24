@@ -892,32 +892,33 @@
       "path": "src/agent/nodes/reflector.py",
       "language": "python",
       "fileCategory": "code",
-      "totalLines": 167,
-      "nonEmptyLines": 141,
+      "totalLines": 180,
+      "nonEmptyLines": 152,
       "functions": [
         {
           "name": "reflector_node",
-          "startLine": 41,
-          "endLine": 115,
+          "startLine": 43,
+          "endLine": 124,
           "params": [
             "state"
           ]
         },
         {
           "name": "_run_qwen_reflection",
-          "startLine": 118,
-          "endLine": 147,
+          "startLine": 127,
+          "endLine": 160,
           "params": [
             "doc_id",
             "validation_errors",
             "current_threshold",
-            "pii_count"
+            "pii_count",
+            "evidence"
           ]
         },
         {
           "name": "_write_to_human_review_queue",
-          "startLine": 150,
-          "endLine": 167,
+          "startLine": 163,
+          "endLine": 180,
           "params": [
             "state"
           ]
@@ -926,17 +927,17 @@
       "exports": [
         {
           "name": "reflector_node",
-          "line": 41,
+          "line": 43,
           "isDefault": false
         },
         {
           "name": "_run_qwen_reflection",
-          "line": 118,
+          "line": 127,
           "isDefault": false
         },
         {
           "name": "_write_to_human_review_queue",
-          "line": 150,
+          "line": 163,
           "isDefault": false
         }
       ],
@@ -944,27 +945,17 @@
         {
           "caller": "reflector_node",
           "callee": "dict",
-          "lineNumber": 53
+          "lineNumber": 55
         },
         {
           "caller": "reflector_node",
           "callee": "state.get",
-          "lineNumber": 53
+          "lineNumber": 55
         },
         {
           "caller": "reflector_node",
           "callee": "time.time",
-          "lineNumber": 54
-        },
-        {
-          "caller": "reflector_node",
-          "callee": "state.get",
           "lineNumber": 56
-        },
-        {
-          "caller": "reflector_node",
-          "callee": "state.get",
-          "lineNumber": 57
         },
         {
           "caller": "reflector_node",
@@ -973,188 +964,218 @@
         },
         {
           "caller": "reflector_node",
-          "callee": "logger.warning",
-          "lineNumber": 62
+          "callee": "state.get",
+          "lineNumber": 59
         },
         {
           "caller": "reflector_node",
           "callee": "state.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "reflector_node",
+          "callee": "logger.warning",
           "lineNumber": 64
         },
         {
           "caller": "reflector_node",
+          "callee": "state.get",
+          "lineNumber": 66
+        },
+        {
+          "caller": "reflector_node",
           "callee": "_write_to_human_review_queue",
-          "lineNumber": 68
+          "lineNumber": 70
         },
         {
           "caller": "reflector_node",
-          "callee": "_run_qwen_reflection",
-          "lineNumber": 77
-        },
-        {
-          "caller": "reflector_node",
-          "callee": "state.get",
-          "lineNumber": 78
-        },
-        {
-          "caller": "reflector_node",
-          "callee": "state.get",
+          "callee": "trim_validation_evidence",
           "lineNumber": 79
         },
         {
           "caller": "reflector_node",
+          "callee": "state.get",
+          "lineNumber": 80
+        },
+        {
+          "caller": "reflector_node",
+          "callee": "state.get",
+          "lineNumber": 81
+        },
+        {
+          "caller": "reflector_node",
+          "callee": "_run_qwen_reflection",
+          "lineNumber": 85
+        },
+        {
+          "caller": "reflector_node",
+          "callee": "state.get",
+          "lineNumber": 86
+        },
+        {
+          "caller": "reflector_node",
+          "callee": "state.get",
+          "lineNumber": 87
+        },
+        {
+          "caller": "reflector_node",
           "callee": "max",
-          "lineNumber": 88
+          "lineNumber": 97
         },
         {
           "caller": "reflector_node",
           "callee": "min",
-          "lineNumber": 88
+          "lineNumber": 97
         },
         {
           "caller": "reflector_node",
           "callee": "round",
-          "lineNumber": 89
+          "lineNumber": 98
         },
         {
           "caller": "reflector_node",
           "callee": "max",
-          "lineNumber": 90
+          "lineNumber": 99
         },
         {
           "caller": "reflector_node",
           "callee": "min",
-          "lineNumber": 90
+          "lineNumber": 99
         },
         {
           "caller": "reflector_node",
           "callee": "logger.info",
-          "lineNumber": 92
+          "lineNumber": 101
         },
         {
           "caller": "reflector_node",
           "callee": "state.get",
-          "lineNumber": 94
+          "lineNumber": 103
         },
         {
           "caller": "reflector_node",
           "callee": "logger.warning",
-          "lineNumber": 100
+          "lineNumber": 109
         },
         {
           "caller": "reflector_node",
           "callee": "state.get",
-          "lineNumber": 102
+          "lineNumber": 111
+        },
+        {
+          "caller": "_run_qwen_reflection",
+          "callee": "evidence.strip",
+          "lineNumber": 137
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "REFLECTOR_PROMPT_TEMPLATE.format",
-          "lineNumber": 127
+          "lineNumber": 139
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "\"; \".join",
-          "lineNumber": 129
+          "lineNumber": 141
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "ollama.chat",
-          "lineNumber": 135
+          "lineNumber": 148
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "json.loads",
-          "lineNumber": 140
+          "lineNumber": 153
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "str",
-          "lineNumber": 141
+          "lineNumber": 154
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "parsed.get",
-          "lineNumber": 141
+          "lineNumber": 154
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "float",
-          "lineNumber": 142
+          "lineNumber": 155
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "parsed.get",
-          "lineNumber": 142
+          "lineNumber": 155
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "float",
-          "lineNumber": 143
+          "lineNumber": 156
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "parsed.get",
-          "lineNumber": 143
+          "lineNumber": 156
         },
         {
           "caller": "_run_qwen_reflection",
           "callee": "logger.warning",
-          "lineNumber": 146
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "queue_dir.mkdir",
-          "lineNumber": 153
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "state.get",
-          "lineNumber": 157
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "state.get",
-          "lineNumber": 158
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "state.get",
           "lineNumber": 159
         },
         {
           "caller": "_write_to_human_review_queue",
-          "callee": "state.get",
-          "lineNumber": 160
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "state.get",
-          "lineNumber": 161
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "state.get",
-          "lineNumber": 162
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "time.time",
-          "lineNumber": 163
-        },
-        {
-          "caller": "_write_to_human_review_queue",
-          "callee": "open",
+          "callee": "queue_dir.mkdir",
           "lineNumber": 166
         },
         {
           "caller": "_write_to_human_review_queue",
+          "callee": "state.get",
+          "lineNumber": 170
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "state.get",
+          "lineNumber": 171
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "state.get",
+          "lineNumber": 172
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "state.get",
+          "lineNumber": 173
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "state.get",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "state.get",
+          "lineNumber": 175
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "time.time",
+          "lineNumber": 176
+        },
+        {
+          "caller": "_write_to_human_review_queue",
+          "callee": "open",
+          "lineNumber": 179
+        },
+        {
+          "caller": "_write_to_human_review_queue",
           "callee": "f.write",
-          "lineNumber": 167
+          "lineNumber": 180
         },
         {
           "caller": "_write_to_human_review_queue",
           "callee": "json.dumps",
-          "lineNumber": 167
+          "lineNumber": 180
         }
       ],
       "metrics": {
@@ -2193,8 +2214,8 @@
       "path": "tests/unit/test_reflector.py",
       "language": "python",
       "fileCategory": "code",
-      "totalLines": 143,
-      "nonEmptyLines": 119,
+      "totalLines": 160,
+      "nonEmptyLines": 133,
       "functions": [
         {
           "name": "base_state",
@@ -2207,14 +2228,15 @@
         {
           "name": "TestReflectorNode",
           "startLine": 46,
-          "endLine": 143,
+          "endLine": 160,
           "methods": [
             "test_high_confidence_updates_threshold_capped",
             "test_confidence_gate_boundary_exact_070",
             "test_low_confidence_leaves_threshold_unchanged",
             "test_max_retry_escalates_to_human_review",
             "test_high_pii_count_escalates_to_human_review",
-            "test_ollama_qwen_reflection_failure_uses_fallback"
+            "test_ollama_qwen_reflection_failure_uses_fallback",
+            "test_reflector_calls_trimmer_and_passes_evidence"
           ],
           "properties": []
         }
@@ -2286,6 +2308,16 @@
           "caller": "test_ollama_qwen_reflection_failure_uses_fallback",
           "callee": "critique.lower",
           "lineNumber": 141
+        },
+        {
+          "caller": "test_reflector_calls_trimmer_and_passes_evidence",
+          "callee": "reflector_node",
+          "lineNumber": 155
+        },
+        {
+          "caller": "test_reflector_calls_trimmer_and_passes_evidence",
+          "callee": "mock_reflect.assert_called_once",
+          "lineNumber": 157
         }
       ],
       "metrics": {

@@ -96,8 +96,8 @@
       "summary": "Module conftest.py responsible for tests utilities",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "simple"
     },
@@ -109,9 +109,9 @@
       "summary": "Function `setup_logging` in conftest.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -127,8 +127,8 @@
       "summary": "Test suite verifying test_logging_hygiene",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     }

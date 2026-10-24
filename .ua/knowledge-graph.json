@@ -20,8 +20,8 @@
       "PyMuPDF"
     ],
     "description": "Self-Correcting PII Scrubbing + Validation Agent | Local-First LangGraph Pipeline",
-    "analyzedAt": "2026-10-24T08:39:40Z",
-    "gitCommitHash": "823b92a550e6d6b47bd8261af3db1a8560e3236c"
+    "analyzedAt": "2026-10-24T10:39:39Z",
+    "gitCommitHash": "a9dbf79b8701e539c52d84bd34fa61512dd2acb3"
   },
   "nodes": [
     {

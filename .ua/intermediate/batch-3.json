@@ -39,8 +39,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -51,11 +51,11 @@
       "filePath": "src/agent/nodes/output_node.py",
       "summary": "Function `output_node` in output_node.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -70,11 +70,11 @@
       "filePath": "src/agent/nodes/output_node.py",
       "summary": "Function `_chunk_text` in output_node.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -89,11 +89,11 @@
       "filePath": "src/agent/nodes/output_node.py",
       "summary": "Function `_generate_embedding` in output_node.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -108,11 +108,11 @@
       "filePath": "src/agent/nodes/output_node.py",
       "summary": "Function `_upsert_to_qdrant` in output_node.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -129,8 +129,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "complex"
     },
@@ -141,11 +141,11 @@
       "filePath": "src/agent/nodes/pii_detector.py",
       "summary": "Function `pii_detector_node` in pii_detector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -160,11 +160,11 @@
       "filePath": "src/agent/nodes/pii_detector.py",
       "summary": "Function `_get_analyzer` in pii_detector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -179,11 +179,11 @@
       "filePath": "src/agent/nodes/pii_detector.py",
       "summary": "Function `_run_presidio` in pii_detector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -198,11 +198,11 @@
       "filePath": "src/agent/nodes/pii_detector.py",
       "summary": "Function `_run_qwen_contextual` in pii_detector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -219,8 +219,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -231,11 +231,11 @@
       "filePath": "src/agent/nodes/security_sanitizer.py",
       "summary": "Function `security_sanitizer_node` in security_sanitizer.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -263,8 +263,8 @@
       "summary": "Node 7: Payload allowlist enforcement, mxbai embeddings, Qdrant upsert",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -276,9 +276,9 @@
       "summary": "Function `base_state` in test_output_node.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -294,8 +294,8 @@
       "summary": "Node 3: Hybrid PII detection via Presidio regex/NER and Qwen 3B contextual LLM",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -307,9 +307,9 @@
       "summary": "Function `base_state` in test_pii_detector.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -325,8 +325,8 @@
       "summary": "Node 0: Prompt injection defense, untrusted content wrapping, security flags",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -338,9 +338,9 @@
       "summary": "Function `base_state` in test_security_sanitizer.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [

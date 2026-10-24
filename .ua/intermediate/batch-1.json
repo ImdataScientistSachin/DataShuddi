@@ -97,8 +97,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -109,11 +109,11 @@
       "filePath": "src/agent/checkpoints.py",
       "summary": "Function `get_checkpointer` in checkpoints.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -128,11 +128,11 @@
       "filePath": "src/agent/checkpoints.py",
       "summary": "Function `get_store` in checkpoints.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -161,8 +161,8 @@
       "summary": "Function `log_requests` in app.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "simple",
@@ -205,8 +205,8 @@
       "summary": "Function `verify_admin_key` in admin.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "simple",
@@ -223,8 +223,8 @@
       "summary": "Function `purge_document_data` in admin.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "complex",
@@ -254,8 +254,8 @@
       "summary": "Function `download_redacted_doc` in export.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "complex",
@@ -285,8 +285,8 @@
       "summary": "Function `check_health` in health.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "complex",
@@ -316,8 +316,8 @@
       "summary": "Function `get_job_status` in jobs.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "complex",
@@ -347,8 +347,8 @@
       "summary": "Function `_run_graph_in_background` in sanitize.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "simple",
@@ -365,8 +365,8 @@
       "summary": "Function `submit_document` in sanitize.py",
       "tags": [
         "python",
-        "api",
         "function",
+        "api",
         "code"
       ],
       "complexity": "complex",
@@ -483,9 +483,9 @@
       "summary": "FastAPI REST API layer exposing document ingestion, status, and GDPR purge",
       "tags": [
         "python",
+        "test",
         "api",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -496,11 +496,11 @@
       "filePath": "tests/unit/test_api.py",
       "summary": "Function `test_health_endpoint` in test_api.py",
       "tags": [
-        "api",
         "python",
+        "code",
         "test",
-        "function",
-        "code"
+        "api",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -515,11 +515,11 @@
       "filePath": "tests/unit/test_api.py",
       "summary": "Function `test_sanitize_submission_endpoint` in test_api.py",
       "tags": [
-        "api",
         "python",
+        "code",
         "test",
-        "function",
-        "code"
+        "api",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -534,11 +534,11 @@
       "filePath": "tests/unit/test_api.py",
       "summary": "Function `test_job_status_endpoint` in test_api.py",
       "tags": [
-        "api",
         "python",
+        "code",
         "test",
-        "function",
-        "code"
+        "api",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -553,11 +553,11 @@
       "filePath": "tests/unit/test_api.py",
       "summary": "Function `test_gdpr_purge_endpoint` in test_api.py",
       "tags": [
-        "api",
         "python",
+        "code",
         "test",
-        "function",
-        "code"
+        "api",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -572,11 +572,11 @@
       "filePath": "tests/unit/test_api.py",
       "summary": "Function `test_sanitize_unsupported_extension_rejected` in test_api.py",
       "tags": [
-        "api",
         "python",
+        "code",
         "test",
-        "function",
-        "code"
+        "api",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -591,11 +591,11 @@
       "filePath": "tests/unit/test_api.py",
       "summary": "Function `test_admin_purge_requires_key_when_configured` in test_api.py",
       "tags": [
-        "api",
         "python",
+        "code",
         "test",
-        "function",
-        "code"
+        "api",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -611,8 +611,8 @@
       "summary": "Test suite verifying test_doc_utils",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     }

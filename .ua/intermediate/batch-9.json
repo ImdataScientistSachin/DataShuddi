@@ -92,8 +92,8 @@
       "filePath": "nginx/nginx.conf",
       "summary": "Module nginx.conf responsible for nginx utilities",
       "tags": [
-        "conf",
-        "code"
+        "code",
+        "conf"
       ],
       "complexity": "moderate"
     },
@@ -104,8 +104,8 @@
       "filePath": "notebooks/01_pii_exploration.ipynb",
       "summary": "Module 01_pii_exploration.ipynb responsible for notebooks utilities",
       "tags": [
-        "ipynb",
-        "code"
+        "code",
+        "ipynb"
       ],
       "complexity": "simple"
     },
@@ -116,8 +116,8 @@
       "filePath": "notebooks/02_hf_threshold_analysis.ipynb",
       "summary": "Module 02_hf_threshold_analysis.ipynb responsible for notebooks utilities",
       "tags": [
-        "ipynb",
-        "code"
+        "code",
+        "ipynb"
       ],
       "complexity": "simple"
     },
@@ -128,8 +128,8 @@
       "filePath": "notebooks/03_golden_dataset_analysis.ipynb",
       "summary": "50-document golden benchmark dataset with labeled PII ground truth",
       "tags": [
-        "ipynb",
-        "code"
+        "code",
+        "ipynb"
       ],
       "complexity": "simple"
     },
@@ -246,8 +246,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "simple"
     },
@@ -260,8 +260,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "simple"
     },
@@ -334,8 +334,8 @@
       "summary": "Module __init__.py responsible for tests utilities",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "simple"
     },
@@ -347,8 +347,8 @@
       "summary": "Module __init__.py responsible for integration utilities",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "simple"
     },
@@ -359,8 +359,8 @@
       "filePath": "tests/testdata/.gitkeep",
       "summary": "Module .gitkeep responsible for testdata utilities",
       "tags": [
-        "test",
         "unknown",
+        "test",
         "code"
       ],
       "complexity": "simple"
@@ -373,8 +373,8 @@
       "summary": "Module __init__.py responsible for unit utilities",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "simple"
     }

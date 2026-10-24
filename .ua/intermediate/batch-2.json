@@ -10,8 +10,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -22,11 +22,11 @@
       "filePath": "src/agent/graph.py",
       "summary": "Function `route_after_validation` in graph.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -41,11 +41,11 @@
       "filePath": "src/agent/graph.py",
       "summary": "Function `route_after_reflection` in graph.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -60,11 +60,11 @@
       "filePath": "src/agent/graph.py",
       "summary": "Function `build_graph` in graph.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -79,11 +79,11 @@
       "filePath": "src/agent/graph.py",
       "summary": "Function `get_compiled_graph` in graph.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -100,8 +100,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -112,11 +112,11 @@
       "filePath": "src/agent/nodes/extractor.py",
       "summary": "Function `extractor_node` in extractor.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -131,11 +131,11 @@
       "filePath": "src/agent/nodes/extractor.py",
       "summary": "Function `_extract_pdf` in extractor.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -150,11 +150,11 @@
       "filePath": "src/agent/nodes/extractor.py",
       "summary": "Function `_ocr_fallback_pdf` in extractor.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -169,11 +169,11 @@
       "filePath": "src/agent/nodes/extractor.py",
       "summary": "Function `_extract_docx` in extractor.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -188,11 +188,11 @@
       "filePath": "src/agent/nodes/extractor.py",
       "summary": "Function `_extract_txt` in extractor.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -209,8 +209,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -221,11 +221,11 @@
       "filePath": "src/agent/nodes/hf_detector.py",
       "summary": "Function `hf_detector_node` in hf_detector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -242,8 +242,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -254,11 +254,11 @@
       "filePath": "src/agent/nodes/pii_masker.py",
       "summary": "Function `_resolve_overlapping_entities` in pii_masker.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -273,11 +273,11 @@
       "filePath": "src/agent/nodes/pii_masker.py",
       "summary": "Function `pii_masker_node` in pii_masker.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -294,8 +294,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -306,16 +306,16 @@
       "filePath": "src/agent/nodes/reflector.py",
       "summary": "Function `reflector_node` in reflector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
-        41,
-        115
+        43,
+        124
       ]
     },
     {
@@ -325,16 +325,16 @@
       "filePath": "src/agent/nodes/reflector.py",
       "summary": "Function `_run_qwen_reflection` in reflector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
-        118,
-        147
+        127,
+        160
       ]
     },
     {
@@ -344,16 +344,16 @@
       "filePath": "src/agent/nodes/reflector.py",
       "summary": "Function `_write_to_human_review_queue` in reflector.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
-        150,
-        167
+        163,
+        180
       ]
     },
     {
@@ -365,8 +365,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -377,11 +377,11 @@
       "filePath": "src/agent/nodes/schema_validator.py",
       "summary": "Function `schema_validator_node` in schema_validator.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -396,11 +396,11 @@
       "filePath": "src/agent/nodes/schema_validator.py",
       "summary": "Function `_calculate_quality_score` in schema_validator.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -417,8 +417,8 @@
       "tags": [
         "python",
         "agent",
-        "core",
-        "code"
+        "code",
+        "core"
       ],
       "complexity": "moderate"
     },
@@ -429,11 +429,11 @@
       "filePath": "src/agent/state.py",
       "summary": "Function `create_initial_state` in state.py",
       "tags": [
-        "agent",
         "python",
-        "function",
+        "agent",
         "code",
-        "core"
+        "core",
+        "function"
       ],
       "complexity": "complex",
       "lineRange": [
@@ -461,8 +461,8 @@
       "summary": "50-document golden benchmark dataset with labeled PII ground truth",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -474,9 +474,9 @@
       "summary": "Function `get_golden_dataset` in golden_dataset.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -492,8 +492,8 @@
       "summary": "Test suite verifying test_full_pipeline",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -505,9 +505,9 @@
       "summary": "Function `clean_doc_file` in test_full_pipeline.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -523,8 +523,8 @@
       "summary": "CI/CD release gate verifying 100% PII recall and 0% residual leak tolerance",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -536,8 +536,8 @@
       "summary": "Node 1: PyMuPDF + PaddleOCR fallback text extraction with char density gating",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -549,9 +549,9 @@
       "summary": "Function `txt_sample_file` in test_extractor.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -567,9 +567,9 @@
       "summary": "Function `docx_sample_file` in test_extractor.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "simple",
       "lineRange": [
@@ -585,9 +585,9 @@
       "summary": "Function `base_state` in test_extractor.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -603,8 +603,8 @@
       "summary": "Node 2: Header/Footer frequency analysis and dynamic boilerplate stripping",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -616,9 +616,9 @@
       "summary": "Function `base_state` in test_hf_detector.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -634,8 +634,8 @@
       "summary": "Node 4: PII redaction and token replacement with safe placeholder offsets",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -647,9 +647,9 @@
       "summary": "Function `base_state` in test_pii_masker.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -665,8 +665,8 @@
       "summary": "Node 6: Self-correction critique, threshold learning, human review escalation",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -678,9 +678,9 @@
       "summary": "Function `base_state` in test_reflector.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [
@@ -696,8 +696,8 @@
       "summary": "Node 5: Pydantic v2 enterprise doc validation and residual PII scanning",
       "tags": [
         "python",
-        "code",
-        "test"
+        "test",
+        "code"
       ],
       "complexity": "moderate"
     },
@@ -709,9 +709,9 @@
       "summary": "Function `base_state` in test_schema_validator.py",
       "tags": [
         "python",
+        "test",
         "function",
-        "code",
-        "test"
+        "code"
       ],
       "complexity": "moderate",
       "lineRange": [

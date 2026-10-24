@@ -55,8 +55,8 @@
       "filePath": "Makefile",
       "summary": "Module Makefile responsible for project utilities",
       "tags": [
-        "makefile",
-        "infra"
+        "infra",
+        "makefile"
       ],
       "complexity": "simple"
     },
@@ -103,8 +103,8 @@
       "filePath": "pyrightconfig.json",
       "summary": "Module pyrightconfig.json responsible for project utilities",
       "tags": [
-        "json",
-        "config"
+        "config",
+        "json"
       ],
       "complexity": "simple"
     },
@@ -115,8 +115,8 @@
       "filePath": "requirements.txt",
       "summary": "Module requirements.txt responsible for project utilities",
       "tags": [
-        "docs",
-        "txt"
+        "txt",
+        "docs"
       ],
       "complexity": "moderate"
     }
