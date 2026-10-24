@@ -141,3 +141,20 @@ class TestReflectorNode:
         assert "fallback" in critique.lower()
         assert recommended == 0.30
         assert confidence == 0.5
+
+    @patch("src.agent.nodes.reflector._run_qwen_reflection")
+    def test_reflector_calls_trimmer_and_passes_evidence(
+        self, mock_reflect: MagicMock, base_state: DataShuddiState
+    ) -> None:
+        """Arrange: State with multi-line masked text. Act: Run node. Assert: Evidence passed to _run_qwen_reflection."""
+        mock_reflect.return_value = ("Critique", 0.35, 0.80)
+        state = base_state
+        state["masked_text"] = ("Standard contract paragraph.\n" * 20) + "Residual pattern US_SSN at offset 50.\n"
+        state["validation_errors"] = ["Residual pattern US_SSN"]
+
+        reflector_node(state)
+
+        mock_reflect.assert_called_once()
+        _, kwargs = mock_reflect.call_args
+        assert "evidence" in kwargs
+        assert "Residual pattern US_SSN" in kwargs["evidence"]

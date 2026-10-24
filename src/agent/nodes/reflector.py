@@ -18,6 +18,7 @@ from loguru import logger
 
 from src.agent.state import DataShuddiState
 from src.utils.config import settings
+from src.utils.trimmer import trim_validation_evidence
 
 # Prompt template for Qwen14b Reflector critique
 REFLECTOR_PROMPT_TEMPLATE = """You are a senior data pipeline diagnostic agent. A document failed schema validation.
@@ -26,8 +27,9 @@ Document ID: {doc_id}
 Validation Errors: {validation_errors}
 Current H/F Threshold: {current_threshold}
 Detected PII Count: {pii_count}
+{evidence_block}
 
-Analyze why validation failed and recommend an updated H/F detection threshold (range 0.10 to 0.50).
+Analyze why validation failed based on the evidence above and recommend an updated H/F detection threshold (range 0.10 to 0.50).
 Current threshold delta MUST NOT exceed 0.05.
 
 Return ONLY valid JSON in this exact format:
@@ -73,12 +75,19 @@ def reflector_node(state: DataShuddiState) -> DataShuddiState:
             "node_timestamps": timestamps,
         }
 
-    # Run Qwen14b CPU critique
+    # Sift masked text down to verbatim evidence snippet via trim-1 protocol (~7ms)
+    evidence = trim_validation_evidence(
+        masked_text=state.get("masked_text", ""),
+        validation_errors=state.get("validation_errors", []),
+    )
+
+    # Run Qwen14b CPU critique with grounded evidence snippet
     critique, recommended_threshold, confidence = _run_qwen_reflection(
         doc_id=state.get("doc_id", "UNKNOWN"),
         validation_errors=state.get("validation_errors", []),
         current_threshold=current_threshold,
         pii_count=pii_count,
+        evidence=evidence,
     )
 
     # Enforce Confidence Gate (confidence >= 0.70)
@@ -120,15 +129,19 @@ def _run_qwen_reflection(
     validation_errors: list[str],
     current_threshold: float,
     pii_count: int,
+    evidence: str = "",
 ) -> tuple[str, float, float]:
     """Run Qwen2.5-coder:14b CPU via Ollama for critique JSON."""
     import ollama
+
+    evidence_block = f"\n[ERROR_EVIDENCE]\n{evidence}\n[/ERROR_EVIDENCE]" if evidence.strip() else ""
 
     prompt = REFLECTOR_PROMPT_TEMPLATE.format(
         doc_id=doc_id,
         validation_errors="; ".join(validation_errors),
         current_threshold=current_threshold,
         pii_count=pii_count,
+        evidence_block=evidence_block,
     )
 
     try:
