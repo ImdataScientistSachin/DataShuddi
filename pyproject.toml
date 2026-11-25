@@ -98,6 +98,13 @@ module = [
     "ollama.*",
     "qdrant_client.*",
     "psycopg2.*",
+    "psycopg.*",
+    "psycopg_pool.*",
+    "langgraph.*",
+    "numpy.*",
+    "click.*",
+    "httpx.*",
+    "uvicorn.*",
 ]
 ignore_missing_imports = true
 

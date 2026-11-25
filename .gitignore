@@ -48,3 +48,8 @@ Thumbs.db
 docs/
 *.egg-info/
 
+# AI Agent files & workspace metadata
+GEMINI.md
+.ua/
+
+

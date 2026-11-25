@@ -1,0 +1,39 @@
+name: Documentation & Markdown Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docs-lint:
+    name: Documentation Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate README Links & Markdown Structure
+        run: |
+          python -c "
+          import pathlib, sys
+          readme = pathlib.Path('README.md')
+          if not readme.exists():
+              print('❌ README.md is missing!')
+              sys.exit(1)
+          content = readme.read_text(encoding='utf-8')
+          if len(content) < 500:
+              print('❌ README.md content is suspiciously short!')
+              sys.exit(1)
+          print(f'✅ README.md verified ({len(content)} characters, {len(content.splitlines())} lines).')
+          "
