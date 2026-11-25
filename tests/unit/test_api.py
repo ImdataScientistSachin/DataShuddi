@@ -71,3 +71,42 @@ def test_gdpr_purge_endpoint() -> None:
     data = response.json()
     assert data["doc_id"] == dummy_doc_id
     assert data["status"] == "success"
+
+
+@pytest.mark.unit
+def test_sanitize_unsupported_extension_rejected(tmp_path: Path) -> None:
+    """Test POST /api/v1/sanitize rejects disallowed file types like .exe."""
+    sample_file = tmp_path / "malicious.exe"
+    sample_file.write_bytes(b"MZ\x90\x00")
+
+    with open(sample_file, "rb") as f:
+        response = client.post(
+            "/api/v1/sanitize",
+            files={"file": ("malicious.exe", f, "application/x-msdownload")},
+            data={"source_system": "local"},
+        )
+    assert response.status_code == 400
+    assert "Unsupported file type" in response.json()["detail"]
+
+
+@pytest.mark.unit
+def test_admin_purge_requires_key_when_configured() -> None:
+    """Test POST /api/v1/admin/purge enforces X-API-Key when settings.admin_api_key is set."""
+    from src.utils.config import settings
+    original_key = settings.admin_api_key
+    try:
+        settings.admin_api_key = "secret_admin_token_999"
+        # Request without key -> 401
+        res_unauth = client.post("/api/v1/admin/purge", json={"doc_id": "test_id"})
+        assert res_unauth.status_code == 401
+
+        # Request with valid key -> 200
+        res_auth = client.post(
+            "/api/v1/admin/purge",
+            headers={"X-API-Key": "secret_admin_token_999"},
+            json={"doc_id": "test_id"},
+        )
+        assert res_auth.status_code == 200
+    finally:
+        settings.admin_api_key = original_key
+

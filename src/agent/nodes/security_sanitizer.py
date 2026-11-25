@@ -53,9 +53,18 @@ def security_sanitizer_node(state: DataShuddiState) -> DataShuddiState:
             )
             sanitized_text = re.sub(pattern, "[SECURITY_REDACTED]", sanitized_text)
 
+    # Also sanitize page-level text if available
+    sanitized_pages = []
+    for page in state.get("_pages", []):
+        p_text = page
+        for pattern in INJECTION_PATTERNS:
+            p_text = re.sub(pattern, "[SECURITY_REDACTED]", p_text)
+        sanitized_pages.append(p_text)
+
     return {
         **state,
         "raw_text": sanitized_text,
+        "_pages": sanitized_pages if sanitized_pages else state.get("_pages", []),
         "is_sanitized": True,
         "security_flags": detected_flags,
         "node_timestamps": timestamps,

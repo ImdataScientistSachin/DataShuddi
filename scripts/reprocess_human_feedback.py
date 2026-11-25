@@ -21,7 +21,6 @@ from src.utils.config import settings
 from src.utils.doc_utils import compute_doc_id, detect_mime_type
 
 
-
 @click.command()
 @click.option(
     "--queue-file",

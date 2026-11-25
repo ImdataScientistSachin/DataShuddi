@@ -8,7 +8,7 @@ from fastapi.responses import FileResponse, Response
 
 from src.agent.checkpoints import get_checkpointer
 from src.utils.config import settings
-from streamlit_app.ui_components import generate_sanitized_pdf
+from src.utils.pdf_utils import generate_sanitized_pdf
 
 router = APIRouter(prefix="/api/v1", tags=["Export"])
 

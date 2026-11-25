@@ -86,16 +86,19 @@ def _calculate_quality_score(masked_text: str, hf_removed: int, pii_count: int) 
     """
     Calculate composite quality score in range [0.0, 1.0].
 
-    High content length and clean sanitization yield 1.0. Short content is penalized.
+    Factors in content density (length >= 100 chars), PII scrubbing load,
+    and boilerplate removal efficiency.
     """
     content_len = len(masked_text.strip())
     if content_len < 100:
-        content_score = content_len / 100.0
+        content_score = max(0.0, content_len / 100.0)
     else:
         content_score = 1.0
 
-    # Clean processing completeness score
-    cleanliness_score = 1.0
+    # Cleanliness score factoring in PII redaction density and H/F cleanup
+    pii_factor = max(0.60, 1.0 - (pii_count * 0.01))
+    hf_bonus = min(1.0, 0.90 + (min(hf_removed, 10) * 0.01))
+    cleanliness_score = pii_factor * hf_bonus
 
-    composite = (0.7 * content_score) + (0.3 * cleanliness_score)
+    composite = (0.60 * content_score) + (0.40 * cleanliness_score)
     return round(min(1.0, max(0.0, composite)), 2)

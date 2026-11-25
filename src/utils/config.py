@@ -54,6 +54,16 @@ class Settings(BaseSettings):
     qdrant_storage_dir: Path = Path("./data/qdrant_storage")
     postgres_data_dir: Path = Path("./data/postgres_data")
 
+    # API & Security
+    admin_api_key: str | None = None
+    cors_allowed_origins: list[str] = [
+        "http://localhost:8501",
+        "http://127.0.0.1:8501",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
+    ]
+    max_upload_size_bytes: int = 25 * 1024 * 1024  # 25 MB ceiling
+
     # Logging
     log_level: str = "INFO"
     enable_langsmith_tracing: bool = False

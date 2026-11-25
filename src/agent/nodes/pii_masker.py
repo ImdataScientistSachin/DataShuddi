@@ -28,6 +28,46 @@ from src.agent.state import DataShuddiState
 from src.utils.constants import ANONYMIZER_MAPPING
 
 
+def _resolve_overlapping_entities(entities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """
+    Resolve overlapping PII entity spans by prioritizing higher score and wider span.
+
+    Guarantees non-overlapping intervals so string replacements never corrupt adjacent tokens.
+    """
+    if not entities:
+        return []
+
+    # Sort entities by priority: specific types > score > span length
+    priority_types = {"EMAIL_ADDRESS": 3, "US_SSN": 3, "CREDIT_CARD": 3, "PHONE_NUMBER": 2, "PERSON": 2}
+    sorted_by_priority = sorted(
+        entities,
+        key=lambda e: (
+            priority_types.get(e.get("type", ""), 1),
+            e.get("score", 0.0),
+            e.get("end", 0) - e.get("start", 0),
+        ),
+        reverse=True,
+    )
+
+    non_overlapping: list[dict[str, Any]] = []
+
+    for candidate in sorted_by_priority:
+        c_start = candidate.get("start", 0)
+        c_end = candidate.get("end", 0)
+        if c_start >= c_end:
+            continue
+
+        # Check for overlap against already selected entities
+        overlaps = any(
+            not (c_end <= selected.get("start", 0) or c_start >= selected.get("end", 0))
+            for selected in non_overlapping
+        )
+        if not overlaps:
+            non_overlapping.append(candidate)
+
+    return sorted(non_overlapping, key=lambda e: e.get("start", 0))
+
+
 def pii_masker_node(state: DataShuddiState) -> DataShuddiState:
     """
     Node 4: Apply Presidio Anonymizer and token substitution to produce masked_text.
@@ -53,9 +93,12 @@ def pii_masker_node(state: DataShuddiState) -> DataShuddiState:
             "node_timestamps": timestamps,
         }
 
-    # Sort entities by start character offset in reverse order to avoid offset drift
-    sorted_entities = sorted(entities, key=lambda e: e.get("start", 0), reverse=True)
-    masked_chars = list(text)
+    # Resolve overlapping spans (e.g. EMAIL containing URL domain)
+    resolved_entities = _resolve_overlapping_entities(entities)
+
+    # Sort entities in descending order of start offset to prevent position drift
+    sorted_entities = sorted(resolved_entities, key=lambda e: e.get("start", 0), reverse=True)
+    masked_text = text
 
     for ent in sorted_entities:
         start = ent.get("start", 0)
@@ -63,15 +106,13 @@ def pii_masker_node(state: DataShuddiState) -> DataShuddiState:
         ent_type = ent.get("type", "UNKNOWN")
         placeholder = ANONYMIZER_MAPPING.get(ent_type, f"[{ent_type}_REDACTED]")
 
-        if 0 <= start < end <= len(text):
-            masked_chars[start:end] = list(placeholder)
-
-    masked_text = "".join(masked_chars)
+        if 0 <= start < end <= len(masked_text):
+            masked_text = masked_text[:start] + placeholder + masked_text[end:]
 
     logger.info(
         "doc_id={} | Node 4: Masked {} entities successfully",
         state.get("doc_id", "UNKNOWN"),
-        len(entities),
+        len(resolved_entities),
     )
 
     return {
@@ -79,3 +120,4 @@ def pii_masker_node(state: DataShuddiState) -> DataShuddiState:
         "masked_text": masked_text,
         "node_timestamps": timestamps,
     }
+

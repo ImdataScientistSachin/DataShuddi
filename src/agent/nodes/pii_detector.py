@@ -103,20 +103,49 @@ _analyzer_engine = None
 
 
 def _get_analyzer() -> Any:
-    """Return singleton AnalyzerEngine instance with custom SSN pattern recognizer."""
+    """Return singleton AnalyzerEngine instance with custom high-precision pattern recognizers."""
     global _analyzer_engine
     if _analyzer_engine is None:
         from presidio_analyzer import AnalyzerEngine, Pattern, PatternRecognizer
 
         engine = AnalyzerEngine()
-        # Explicit SSN regex recognizer to guarantee 100% SSN pattern detection
-        ssn_pattern = Pattern(name="ssn_pattern", regex=r"\b\d{3}-\d{2}-\d{4}\b", score=0.95)
+
+        # 1. Custom SSN pattern recognizer
+        ssn_pattern = Pattern(name="ssn_pattern", regex=r"\b\d{3}-\d{2}-\d{4}\b", score=0.98)
         ssn_recognizer = PatternRecognizer(
             supported_entity="US_SSN",
             patterns=[ssn_pattern],
             name="custom_ssn_recognizer",
         )
         engine.registry.add_recognizer(ssn_recognizer)
+
+        # 2. Custom Email pattern recognizer (matches all corporate/custom TLDs)
+        email_pattern = Pattern(name="email_pattern", regex=r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b", score=0.98)
+        email_recognizer = PatternRecognizer(
+            supported_entity="EMAIL_ADDRESS",
+            patterns=[email_pattern],
+            name="custom_email_recognizer",
+        )
+        engine.registry.add_recognizer(email_recognizer)
+
+        # 3. Custom Phone pattern recognizer (standard US and international prefixes)
+        phone_pattern = Pattern(name="phone_pattern", regex=r"\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b", score=0.92)
+        phone_recognizer = PatternRecognizer(
+            supported_entity="PHONE_NUMBER",
+            patterns=[phone_pattern],
+            name="custom_phone_recognizer",
+        )
+        engine.registry.add_recognizer(phone_recognizer)
+
+        # 4. Custom Credit Card pattern recognizer (16-digit card sequences with/without separators)
+        cc_pattern = Pattern(name="cc_pattern", regex=r"\b(?:\d{4}[-\s]?){3}\d{4}\b", score=0.95)
+        cc_recognizer = PatternRecognizer(
+            supported_entity="CREDIT_CARD",
+            patterns=[cc_pattern],
+            name="custom_cc_recognizer",
+        )
+        engine.registry.add_recognizer(cc_recognizer)
+
         _analyzer_engine = engine
     return _analyzer_engine
 
@@ -140,6 +169,18 @@ def _run_presidio(text: str) -> list[dict[str, Any]]:
     ]
 
 
+from pydantic import BaseModel, Field
+
+
+class ContextualPIIEntity(BaseModel):
+    """Pydantic schema enforcing structure on LLM contextual PII predictions."""
+
+    type: str = Field(..., min_length=1)
+    start: int = Field(..., ge=0)
+    end: int = Field(..., gt=0)
+    score: float = Field(default=0.85, ge=0.0, le=1.0)
+
+
 def _run_qwen_contextual(text: str, doc_id: str) -> list[dict[str, Any]]:
     """
     Run Qwen2.5-coder:3b via Ollama for contextual PII detection.
@@ -149,11 +190,13 @@ def _run_qwen_contextual(text: str, doc_id: str) -> list[dict[str, Any]]:
         doc_id: Document ID for logging.
 
     Returns:
-        List of additional entity dicts from contextual LLM analysis.
+        List of additional validated entity dicts from contextual LLM analysis.
     """
     import ollama
 
-    prompt = CONTEXTUAL_PII_PROMPT_TEMPLATE.format(document_text=text[:4000])  # Context limit
+    # Context window guard (safe 4000 char window)
+    safe_text = text[:4000]
+    prompt = CONTEXTUAL_PII_PROMPT_TEMPLATE.format(document_text=safe_text)
 
     try:
         response = ollama.chat(
@@ -163,8 +206,23 @@ def _run_qwen_contextual(text: str, doc_id: str) -> list[dict[str, Any]]:
         )
         raw_json = response["message"]["content"]
         parsed = json.loads(raw_json)
-        entities = parsed.get("entities", [])
-        return list(entities) if isinstance(entities, list) else []
+        raw_entities = parsed.get("entities", [])
+        if not isinstance(raw_entities, list):
+            return []
+
+        validated_entities: list[dict[str, Any]] = []
+        text_len = len(text)
+        for item in raw_entities:
+            if isinstance(item, dict):
+                try:
+                    ent = ContextualPIIEntity(**item)
+                    if 0 <= ent.start < ent.end <= text_len:
+                        validated_entities.append(ent.model_dump())
+                except Exception:
+                    continue
+
+        return validated_entities
     except (json.JSONDecodeError, KeyError, Exception) as exc:
-        logger.warning("doc_id={} | Qwen3B PII detection failed: {}", doc_id, type(exc).__name__)
+        logger.warning("doc_id={} | Qwen3B PII detection notice: {}", doc_id, type(exc).__name__)
         return []
+

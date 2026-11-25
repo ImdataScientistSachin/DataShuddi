@@ -6,12 +6,12 @@ retry/reflection routing, checkpointer, and memory store.
 
 Graph Topology:
     START
-      -> Node 0: security_sanitizer
-      -> Node 1: extractor
-      -> Node 2: hf_detector
-      -> Node 3: pii_detector
-      -> Node 4: pii_masker
-      -> Node 5: schema_validator
+      -> Node 1: extractor (extracts raw document text & page splits)
+      -> Node 0: security_sanitizer (pre-ingestion prompt injection stripping)
+      -> Node 2: hf_detector (page frequency boilerplate stripping)
+      -> Node 3: pii_detector (Presidio + contextual LLM PII recognition)
+      -> Node 4: pii_masker (safe token replacement & offset drift protection)
+      -> Node 5: schema_validator (Pydantic v2 enterprise validation)
       -> [CONDITIONAL ROUTING]
            validation_passed = True  -> Node 7: output_node -> END
            needs_human_review = True -> END
@@ -128,3 +128,16 @@ def build_graph(use_checkpointer: bool = True) -> Any:
     store = get_store()
 
     return builder.compile(checkpointer=checkpointer, store=store)
+
+
+# Application-level compiled graph cache
+_compiled_graphs: dict[bool, Any] = {}
+
+
+def get_compiled_graph(use_checkpointer: bool = True) -> Any:
+    """Return cached compiled StateGraph instance to avoid recompilation overhead."""
+    global _compiled_graphs
+    if use_checkpointer not in _compiled_graphs:
+        _compiled_graphs[use_checkpointer] = build_graph(use_checkpointer=use_checkpointer)
+    return _compiled_graphs[use_checkpointer]
+

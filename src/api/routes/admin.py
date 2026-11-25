@@ -3,7 +3,7 @@ DataShuddi API — Compliance Admin Data Purge Route Handler.
 """
 import json
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends, Header, HTTPException, status
 from loguru import logger
 
 from src.api.schemas import GDPRPurgeRequest, GDPRPurgeResponse
@@ -12,13 +12,27 @@ from src.utils.config import settings
 router = APIRouter(prefix="/api/v1/admin", tags=["Admin & Compliance"])
 
 
+async def verify_admin_key(x_api_key: str | None = Header(None, alias="X-API-Key")) -> str:
+    """Verify administrator API key for compliance management operations."""
+    if settings.admin_api_key:
+        if not x_api_key or x_api_key != settings.admin_api_key:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid or missing administrator API key (X-API-Key).",
+            )
+    return x_api_key or "dev_mode"
+
+
 @router.post(
     "/purge",
     response_model=GDPRPurgeResponse,
     summary="Execute Complete GDPR User Data Erasure",
     description="Completely purges clean files, Qdrant vector points, and human review queue records matching the given doc_id.",
 )
-async def purge_document_data(body: GDPRPurgeRequest) -> GDPRPurgeResponse:
+async def purge_document_data(
+    body: GDPRPurgeRequest,
+    _auth: str = Depends(verify_admin_key),
+) -> GDPRPurgeResponse:
     """Purge all document data across filesystem, vectors, and review queues."""
     doc_id = body.doc_id
     files_deleted = 0
